@@ -124,7 +124,15 @@ Four techniques described here are:
 
 Prototyping techniques are used to create a working model of a solution to test with users in a variety of forms - to learn something at a much lower cost than building the full solution.
 
-TBC
+Below describes four key prototyping techniques:
+1. **Feasibility Prototyping** - Typically code written by engineers to address technical feasibility risks - the idea is to write just enough code to mitigate the feasibility risk.
+2. **User Prototype Technique** - Two types: low fidelity and high fidelity (see below) - user prototypes are simulations for judging usability of the solution, most typically developed by the product designer. Don't use them for judging value or feasibility.
+3. **Live-Data Prototype Technique** - Sometimes we may need to collect some actual usage data as evidence support ideas from discovery. This should be real code, but developed to a fraction of what a full product is - it is just to collect data.
+4. **Hybrid Prototype Technique** - Combine a wide variety of the above techniques for different purposes. An example is a Wizard of Oz prototype, where a test user interacts with a high fidelity prototype front end, but with an actual person on the other end of the interaction providing the necessary backend functionality to support the user's actions that would ultimately be provided by the full product.
+
+:::tip[High vs Low Fidelity User Prototypes]
+A low fidelity prototype is a simple UI with basic functionality to gather feedback quickly, while a high fidelity prototype is more visually developed to look like the final product.
+:::
 
 > More information can be found on page 223 of Marty Cagan's book "[Inspired](../product-management/research#inspired-how-to-create-products-customers-love)".
 
@@ -136,10 +144,6 @@ Testing techniques are used to validate the assumptions we've made about the pro
 
 > More information can be found on page 241 of Marty Cagan's book "[Inspired](../product-management/research#inspired-how-to-create-products-customers-love)".
 
-#### Testing Feasibility
-
-TBC
-
 #### Testing Usability
 
 TBC
@@ -148,11 +152,39 @@ TBC
 
 TBC
 
+#### Demand Testing Techniques
+
+TBC
+
+#### Qualitative Value Testing Techniques
+
+TBC
+
+#### Quantitative Value Testing Techniques
+
+TBC
+
+#### Testing Feasibility
+
+TBC
+
 #### Testing Business Viability
 
 TBC
 
 
+
+<PageBreak />
+
+### Transformation Techniques
+
+#### Discovery Sprint Technique
+
+TBC
+
+#### Pilot Team Technique
+
+TBC
 
 <PageBreak />
 

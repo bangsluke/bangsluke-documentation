@@ -91,6 +91,7 @@ Inspired is a book about product management that teaches you how to create produ
 
 ### Inspired Key Concepts
 
+The key concepts in Inspired include techniques for product discovery, including [framing techniques](../product-management/product-discovery#framing-techniques), [planning](../product-management/product-discovery#planning-techniques), [ideation](../product-management/product-discovery#ideation-techniques), [prototyping](../product-management/product-discovery#prototyping-techniques) and [testing](../product-management/product-discovery#testing-techniques).
 <!-- TODO: Update the below key concepts with the book key concepts -->
 
 <PageBreak />
