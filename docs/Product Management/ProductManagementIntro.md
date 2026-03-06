@@ -156,17 +156,27 @@ For The Second Way, you can use tools like [Mixpanel](https://mixpanel.com/) or 
 
 <PageBreak />
 
-### Prioritization Frameworks
+### Prioritisation Frameworks
 
-With limited resources and endless feature requests, structured prioritization is essential. The most effective frameworks include:
+With limited resources and endless feature requests, structured prioritisation is essential. The most effective frameworks include:
 
 | Framework     | When to Use                                            | Key Components                                 | Pros                      | Cons                                        |
 | ------------- | ------------------------------------------------------ | ---------------------------------------------- | ------------------------- | ------------------------------------------- |
-| RICE          | Feature-level prioritization with quantifiable metrics | Reach, Impact, Confidence, Effort              | Data-driven, objective    | Can be time-consuming, subjective estimates |
+| RICE          | Feature-level prioritisation with quantifiable metrics | Reach, Impact, Confidence, Effort              | Data-driven, objective    | Can be time-consuming, subjective estimates |
 | MoSCoW        | Sprint planning, stakeholder communication             | Must-have, Should-have, Could-have, Won't-have | Simple, aligns teams      | Can be vague, subjective                    |
 | Cost-of-Delay | Strategic decisions, opportunity cost analysis         | Business value × Urgency                       | Focuses on value, urgency | Requires accurate value estimation          |
+| Kano Model    | Feature-level prioritisation with quantifiable metrics | Basic expectations, performance differentiators, or delighters | Helps identify which features will drive satisfaction vs. which are table stakes | Can be subjective                    |
 
-For outcome-based planning and aligning roadmap to goals, see [Outcome-based roadmaps and OKRs](/docs/SDLC/planning-and-design#outcome-based-roadmaps-and-okrs) in Planning and Design.
+Elaboration
+
+- **RICE** helps PMs quantify and compare features based on their potential impact and required effort.
+- **MoSCoW** is effective for communicating priorities with stakeholders and ensuring MVP focus.
+- **Cost-of-Delay** highlights the financial and strategic impact of delayed features, guiding urgent investments.
+- **Kano Model** helps identify which features will drive satisfaction vs. which are table stakes.
+
+PMs should use multiple frameworks as appropriate and validate assumptions with user research and data.
+
+> For outcome-based planning and aligning roadmap to goals, see [Outcome-based roadmaps and OKRs](/docs/SDLC/planning-and-design#outcome-based-roadmaps-and-okrs) in Planning and Design.
 
 <PageBreak />
 

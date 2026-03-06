@@ -34,7 +34,10 @@ Not everything can be built at once. Use a structured framework to decide what t
 
 - **<Tooltip text="MoSCoW" definition="A prioritisation method that categorises requirements as Must have, Should have, Could have, and Won't have (this time)." />:** Categorise requirements as Must / Should / Could / Won't. Simple and effective for initial scoping. [Read more here](https://www.productplan.com/glossary/moscow-prioritization/).
 - **<Tooltip text="RICE" definition="A scoring model that ranks items by Reach, Impact, Confidence, and Effort to produce a prioritisation score." />:** Score each item by Reach, Impact, Confidence, and Effort. Produces a numerical priority score that is useful for comparing many items objectively. [Read more here](https://www.productplan.com/glossary/rice-scoring-model/).
+- **<Tooltip text="Cost-of-Delay" definition="A framework that scores items by the financial and strategic impact of delayed delivery." />:** Score each item by the financial and strategic impact of delayed delivery. [Read more here](https://www.productplan.com/glossary/cost-of-delay/).
 - **Kano Model:** Classify features as basic expectations, performance differentiators, or delighters. Helps identify which features will drive satisfaction vs. which are table stakes. [Read more here](https://www.productplan.com/glossary/kano-model/).
+
+> For more information on the frameworks, see [Prioritisation Frameworks](/docs/product-management/product-management-intro#prioritisation-frameworks) in Product Management.
 
 ### Estimation
 
