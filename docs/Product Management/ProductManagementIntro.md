@@ -15,6 +15,89 @@ description: Product Management introduction and key concepts
 
 <PageBreak />
 
+## Product Management: An Introduction
+
+> The below is a summary from SVPG's "[Product Management: An Introduction](https://www.svpg.com/product-management-an-introduction/)" article.
+
+### Key Skills of a Product Manager
+
+Product managers working in the product model on an empowered, cross-functional product team, must bring to their product team deep knowledge in five key areas:
+
+**1. Deep Knowledge of the Users and Customers**
+
+The product manager must be an  acknowledged expert on the users and customers.  This requires direct engagement to understand their pain points, needs, decision-making process, and behaviors. Effective product managers leverage both:
+- **Quantitative insights** to analyze user behavior and trends through data to understand how their products are being used 
+- **Qualitative insights** to understand the motivations behind user and customer behaviors – especially to understand why their products are not being used.
+
+**2. Deep Knowledge of the Data**
+
+Today’s product managers must be **fluent with data and analytics**.  They need to be adept at:
+
+- **User analytics** to understand how the product is used
+- **Sales analytics** to understand how the product is purchased
+- **Data trends** to evaluate how patterns are changing over time
+
+While product managers often collaborate with data analysts or data scientists on collecting and analyzing data, they _must_ understand the data themselves in order to truly understand their customers.
+
+**3. Deep Knowledge of their Business**
+
+This refers not to their customer’s business, but rather their own business.  In particular, the various constraints on the business – sales, marketing, finance, legal, compliance and more.
+
+A product manager must **understand the business context** and be well-versed in the:
+
+- **Go-to-market strategy** – How the product reaches customers
+- **Business model** – How the business and products generate revenue
+- **Product economics** – Costs, pricing, and profitability
+- **Legal, compliance and ethical considerations** – Privacy, security, and regulatory compliance factors
+
+**4. Deep Knowledge of the Market and Industry**
+
+A product manager must stay abreast of:
+
+- **Competitive landscape** – Understanding the market and the various players and their positions 
+- **Emerging technologies** – Innovations shaping the industry
+- **Customer behaviors and expectations** – Anticipating shifts in behaviors and demand
+
+**5. Deep Knowledge of the Product**
+
+Product managers must also be **experts on their own product’s capabilities and limitations**. This expertise includes becoming an expert user of your product. 
+
+<PageBreak />
+
+### Product Management’s Role in Assessing The Risks in Product
+
+The product team is responsible for both product discovery (understanding the problem and figuring out the solution we need to build) and product delivery (building, testing and deploying that solution to our customers).
+
+While every member of the team participates in both product discovery and product delivery, the product manager’s primary responsibility is product discovery.  In particular, the product manager is responsible for ensuring the _value_ and the _viability_ of what the product team builds.
+
+Product discovery is how product teams **gather evidence** that their solution or product will achieve the desired outcome.
+
+This work is structured around the four key product risks that the product team addresses in product discovery are: 
+
+**1. Value Risk** – Will customers buy or choose to use the product or feature?
+ - Validate that the product solves a real customer problem and delivers enough value for users to adopt it through continuous product discovery, customer research, and experimentation.  This is the responsibility of the **product manager**.
+
+**2. Business Viability Risk** – Will this solution work for our business (e.g., legal, financial, and strategic fit)? 
+- Collaborating with key stakeholders, ensuring that the solution aligns with their goals and constraints.  This is the responsibility of the **product manager**.
+
+**3. Usability Risk** – Can users figure out how to use it?
+- Ensure the holistic product experience is easy to learn and use, meets each type of user’s needs.  This is the responsibility of the **product designer**.
+
+**4. Feasibility Risk** – Can the solution be built with the available technology, skills, and resources?
+- Determine if the product can be built with the available time, money, technology, skills, performance and scaleability that is necessary to create a product quality solution.  This is the responsibility of the **engineering tech lead**.
+
+<PageBreak />
+
+### What Product Management is Not
+
+The role of the product manager is often misunderstood, or confused with the role of a project manager. **Product Managers**:
+- Do not directly manage people, but instead work collaboratively with the engineers, designers, or other team members to deliver outcomes.
+- Are not requirement gatherers or backlog managers.
+- Are not project managers focused only on delivery timelines.
+- Don't focus on shipping features; they focus on solving problems in ways their customers love that also work for their business
+
+<PageBreak />
+
 ## Key Concepts
 
 ### Product Vision, Strategy and Principles
@@ -73,17 +156,27 @@ For The Second Way, you can use tools like [Mixpanel](https://mixpanel.com/) or 
 
 <PageBreak />
 
-### Prioritization Frameworks
+### Prioritisation Frameworks
 
-With limited resources and endless feature requests, structured prioritization is essential. The most effective frameworks include:
+With limited resources and endless feature requests, structured prioritisation is essential. The most effective frameworks include:
 
 | Framework     | When to Use                                            | Key Components                                 | Pros                      | Cons                                        |
 | ------------- | ------------------------------------------------------ | ---------------------------------------------- | ------------------------- | ------------------------------------------- |
-| RICE          | Feature-level prioritization with quantifiable metrics | Reach, Impact, Confidence, Effort              | Data-driven, objective    | Can be time-consuming, subjective estimates |
+| RICE          | Feature-level prioritisation with quantifiable metrics | Reach, Impact, Confidence, Effort              | Data-driven, objective    | Can be time-consuming, subjective estimates |
 | MoSCoW        | Sprint planning, stakeholder communication             | Must-have, Should-have, Could-have, Won't-have | Simple, aligns teams      | Can be vague, subjective                    |
 | Cost-of-Delay | Strategic decisions, opportunity cost analysis         | Business value × Urgency                       | Focuses on value, urgency | Requires accurate value estimation          |
+| Kano Model    | Feature-level prioritisation with quantifiable metrics | Basic expectations, performance differentiators, or delighters | Helps identify which features will drive satisfaction vs. which are table stakes | Can be subjective                    |
 
-For outcome-based planning and aligning roadmap to goals, see [Outcome-based roadmaps and OKRs](/docs/SDLC/planning-and-design#outcome-based-roadmaps-and-okrs) in Planning and Design.
+Elaboration
+
+- **RICE** helps PMs quantify and compare features based on their potential impact and required effort.
+- **MoSCoW** is effective for communicating priorities with stakeholders and ensuring MVP focus.
+- **Cost-of-Delay** highlights the financial and strategic impact of delayed features, guiding urgent investments.
+- **Kano Model** helps identify which features will drive satisfaction vs. which are table stakes.
+
+PMs should use multiple frameworks as appropriate and validate assumptions with user research and data.
+
+> For outcome-based planning and aligning roadmap to goals, see [Outcome-based roadmaps and OKRs](/docs/SDLC/planning-and-design#outcome-based-roadmaps-and-okrs) in Planning and Design.
 
 <PageBreak />
 
