@@ -180,6 +180,21 @@ PMs should use multiple frameworks as appropriate and validate assumptions with 
 
 <PageBreak />
 
+### Agile User Stories - INVEST
+
+The INVEST criteria spell out how to create Agile user stories that deliver valuable working software early and often. They show you how to specify your requirements in ways that follow the principles and values of Agile.
+
+- **I**ndependent - The story is not dependent on other stories getting done.
+- **N**egotiable - The story prompts but doesn't prescribe a solution.
+- **V**aluable - The story makes clear the benefit it delivers the users.
+- **E**stimable - The story gives the development team enough detail to estimate the size of the story.
+- **S**mall - The story is the smallest piece of work that will deliver useful software.
+- **T**estable - The story is clear enough that you can assess if the story is done.
+
+> For more reading, see [this post](https://www.boost.co.nz/blog/2021/10/invest-criteria).
+
+<PageBreak />
+
 ## Suggested PM Tool Stack
 
 | Concept/Area                                   | Essential Tools/Technologies                                   | Why It Matters for PMs                                                       |
