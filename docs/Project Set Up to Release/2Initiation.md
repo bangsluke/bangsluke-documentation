@@ -11,6 +11,36 @@ description: The initiation phase of setting up the project
 See [Code](../SDLC/code) for more information on the code (implementation) phase of the SDLC.
 :::
 
+## AI Set Up
+
+> For details on my AI Set Up, see <a href="obsidian://open?vault=Obsidian%20Personal%20Notes&file=01%20Notes%2F02%20Areas%2FWork%20Notes%2FCoding%20Notes%2FAI%20Vibe%20Code%20Prompts" target="_blank">my Obsidian note on AI Set Up here</a>.
+
+### Claude Code, Cursor/Antigravity Rules
+
+<img src="https://img.shields.io/badge/Claude-red?style=for-the-badge&logo=claude&logoColor=white" alt="Claude" />
+<img src="https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white" alt="Cursor" />
+<img src="https://img.shields.io/badge/Antigravity-2F8EF5?style=for-the-badge&logo=antigravity&logoColor=white" alt="Antigravity" />
+
+<PageBreak displayLine={false} size="1rem" />
+
+:::tip[AI Set Up]
+After running the Project Initiation prompt (see [Planning - Decide on Architecture section](/docs/project-set-up-to-release/planning#decide-on-architecture)), check your global rules and set up your project rules in your chosen AI tool, as per the <a href="obsidian://open?vault=Obsidian%20Personal%20Notes&file=01%20Notes%2F02%20Areas%2FWork%20Notes%2FCoding%20Notes%2FAI%20Vibe%20Code%20Prompts" target="_blank">Obsidian note</a>. Below is some further guidance.
+:::
+
+If using either Cursor or Antigravity, you will already have a User Rule/Global Rule set up (see <a href="obsidian://open?vault=Obsidian%20Personal%20Notes&file=01%20Notes%2F02%20Areas%2FWork%20Notes%2FCoding%20Notes%2FAI%20Vibe%20Code%20Prompts" target="_blank">my Obsidian note on AI Prompts here</a>).
+
+For setting up the Project Rules, you can follow the notes in the Obsidian notes or follow below:
+
+- To set up Project rules, open the project in Cursor and then follow the instructions in the following link to automatically set up the correct Project rule files for your project.
+  - [GitHub - Renvia-code/best-cursor-rules: Best Cursor Rules is a curated collection of 33 high-quality Cursor AI rules that actually work. Includes a Setup Wizard that analyzes your project and generates customized rules automatically.](https://github.com/Renvia-code/best-cursor-rules)
+- Answer the questions in the Setup Wizard to generate the correct Project rule files for your project.
+
+:::note
+If you are using Antigravity, ensure that you copy the rules generated in Cursor over into the Rules section of Antigravity - Settings.
+:::
+
+<PageBreak />
+
 ## Create the New App
 
 ### Boilerplate Code
@@ -324,25 +354,6 @@ Set up <Tooltip text="Dependabot" definition="A GitHub tool that automatically c
 - **Dependabot:** Add a `dependabot.yml` to `.github/` (already included in the workflow files above)
 - Configure it to open PRs weekly for patch/minor updates and flag major updates for manual review
 - Never let dependencies go unpatched for months - automated PRs make this near-effortless
-
-## Cursor/Antigravity Project Rules
-
-<img src="https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white" alt="Cursor" />
-<img src="https://img.shields.io/badge/Antigravity-2F8EF5?style=for-the-badge&logo=antigravity&logoColor=white" alt="Antigravity" />
-
-<PageBreak displayLine={false} size="1rem" />
-
-If using either Cursor or Antigravity, you will already have a User Rule/Global Rule set up (see <a href="obsidian://open?vault=Obsidian%20Personal%20Notes&file=01%20Notes%2F02%20Areas%2FLife%20Notes%2FCoding%20Notes%2FAI%20Vibe%20Code%20Prompts" target="_blank">my Obsidian note on AI Prompts here</a>).
-
-For setting up the Project Rules, you can follow the notes in the Obsidian notes or follow below:
-
-- To set up Project rules, open the project in Cursor and then follow the instructions in the following link to automatically set up the correct Project rule files for your project.
-  - [GitHub - Renvia-code/best-cursor-rules: Best Cursor Rules is a curated collection of 33 high-quality Cursor AI rules that actually work. Includes a Setup Wizard that analyzes your project and generates customized rules automatically.](https://github.com/Renvia-code/best-cursor-rules)
-- Answer the questions in the Setup Wizard to generate the correct Project rule files for your project.
-
-:::note
-If you are using Antigravity, ensure that you copy the rules generated in Cursor over into the Rules section of Antigravity - Settings.
-:::
 
 <PageBreak />
 
