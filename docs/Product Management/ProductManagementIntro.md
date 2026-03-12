@@ -166,13 +166,17 @@ With limited resources and endless feature requests, structured prioritisation i
 | MoSCoW        | Sprint planning, stakeholder communication             | Must-have, Should-have, Could-have, Won't-have | Simple, aligns teams      | Can be vague, subjective                    |
 | Cost-of-Delay | Strategic decisions, opportunity cost analysis         | Business value × Urgency                       | Focuses on value, urgency | Requires accurate value estimation          |
 | Kano Model    | Feature-level prioritisation with quantifiable metrics | Basic expectations, performance differentiators, or delighters | Helps identify which features will drive satisfaction vs. which are table stakes | Can be subjective                    |
+| Value vs. effort | For less experienced teams or more subjective decision-making | 2x2 grid based on value to the user and the effort required to deliver | Visual identification for easier decisions | Can be subjective relying on instinct                    |
+| Opportunity scoring | If the project aims to improve customer satisfaction | Importance + max(importance – satisfaction,0) = opportunity | The ROI outweighs the development costs | Scoring models only provide a limited view of each idea's scope                    |
 
-Elaboration
+**Elaboration:**
 
-- **RICE** helps PMs quantify and compare features based on their potential impact and required effort.
-- **MoSCoW** is effective for communicating priorities with stakeholders and ensuring MVP focus.
-- **Cost-of-Delay** highlights the financial and strategic impact of delayed features, guiding urgent investments.
-- **Kano Model** helps identify which features will drive satisfaction vs. which are table stakes.
+- **RICE** helps PMs quantify and compare features based on their potential impact and required effort. [Read more here](https://www.productplan.com/glossary/rice-scoring-model/).
+- **MoSCoW** is effective for communicating priorities with stakeholders and ensuring MVP focus. [Read more here](https://www.productplan.com/glossary/moscow-prioritization/).
+- **Cost-of-Delay** highlights the financial and strategic impact of delayed features, guiding urgent investments. [Read more here](https://www.productplan.com/glossary/cost-of-delay/).
+- **Kano Model** helps identify which features will drive satisfaction vs. which are table stakes. [Read more here](https://www.productplan.com/glossary/kano-model/).
+- **Value vs. effort** helps prioritise features into a 2x2 grid based on their value to the user and the effort required to deliver them. [Read more here](https://www.geeksforgeeks.org/software-engineering/what-is-value-vs-effort-matrix-and-how-does-it-work-in-product-management/).
+- **Opportunity scoring** gets customers to rate both a feature's importance and their satisfaction and an opportunity algorithm calculates the score on a five or ten point scale. [Read more here](https://www.productplan.com/glossary/opportunity-scoring/).
 
 PMs should use multiple frameworks as appropriate and validate assumptions with user research and data.
 
