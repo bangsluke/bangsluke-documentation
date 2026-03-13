@@ -140,7 +140,7 @@ A low fidelity prototype is a simple UI with basic functionality to gather feedb
 
 ### Testing Techniques
 
-Testing techniques are used to validate the assumptions we've made about the problem to be solved and the solutions we've proposed.
+Testing techniques are used to validate the assumptions we've made about the problem to be solved and the solutions we've proposed. 
 
 > More information can be found on page 241 of Marty Cagan's book "[Inspired](../product-management/research#inspired-how-to-create-products-customers-love)".
 
