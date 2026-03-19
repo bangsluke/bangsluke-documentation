@@ -127,6 +127,10 @@ The Hard Thing About Hard Things is a brutally honest guide to what it actually 
    - CEOs must balance transparency with strategic communication.
    - Boards can be helpful, but the CEO must own the final decision.
 
+:::tip
+Use an agenda item called "What are we NOT doing?" to help you identify areas that are not being worked on and challenge why not.
+:::
+
 <PageBreak />
 
 ## The DevOps Handbook

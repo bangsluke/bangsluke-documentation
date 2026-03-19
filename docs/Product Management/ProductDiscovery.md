@@ -142,27 +142,89 @@ A low fidelity prototype is a simple UI with basic functionality to gather feedb
 
 Testing techniques are used to validate the assumptions we've made about the problem to be solved and the solutions we've proposed. 
 
+We're essentially trying to quickly separate the good ideas from the bad, answering four questions as we go:
+1. Will the user or customer choose to use or buy this? (Value)
+2. Can the user figure out how to use it? (Usability)
+3. Can we build it? (Feasibility)
+4. Is this solution viable for our business? (Business Viability)
+
 > More information can be found on page 241 of Marty Cagan's book "[Inspired](../product-management/research#inspired-how-to-create-products-customers-love)".
 
 #### Testing Usability
 
-TBC
+Probably the easiest to test, but should be done early on during discovery using prototypes. You need to do the following:
+
+- **Recruit users to test**: Establish a base of users to test, either through the product team's existing user base or through a recruitment agency.
+- **Preparing the test**: It is usual to conduct the usbaility test with a high-fidelity user prototype. Conduct the test with the product manager, designer and one engineer from the team. Define the set of tasks to be tested in advance. One person should administer the test and another take notes. Tests can be done in formal testing labs with video recording, in more comfortable public settings such as coffee shops, at the customer's location (where they are most comfortable and natural), or even remotely (although this is less effective in many ways).
+- **Testing your prototype**: Ensure that you frame the test situation, explaining that this prototype is not real and that you need feedback good or bad. Before jumping into your tasks, ask the user what they think the prototype is and what they think it does from its design which can lead to interesting insights. When testing, keep them in *use mode* rather than *critique mode* - what matters is if the user can easily do the task they need to do, not if they can critique the design. During testing, the main skill for you is to stay quiet and suppress your natural urge to help them out.
+
+> There is far far more guidance on pages 243-249 of Marty Cagan's book "[Inspired](../product-management/research#inspired-how-to-create-products-customers-love)".
 
 #### Testing Value
 
-TBC
+Most of the time, users will already have a solution for the problem your product is trying to solve. You don't just need to match the features of their current solution (feature parity), you need to be substanially better than their current solution for them to migrate to your product. To test value you must:
+
+- **Test Demand**: We can't just assume that there is a demand for the product, we need to test it - see [Demand Testing Techniques](#demand-testing-techniques)
+- **Test Qualitative Value**: Do customers love the product? Will they pay for it? And most important, if not, why not? - see [Qualitative Value Testing Techniques](#qualitative-value-testing-techniques)
+- **Test Quantitative Value**: We need to test *efficacy* which refers to how well this solution solves the underlying problem - see [Quantitative Value Testing Techniques](#quantitative-value-testing-techniques)
 
 #### Demand Testing Techniques
 
-TBC
+It is very easy for products or features to be built that are not in demand, but even easier to avoid this. Some techniques to test demand are:
+- **Fake Door Demand Test**: The idea is that we put the button or menu item into the user experience exactly where we think it should be, which rather than leads to the feature, takes the uset to a page explaining that you're considering adding the feature and asking for their input on whether they would use it.
+- **Landing Page Demand Test**: The idea is to set up a landing page for the new offering's product funnel, describing what the new offering would be as if we would if we were launching it. Rather that the CTA button on the page signing the person up for a trial, it takes them to a page explaining that you're studying the possibility of adding this new offering and you'd like to talk to them about it.
+
+Both of these techniques collect two useful things: (1) some good evidence on demand and (2) a list of users who are ready and willing to talk with you about this specific new capability.
+
+:::tip
+You could use feature flags to roll out these demand testing techniques to a small subset of users to get early evidence on demand.
+:::
 
 #### Qualitative Value Testing Techniques
 
-TBC
+Quantitative testing tells us what's happening (or not), but it can't tell us *why* and what to do to correct the situation - that's why we do qualitative testing.
+
+Qualitative testing is not about proving anything, it is about rapid learning and big insights. Marty Cagan suggests that product teams do at least *two or three qualitative tests every single week* as he sees it as the most important discovery activity.
+
+- **Interview first**: Begin the user test with a short user interview where we try to make sure our user has the problems we think she has, how she solves these problems today, and what it would take for her to switch.
+- **Usability test**: Always preceed a value test with a usability test to ensure that the user first understands what the product is and how it works. Only then can we have a discussion on the value of the product (or lack thereof). See more details in [Testing Usability](#testing-usability).
+- **Specific Value Tests**: It is important to challenge the user to be honest with us rather than nice, by using something to demonstrate value. For each of the below, we're not expecting them to actually do it, but we want to see if they would consider it to indicate value:
+    - **Using money to demonstrate value**: See if the user is willing to pay for the product or feature. We're looking for the user to pull out their credit card or sign a "non-binding letter of intent" to buy the product or feature.
+    - **Using reputation to demonstrate value**: See if the user is willing to recommend the product or feature to their friends or colleagues. See if they will share it online.
+    - **Using time to demonstrate value**: See if the user is willing to spend more time using the product or feature.
+    - **Using access to demonstrate value**: See if the user is willing to begin migrating from their current solution to the new solution immediately.
+- **Iterating the Prototype**: Remember, this is not about proving anything - it's about rapid learning. For example, if you show your prototype to two users and get substantially different feedback, your job is to figure out why.
+
+:::important
+As a product manager/owner, it is important that you are at every single qualitative value test - do not delegate the responsibility to someone else.
+:::
 
 #### Quantitative Value Testing Techniques
 
-TBC
+While qualitative testing is all about fast learning and big insights, quantitative techniques are about collecting evidence. Sometimes we can collect enough data that we have *statistically significant results* (such as with consumer services with lots of daily traffic), and other times we'll set the bar lower and collect less usage data that we consider as useful *evidence*. The technique we select depends on the amount of traffic we have, the amount of time we have and our tolerance to risk.
+
+- **A/B Testing**: In discovery A/B testing, we ususally have the current product showing to 99% of users and the new product showing to 1% of users. We then measure the difference in usage between the two groups and see if it is statistically significant.
+- **Invite-Only Testing**: If your company is more risk averse, or you don't have enough traffic to show to 1 or 10% of users and get useful results, you can invite a small number of users to test the new product or feature. You tell them that this is an experimental version, allowing them to opt in or out of the test. Generally, groups who volutneer for this are more likely to be early adopters types - so this can be less representative of the overall user base.
+- **Customer Discovery Program**: Here we can use existing contacts from our customer discovery program, explained earlier. These customers have already opted in to testing new versions and so will be willing to test the new product or feature.
+
+In today's world, product managers are also expected to leverage data analytics to collect evidence. There are 5 main uses of analytics in strong product teams:
+
+1. **Understanding user and customer behavior**: We can use analytics to understand if and how users and customers are using our product or feature, and how they are behaving.
+2. **Measure product progress**: Set the team business objectives and measure progress against them.
+3. **Prove whether product ideas work**: We can isolate the contribution of new features, new versions of workflows or new designs by running A/B tests and comparing the results - allowing us to prove whether product ideas work.
+4. **Inform product decisions**: Today, data beats opinions - we can use analytics to inform product decisions by showing us what is working and what is not.
+5. **Inpire product work**: By exploring the data, we can find some very powerful product opportunities that we may not have otherwise considered.
+
+:::tip
+It's important for tech product managers to have a broad understanding of the types of analytics that could be available:
+- User behaviour analytics (click paths, engagement)
+- Business analytics (active users, conversion rate, lifetime value, retrention)
+- Financial analytics (<Tooltip text="ASP" definition="Average Selling Price" />, billings, <Tooltip text="time to close" definition="The time it takes to close a deal" />)
+- Performance (load time, uptime)
+- Operational costs (storage, hosting)
+- Go-to-market costs (acquisition costs, costs of sales, programs)
+- Sentiment (<Tooltip text="NPS" definition="Net Promoter Score" />, customer satisfaction, surveys)
+:::
 
 #### Testing Feasibility
 
