@@ -29,7 +29,7 @@ On occassions, there is a fifth risk: ethics - where a team should also consider
 
 Discovery is not a one-off phase-effective teams treat it as <Tooltip text="continuous discovery" definition="A practice of having at least weekly customer touchpoints, with the product team running small research activities in pursuit of a desired outcome (Teresa Torres)." />, running small research activities alongside delivery so that future work is informed by evidence.
 
-> More information can be found on page 165 of Marty Cagan's book "[Inspired (How to Create Products Customers Love)](../product-management/research#inspired-how-to-create-products-customers-love)".
+> More information can be found on page 165 of Marty Cagan's book "[Inspired](/docs/product-management/research#inspired)".
 
 <PageBreak />
 
@@ -58,7 +58,7 @@ There are really two goals to framing:
 1. Ensure that the team is on the same page about the problem to be solved, agreeing on the business objective we're focusing on, the specific problem we're intending to solve for customers, which customers are we intending to solve it for, and the success criteria for the solution.
 2. To identify the big risks (financial, technical, legal, etc.) that will need to be tackled during the discovery process.
 
-> More information can be found on page 175 of Marty Cagan's book "[Inspired](../product-management/research#inspired-how-to-create-products-customers-love)".
+> More information can be found on page 175 of Marty Cagan's book "[Inspired](/docs/product-management/research#inspired)".
 
 Three useful framing techniques are:
 
@@ -96,12 +96,12 @@ For situations where you're creating an entirely new product line or new busines
 
 These are techniques to help with identifying the bigger challenges and planning how to attack this work. For complicated product efforts, it often helps to have some way to scope out and plan your discovery efforts.
 
-> More information can be found on page 191 of Marty Cagan's book "[Inspired](../product-management/research#inspired-how-to-create-products-customers-love)".
+> More information can be found on page 191 of Marty Cagan's book "[Inspired](/docs/product-management/research#inspired)".
 
 Two techniques are:
 
 1. **Story Maps** - Generally useful technique. Major user activities are arrayed on a board along the horizontal axis, loosely ordered by time from left to right. Along the vertical dimension we go into more detail by breaking down the user activity into smaller user tasks and add stories per task, with critical tasks higher than the optional tasks. This allows you to get a holistic view of the of the system and plan workloads.
-2. **Customer Discovery Program Technique** - A very powerful but time costly approach. The approach is to gather <Tooltip text="reference customers" definition="A real customer who is using your tool in production, has paid real money for the product and is willing to tell others about how much they love your product." /> (at least six is best) who feel strongly about your product and are willing to help you build it. The benefit to them is that they get real input to the solution, and the benefit to the product team is that they get a chance to test the solution with real users. Then work with these customers, bouncing possible solutions off them and getting their feedback on the solutions. Read much more information on page 195 of Marty Cagan's book "[Inspired](../product-management/research#inspired-how-to-create-products-customers-love)".
+2. **Customer Discovery Program Technique** - A very powerful but time costly approach. The approach is to gather <Tooltip text="reference customers" definition="A real customer who is using your tool in production, has paid real money for the product and is willing to tell others about how much they love your product." /> (at least six is best) who feel strongly about your product and are willing to help you build it. The benefit to them is that they get real input to the solution, and the benefit to the product team is that they get a chance to test the solution with real users. Then work with these customers, bouncing possible solutions off them and getting their feedback on the solutions. Read much more information on page 195 of Marty Cagan's book "[Inspired](/docs/product-management/research#inspired)".
 
 <PageBreak />
 
@@ -109,7 +109,7 @@ Two techniques are:
 
 Ideation techniques are designed to provide the product team with a wealth of promising solutions to the problems we're focused on. Although if in general, the product team is given actual business problems to solve rather than solutions, and the product team does their job well and interacts directly and frequently with the users and customers, then typically getting sufficient quantity and quality of solutions is not a problem.
 
-> More information can be found on page 208 of Marty Cagan's book "[Inspired](../product-management/research#inspired-how-to-create-products-customers-love)".
+> More information can be found on page 208 of Marty Cagan's book "[Inspired](/docs/product-management/research#inspired)".
 
 Four techniques described here are:
 
@@ -134,7 +134,7 @@ Below describes four key prototyping techniques:
 A low fidelity prototype is a simple UI with basic functionality to gather feedback quickly, while a high fidelity prototype is more visually developed to look like the final product.
 :::
 
-> More information can be found on page 223 of Marty Cagan's book "[Inspired](../product-management/research#inspired-how-to-create-products-customers-love)".
+> More information can be found on page 223 of Marty Cagan's book "[Inspired](/docs/product-management/research#inspired)".
 
 <PageBreak />
 
@@ -148,7 +148,7 @@ We're essentially trying to quickly separate the good ideas from the bad, answer
 3. Can we build it? (Feasibility)
 4. Is this solution viable for our business? (Business Viability)
 
-> More information can be found on page 241 of Marty Cagan's book "[Inspired](../product-management/research#inspired-how-to-create-products-customers-love)".
+> More information can be found on page 241 of Marty Cagan's book "[Inspired](/docs/product-management/research#inspired)".
 
 #### Testing Usability
 
@@ -158,7 +158,7 @@ Probably the easiest to test, but should be done early on during discovery using
 - **Preparing the test**: It is usual to conduct the usbaility test with a high-fidelity user prototype. Conduct the test with the product manager, designer and one engineer from the team. Define the set of tasks to be tested in advance. One person should administer the test and another take notes. Tests can be done in formal testing labs with video recording, in more comfortable public settings such as coffee shops, at the customer's location (where they are most comfortable and natural), or even remotely (although this is less effective in many ways).
 - **Testing your prototype**: Ensure that you frame the test situation, explaining that this prototype is not real and that you need feedback good or bad. Before jumping into your tasks, ask the user what they think the prototype is and what they think it does from its design which can lead to interesting insights. When testing, keep them in *use mode* rather than *critique mode* - what matters is if the user can easily do the task they need to do, not if they can critique the design. During testing, the main skill for you is to stay quiet and suppress your natural urge to help them out.
 
-> There is far far more guidance on pages 243-249 of Marty Cagan's book "[Inspired](../product-management/research#inspired-how-to-create-products-customers-love)".
+> There is far far more guidance on pages 243-249 of Marty Cagan's book "[Inspired](/docs/product-management/research#inspired)".
 
 #### Testing Value
 
