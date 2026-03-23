@@ -42,7 +42,6 @@ Even for personal projects, writing a one-page PRD and a handful of user stories
 **Version:** 1.0  
 **Owner:**  
 **Last Updated:**  
-
 ---
 
 ## 1. Overview
@@ -58,7 +57,7 @@ Travellers currently spend too much time manually entering receipt details, lead
 ### 1.3 Goals
 - Reduce manual expense entry  
 - Improve OCR accuracy  
-- Speed up expense submission  
+- Speed up expense submission
 
 ### 1.4 Success Metrics
 | Metric | Target |
@@ -66,48 +65,39 @@ Travellers currently spend too much time manually entering receipt details, lead
 | OCR accuracy | ≥ 95% |
 | Auto‑categorization | ≥ 80% |
 | Time to log expense | ≤ 10 seconds |
-
 ---
 
 ## 2. Scope
-
 ### 2.1 In Scope
 - Receipt capture (camera + upload)  
 - OCR extraction  
 - Auto‑categorization  
 - Duplicate detection  
 - Sync to expense system  
-
 ### 2.2 Out of Scope
 - Multi‑page invoices  
 - Desktop upload  
 - Currency conversion logic  
-
 ---
 
 ## 3. User Stories
 - *As a traveller, I want to scan a receipt so I can log an expense quickly.*  
 - *As a traveller, I want fields auto‑filled so I don’t have to type them.*  
 - *As a finance approver, I want consistent data so reviews are faster.*
-
 ---
 
 ## 4. Functional Requirements
-
 ### 4.1 Capture & Upload
 - Support camera capture and gallery upload  
 - Accept JPG, PNG, HEIC  
-
 ### 4.2 OCR & Categorization
 - Extract merchant, date, total, tax, currency  
 - Provide confidence scores  
 - Auto‑categorize receipts  
-
 ### 4.3 Sync & Storage
 - Store image + parsed data  
 - Sync within 5 seconds  
 - Offline queueing  
-
 ---
 
 ## 5. Non‑Functional Requirements
@@ -115,20 +105,17 @@ Travellers currently spend too much time manually entering receipt details, lead
 - Encrypted at rest and in transit  
 - 99.5% service uptime  
 - Accessible UI (screen readers, contrast)
-
 ---
 
 ## 6. UX & Design
 - Simple capture → review → save flow  
 - Link to wireframes/prototypes  
-
 ---
 
 ## 7. Dependencies
 - OCR service  
 - Categorization API  
 - Expense sync service  
-
 ---
 
 ## 8. Risks
@@ -136,7 +123,6 @@ Travellers currently spend too much time manually entering receipt details, lead
 |------|------------|
 | Low OCR accuracy | Exclude unsupported formats; allow easy edits |
 | Poor lighting | Auto‑enhancement + retake guidance |
-
 ---
 
 ## 9. Open Questions
@@ -173,35 +159,17 @@ The most common mistake for solo developers is trying to build too much at once.
 
 <PageBreak />
 
-## Estimation
-
-Before starting development, estimate the effort involved so you can set realistic expectations and deadlines for yourself.
-
-### T-Shirt Sizing
-
-Use <Tooltip text="T-shirt sizing" definition="A quick, relative estimation technique using sizes (S, M, L, XL) to categorise work items by effort without committing to precise hours or days." /> to get a rough sense of effort for each feature or user story:
-
-| Size | Meaning | Example |
-|------|---------|---------|
-| **S** | A few hours of work | Add a static page, tweak styling |
-| **M** | 1-2 days of work | Build a form with validation, integrate a simple API |
-| **L** | 3-5 days of work | Authentication flow, complex data dashboard |
-| **XL** | 1-2 weeks of work | Full CRUD feature with backend, real-time functionality |
-
-:::tip[Timebox Your Discovery]
-Do not spend weeks in planning. Timebox your planning phase (1-2 days for a solo project is typically sufficient) and get feedback through working software instead. The goal is to plan enough to start building with confidence, not to predict every detail upfront.
-:::
-
-<PageBreak />
-
 ## Decide on Architecture
 
 > If you already have an architecture in mind, jump to [Plan the UI](#plan-the-ui)
 
+:::danger[AI Assisted Planning]
+Before initiating a project, use the plan generated in the planning phase to generate a plan for the project, via a prompt to the AI. For the prompt, template, see the "Project Initiation" section of <a href="obsidian://open?vault=Obsidian%20Personal%20Notes&file=01%20Notes%2F02%20Areas%2FWork%20Notes%2FCoding%20Notes%2FAI%20Vibe%20Code%20Prompts" target="_blank">my Obsidian note on AI Prompts here</a>.
+
 If it is just a web app to be built, consider the below Front End, Back End and Database Architecture options. If it also needs to be a mobile app, consider the below Mobile Architecture options.
 
-1. Ask AI to recommend an architecture with justification - see <a href="obsidian://open?vault=Obsidian%20Personal%20Notes&file=01%20Notes%2F02%20Areas%2FLife%20Notes%2FCoding%20Notes%2FAI%20Vibe%20Code%20Prompts" target="_blank">the Obsidian note on AI Prompts here</a>
-2. Review the below architecture considerations against the AI output and verify it makes sense
+Review the below architecture considerations against the AI output and verify it makes sense
+:::
 
 :::tip[Record Your Decisions]
 Create an <Tooltip text="ADR" definition="Architecture Decision Record: a short document that captures an important architectural decision, its context, the options considered, and the rationale for the choice made." /> for every significant architecture choice. A simple markdown file in a `/docs/decisions/` folder that records _what you chose_, _what alternatives you considered_, and _why_ pays dividends when you revisit the project in 6 months. See <a href="https://adr.github.io/" target="_blank">adr.github.io</a> for a lightweight template.

@@ -10,7 +10,7 @@ desciption: Summaries of research such as books read on Product Management
 
 ## Accelerate
 
-> By Nicole Forsgren, Jez Humble and Gene Kim
+> The Science of Lean Software and DevOps: Building and Scaling High-performing Technology Organizations - By Nicole Forsgren, Jez Humble and Gene Kim
 
 ### Accelerate Summary
 
@@ -63,11 +63,11 @@ Other than the [DORA metrics](../product-management/product-management-intro#dor
 
 ## The Phoenix Project
 
-> By Gene Kim, Kevin Behr, and George Spafford
+> A Novel About IT, DevOps, and Helping Your Business Win - By Gene Kim, Kevin Behr, and George Spafford
 
 ### The Phoenix Project Summary
 
-The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win" by Gene Kim, Kevin Behr, and George Spafford
+A story of an IT manager who is trying to help his business win by implementing DevOps practices including the Three Ways of DevOps.
 
 ### The Phoenix Project Key Concepts
 
@@ -79,30 +79,81 @@ The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win" by
 
 <PageBreak />
 
-## Inspired (How to Create Products Customers Love)
+## Inspired
 
-> By Marty Cagan
+> How to Create Products Customers Love - By Marty Cagan
 
 ### Inspired Summary
-
-<!-- TODO: Update the below summary with the book summary -->
 
 Inspired is a book about product management that teaches you how to create products that customers love. It is a must-read for anyone who wants to be a successful product manager.
 
 ### Inspired Key Concepts
 
-The key concepts in Inspired include techniques for product discovery, including [framing techniques](../product-management/product-discovery#framing-techniques), [planning](../product-management/product-discovery#planning-techniques), [ideation](../product-management/product-discovery#ideation-techniques), [prototyping](../product-management/product-discovery#prototyping-techniques) and [testing](../product-management/product-discovery#testing-techniques).
-<!-- TODO: Update the below key concepts with the book key concepts -->
+The key concepts in Inspired include techniques for product discovery, including [framing techniques](../product-management/product-discovery#framing-techniques), [planning](../product-management/product-discovery#planning-techniques), [ideation](../product-management/product-discovery#ideation-techniques), [prototyping](../product-management/product-discovery#prototyping-techniques) and [testing](../product-management/product-discovery#testing-techniques). I have written up a lot of the techniques on the [Product Discovery](/docs/product-management/product-discovery) page.
+
+<PageBreak />
+
+## The Hard Thing About Hard Things
+
+> Building a Business When Ther Are No Easy Answers - By Ben Horowitz
+
+### The Hard Thing About Hard Things Summary
+
+The Hard Thing About Hard Things is a brutally honest guide to what it actually feels like to run a company when nothing is going to plan. Ben Horowitz strips away the romanticism of entrepreneurship and focuses on the messy, high‑pressure decisions leaders must make when there are no playbooks. His central message: the hardest things in business are the ones no one teaches you—because they’re too situational, too painful, and too human.
+
+### The Hard Thing About Hard Things Key Concepts
+
+1. **There Are No Easy Answers**
+   - Leadership challenges are often unique and cannot be solved with generic frameworks.
+   - CEOs must make decisions with incomplete information and high stakes.
+2. **Embrace the Struggle**
+   - Horowitz emphasises that the emotional burden—fear, doubt, loneliness—is part of the job.
+   - Great leaders persist even when the situation feels hopeless.
+3. **Making Tough Decisions (Especially Layoffs)**
+   - Layoffs must be handled with clarity, speed, and compassion.
+   - Leaders must communicate honestly and take responsibility.
+4. **The CEO’s Job Is Uniquely Lonely**
+   - CEOs carry the weight of the company’s fate and must often act without external validation.
+   - Horowitz argues that becoming a great CEO is a learned skill, not an innate trait.
+5. **Build a Culture That Can Survive Chaos**
+   - Culture is not about perks—it’s about behaviour under pressure.
+   - Resilient cultures reward honesty, accountability, and adaptability.
+6. **Hire for Strength, Not Lack of Weakness**
+   - The best employees excel at something important rather than being “well‑rounded.”
+7. **Honesty in Leadership**
+   - Transparent communication builds trust, especially during crises.
+   - Leaders must confront brutal facts without demoralising the team.
+8. **Managing Investors and Boards**
+   - CEOs must balance transparency with strategic communication.
+   - Boards can be helpful, but the CEO must own the final decision.
+
+:::tip
+Use an agenda item called "What are we NOT doing?" to help you identify areas that are not being worked on and challenge why not.
+:::
+
+<PageBreak />
+
+## Continuous Discovery Habits
+
+> Discover Products That Create Customer Value and Business Value - By Teresa Torres
+
+### Continuous Discovery Habits Summary
+
+<!-- TODO: Add summary of Continuous Discovery Habits book -->
+
+### Continuous Discovery Habits Key Concepts
+
+<!-- TODO: Add summary of key concepts -->
 
 <PageBreak />
 
 ## The DevOps Handbook
 
+> The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations" by Gene Kim, Jez Humble, Patrick Debois, and John Willis
+
 ### The DevOps Handbook Summary
 
 <!-- TODO: Add summary of The DevOps Handbook book -->
-
-The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations" by Gene Kim, Jez Humble, Patrick Debois, and John Willis
 
 ### The DevOps Handbook Key Concepts
 

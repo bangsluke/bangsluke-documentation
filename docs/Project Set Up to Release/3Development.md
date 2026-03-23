@@ -11,13 +11,34 @@ description: Resources and guide for the development of the software
 See [Code](../SDLC/code) for more information on the code (implementation) phase of the SDLC.
 :::
 
+## Estimation
+
+Before starting development, estimate the effort involved so you can set realistic expectations and deadlines for yourself.
+
+### T-Shirt Sizing
+
+Use <Tooltip text="T-shirt sizing" definition="A quick, relative estimation technique using sizes (S, M, L, XL) to categorise work items by effort without committing to precise hours or days." /> to get a rough sense of effort for each feature or user story:
+
+| Size | Meaning | Example |
+|------|---------|---------|
+| **S** | A few hours of work | Add a static page, tweak styling |
+| **M** | 1-2 days of work | Build a form with validation, integrate a simple API |
+| **L** | 3-5 days of work | Authentication flow, complex data dashboard |
+| **XL** | 1-2 weeks of work | Full CRUD feature with backend, real-time functionality |
+
+:::tip[Timebox Your Discovery]
+Do not spend weeks in planning. Timebox your planning phase (1-2 days for a solo project is typically sufficient) and get feedback through working software instead. The goal is to plan enough to start building with confidence, not to predict every detail upfront.
+:::
+
+<PageBreak />
+
 ## Code Quality Practices
 
 Before diving into framework-specific tips, establish these habits that compound over time and prevent the most common solo-developer pitfalls.
 
-### <Tooltip text="Code Review" definition="A process where code changes are examined to catch defects early, validate the approach, and ensure consistency with team standards." /> for Solo Developers {#code-review}
+### Code Review for Solo Developers
 
-Working solo does not mean skipping code review. Use these techniques as your "second pair of eyes":
+Working solo does not mean skipping <Tooltip text="code review" definition="A process where code changes are examined to catch defects early, validate the approach, and ensure consistency with team standards." />. Use these techniques as your "second pair of eyes":
 
 - **Self-review via PR:** Always merge through a pull request and review your own diff before approving. Reading code in the PR view often surfaces issues you miss in the editor.
 - **AI code review tools:** Set up automated review on every PR:

@@ -30,12 +30,7 @@ Effective requirements come from multiple sources and techniques:
 
 ### Prioritisation Frameworks
 
-Not everything can be built at once. Use a structured framework to decide what to build first:
-
-- **<Tooltip text="MoSCoW" definition="A prioritisation method that categorises requirements as Must have, Should have, Could have, and Won't have (this time)." />:** Categorise requirements as Must / Should / Could / Won't. Simple and effective for initial scoping. [Read more here](https://www.productplan.com/glossary/moscow-prioritization/).
-- **<Tooltip text="RICE" definition="A scoring model that ranks items by Reach, Impact, Confidence, and Effort to produce a prioritisation score." />:** Score each item by Reach, Impact, Confidence, and Effort. Produces a numerical priority score that is useful for comparing many items objectively. [Read more here](https://www.productplan.com/glossary/rice-scoring-model/).
-- **<Tooltip text="Cost-of-Delay" definition="A framework that scores items by the financial and strategic impact of delayed delivery." />:** Score each item by the financial and strategic impact of delayed delivery. [Read more here](https://www.productplan.com/glossary/cost-of-delay/).
-- **Kano Model:** Classify features as basic expectations, performance differentiators, or delighters. Helps identify which features will drive satisfaction vs. which are table stakes. [Read more here](https://www.productplan.com/glossary/kano-model/).
+Not everything can be built at once. Use a structured framework to decide what to build first, from options including **<Tooltip text="RICE" definition="A scoring model that ranks items by Reach, Impact, Confidence, and Effort to produce a prioritisation score." />**, **<Tooltip text="MoSCoW" definition="A prioritisation method that categorises requirements as Must have, Should have, Could have, and Won't have (this time)." />**, **<Tooltip text="Cost-of-Delay" definition="A framework that scores items by the financial and strategic impact of delayed delivery." />**, **<Tooltip text="Kano Model" definition="A framework that classifies features as basic expectations, performance differentiators, or delighters." />**, **<Tooltip text="Value vs. effort" definition="A framework that prioritises features based on their value to the user and the effort required to deliver them." />** and **<Tooltip text="Opportunity scoring" definition="Customers rate both a feature's importance and their satisfaction and an opportunity algorithm calculates the score on a five or ten point scale." />**.
 
 > For more information on the frameworks, see [Prioritisation Frameworks](/docs/product-management/product-management-intro#prioritisation-frameworks) in Product Management.
 

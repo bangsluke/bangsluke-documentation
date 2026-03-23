@@ -166,17 +166,36 @@ With limited resources and endless feature requests, structured prioritisation i
 | MoSCoW        | Sprint planning, stakeholder communication             | Must-have, Should-have, Could-have, Won't-have | Simple, aligns teams      | Can be vague, subjective                    |
 | Cost-of-Delay | Strategic decisions, opportunity cost analysis         | Business value × Urgency                       | Focuses on value, urgency | Requires accurate value estimation          |
 | Kano Model    | Feature-level prioritisation with quantifiable metrics | Basic expectations, performance differentiators, or delighters | Helps identify which features will drive satisfaction vs. which are table stakes | Can be subjective                    |
+| Value vs. effort | For less experienced teams or more subjective decision-making | 2x2 grid based on value to the user and the effort required to deliver | Visual identification for easier decisions | Can be subjective relying on instinct                    |
+| Opportunity scoring | If the project aims to improve customer satisfaction | Importance + max(importance – satisfaction,0) = opportunity | The ROI outweighs the development costs | Scoring models only provide a limited view of each idea's scope                    |
 
-Elaboration
+**Elaboration:**
 
-- **RICE** helps PMs quantify and compare features based on their potential impact and required effort.
-- **MoSCoW** is effective for communicating priorities with stakeholders and ensuring MVP focus.
-- **Cost-of-Delay** highlights the financial and strategic impact of delayed features, guiding urgent investments.
-- **Kano Model** helps identify which features will drive satisfaction vs. which are table stakes.
+- **RICE** helps PMs quantify and compare features based on their potential impact and required effort. [Read more here](https://www.productplan.com/glossary/rice-scoring-model/).
+- **MoSCoW** is effective for communicating priorities with stakeholders and ensuring MVP focus. [Read more here](https://www.productplan.com/glossary/moscow-prioritization/).
+- **Cost-of-Delay** highlights the financial and strategic impact of delayed features, guiding urgent investments. [Read more here](https://www.productplan.com/glossary/cost-of-delay/).
+- **Kano Model** helps identify which features will drive satisfaction vs. which are table stakes. [Read more here](https://www.productplan.com/glossary/kano-model/).
+- **Value vs. effort** helps prioritise features into a 2x2 grid based on their value to the user and the effort required to deliver them. [Read more here](https://www.geeksforgeeks.org/software-engineering/what-is-value-vs-effort-matrix-and-how-does-it-work-in-product-management/).
+- **Opportunity scoring** gets customers to rate both a feature's importance and their satisfaction and an opportunity algorithm calculates the score on a five or ten point scale. [Read more here](https://www.productplan.com/glossary/opportunity-scoring/).
 
 PMs should use multiple frameworks as appropriate and validate assumptions with user research and data.
 
 > For outcome-based planning and aligning roadmap to goals, see [Outcome-based roadmaps and OKRs](/docs/SDLC/planning-and-design#outcome-based-roadmaps-and-okrs) in Planning and Design.
+
+<PageBreak />
+
+### Agile User Stories - INVEST
+
+The INVEST criteria spell out how to create Agile user stories that deliver valuable working software early and often. They show you how to specify your requirements in ways that follow the principles and values of Agile.
+
+- **I**ndependent - The story is not dependent on other stories getting done.
+- **N**egotiable - The story prompts but doesn't prescribe a solution.
+- **V**aluable - The story makes clear the benefit it delivers the users.
+- **E**stimable - The story gives the development team enough detail to estimate the size of the story.
+- **S**mall - The story is the smallest piece of work that will deliver useful software.
+- **T**estable - The story is clear enough that you can assess if the story is done.
+
+> For more reading, see [this post](https://www.boost.co.nz/blog/2021/10/invest-criteria).
 
 <PageBreak />
 
