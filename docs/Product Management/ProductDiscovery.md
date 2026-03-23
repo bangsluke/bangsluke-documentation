@@ -228,25 +228,78 @@ It's important for tech product managers to have a broad understanding of the ty
 
 #### Testing Feasibility
 
-TBC
+When we talk about validating feasibility, engineers are trying to answer several questions:
+
+- Do we know *how* to build this?
+- Do we have the *skills* on the team to build this?
+- Do we have enough *time* to build this?
+- Do we need any *architectural* changes to build this?
+- Do we have on hand all the *components* we need to build this?
+- Do we understand the *dependeencies* involved in building this?
+- Will the *performance* be acceptable?
+- Will it *scale* to the levels we need?
+- Do we have the *infrastructure* necessary to test and run this?
+- Can we afford the *cost* to provision this?
+
+Simply holding a weekly planning meeting where you throw a bunch of ideas at an engineer and demand that they give you some sort of estimate in time, story points or any other unit of effort almost certainly leads to an incorrect or conservative estimate. Engineers need time to investigate and consider solutions - and if you've included them in discovery; seeing customers and the prototypes, they probably will already have been considering solutions.
+
+:::tip
+The question isn't "Can you do this?" - the question is "What's the best way to do this and how long will it take?"
+:::
 
 #### Testing Business Viability
 
-TBC
+The product you're building not only needs to be usable, valuable and feasible, it also needs to be viable for the business. It is the product owner's responsibility to ensure that the product is viable for the business, across all of the below described stakeholders.
 
+- **Marketing**: Will the product fit into the go-to-market strategy and support the companies brand and reputation?
+- **Sales**: Will the product represent a departure from what the sales channel has proven their ability to sell?
+- **Customer Success**: Will the product be easy to use and support? Is it a high-touch model of helping customers or a low-touch model?
+- **Finance**: Will the product be profitable for the business? Can you afford to build, sell and operate this product?
+- **Legal**: Will the product comply with all applicable laws and regulations? Have privacy concerns, compliance concerns, security risks, intellectual property concerns and competitive issues been considered?
+- **Business Development**: Will the product fit into any existing business relationships with customers or partners?
+- **Security**: Will the product be secure and compliant with security standards?
+- **CEO/COO/GM**: Will the product pass the CEO/COO/GM's approval?
 
+:::danger[Presentations vs High-fidelity user prototypes]
+Many product managers are still using presentations to validate business viability with stakeholders. Presentations are notoriously terrible for testing business viability as they are too ambiguous - stakeholders need to see real screens and designs to understand what they are signing off.
+
+This is why we should use high-fidelity user prototypes to validate business viability.
+
+The prototype should also be demonstrated to each stakeholder individually, rather than as a group, to avoid design by committee.
+:::
 
 <PageBreak />
 
 ### Transformation Techniques
 
+This section covers techniques to help transform the product team from mercenary-style, product roadmap-driven, output-focused teams to *truly empowered, accountable product teams that are measured by business results*.
+
 #### Discovery Sprint Technique
 
-TBC
+A *discovery srpint* is a one-week time box of product discovery work, designed to tackle a substantial problem or risk your product team is facing. During this week of intense discovery work, you and your team will likely explore dozens of different product ideas and approaches, with the goal of solvig some signiifcant business problem, ending the week with validating your potential solution with real users and customers.
+
+The five-day week starts with framing the problem by mapping the problem space, picking the problem to be solved and the target customer and the progresses into pursuing several different approaches to the solution. Th team next narrows down and fleshes out the different potential solutions, then creates a high-fidelity user prototype - finally, putting that prototype in front of actual target users and observing their reactions.
 
 #### Pilot Team Technique
 
-TBC
+To combat many people's opposition to change, one of the simplest techniques for facilitating moving to new ways of working is the use of pilot teams. *Pilot teams* allow the roll out of change to a limited part of the organisation, before implementing it more broadly. The idea is that you look for a product team to volunteer to try out some new techniques - and then monitor how they get on with the new way of working. After some time (a quarter or two), you're looking to compare the team's effectiveness in delivering business outcomes compared to the rest of the organisation.
+
+If things go well, you'll likely end up with several other teams eager to adopt the new techniques. If things don't go well, you'll have a chance to course correct or even decide the technique isn't for you before rolling out to the rest of the organisation.
+
+To maximise the chance the pilot teams are successful, you should carefully consider the people involved, their location and their degree of autonomy. Ideally we have people who are open to new ways of working, the key people on the team are co-located, and the team is largely in control of how they work - not dependent on other teams that still work in the old way.
+
+#### Weaning an Organisation Off Roadmaps
+
+Many product teams struggle to move off of product roadmaps onto outcome driven plans as their companies have been using roadmaps for years; and roadmaps like these fill two key roles. Roadmap plans like these:
+1. Give stakeholders visibility into what is being worked on and assurance that the most important things are being worked on.
+2. Provide a timed plan for when features will be available for the business to plan around.
+
+In this case, plan to continue with your existing roadmap for 6 to 12 months, but start emphasizing what the *business outcome* that the feature is intended to help for each time the item is mentioned. 
+
+After the feature goes live, be sure to highlight the impact on that business outcome; if the impact was good, celebrate it, and if the impact was not what was hoped, emphasize that it was not successful and that whilst there was learning, there are other ideas for ways to get the desired result.
+
+The goal is that over time, the organisation moves its focus from specific features launching to specific dates, to business results. We still meet the stakeholders requirements by working on the prioritised business objectives determined by leaders, we share our results transparently and we commit to *high-integrity commitments* when critical delivery dates are needed.
+
 
 <PageBreak />
 
@@ -287,6 +340,16 @@ Given that users are now frequently asking AI agents such as ChatGPT, Gemini and
 - **Many stakeholders:** Discovery must account for buyers, compliance, security, and legal-not just end users. Expect 1–2 months for key product decisions and multiple approval steps.
 - **Risk and compliance:** Assumption tests may need to include security reviews, legal sign-off, or pilot agreements. Plan for longer experiment cycles.
 - **Coordination:** Align discovery across teams with shared outcomes and a central place for insights so learning is reused.
+:::
+
+:::tip[COMMUNICATING PRODUCT LEARNINGS]
+It is easy to share learning in a startup when the team is small, however as companies scale, this becomes increasingly difficult. One technqiue to aid this is to have the *head of product* do 15-30 minutes of sharing at a company all-hands or similar meeting. This is just meant to cover the bigger learnings - not the small things or where every product manager parades their work.
+
+This is important as it:
+- Shares learnings for things that went well and things that didn't - and may trigger further insights from other teams
+- Is a useful way for the various product teams to keep aprised of what others are learning
+- Focuses product teams on big learnings
+- Culturally enforces transparency and how critical continuous learning is
 :::
 
 <PageBreak />
