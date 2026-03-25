@@ -10,6 +10,8 @@ description: Best practices and techniques for product discovery using modern Pr
 
 **<Tooltip text="Product discovery" definition="The process of deciding what to build before development: uncovering needs, validating solutions, and testing assumptions with minimal cost so teams ship the right product." />** is the process of uncovering unmet customer needs and validating what to build before committing engineering resources. It reduces the risk of building the wrong thing by testing ideas cheaply through user research and experimentation.
 
+> For good links to Product Discovery, visit [ProductTalk.org](https:/www.producttalk.org/product-discovery/), read Marty Cagan's book "[Inspired](/docs/product-management/research#inspired)", and read Teresa Torres's book "[Continuous Discovery Habits](/docs/product-management/research#continuous-discovery-habits)".
+
 ## What is Product Discovery?
 
 The purpose of product discovery is to address four critical risks before you invest in building:
