@@ -1,0 +1,43 @@
+/*
+Hide color mode toggle in small viewports
+*/
+@media (max-width: 996px) {
+  .colorModeToggle {
+    display: none;
+  }
+}
+
+/*
+Restore some Infima style that broke with CSS Cascade Layers
+See https://github.com/facebook/docusaurus/pull/11142
+*/
+:global(.navbar__items--right) > :last-child {
+  padding-right: 0;
+}
+
+.shareButton {
+  width: 2.25rem; /* matches DocSearch button icon-only size */
+  height: 2.25rem;
+  border-radius: 0.25rem; /* 4px */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--docsearch-search-button-background);
+  border: 1px solid var(--docsearch-subtle-color);
+  color: var(--docsearch-search-button-text-color);
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.shareIcon {
+  color: inherit;
+}
+
+.searchCluster {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+

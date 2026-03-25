@@ -1,0 +1,517 @@
+{
+  "generatedAt": "2026-03-25T16:00:34.261Z",
+  "categoriesBySlug": {
+    "/general-documentation": {
+      "label": "General Documentation",
+      "collapsed": true,
+      "position": 5
+    },
+    "/product-management": {
+      "label": "Product Management",
+      "collapsed": false,
+      "position": 1
+    },
+    "/project-set-up-to-release": {
+      "label": "Project Set Up to Release",
+      "collapsed": true,
+      "position": 3
+    },
+    "/projects/dorkinians-stats": {
+      "label": "Dorkinians Stats",
+      "collapsed": true,
+      "position": 2
+    },
+    "/projects/dorkinians-website-project": {
+      "label": "Dorkinians Website Project",
+      "collapsed": true,
+      "position": 1
+    },
+    "/projects": {
+      "label": "Projects",
+      "collapsed": false,
+      "position": 4
+    },
+    "/SDLC": {
+      "label": "SDLC",
+      "collapsed": true,
+      "position": 2
+    }
+  },
+  "categoryIndexSlugs": [
+    "/general-documentation",
+    "/product-management",
+    "/project-set-up-to-release",
+    "/projects/dorkinians-stats",
+    "/projects/dorkinians-website-project",
+    "/projects",
+    "/SDLC"
+  ],
+  "docH1BySlugOrPath": {
+    "/documentation-intro": "Documentation Intro",
+    "/docs/documentation-intro": "Documentation Intro",
+    "documentation-intro": "Documentation Intro",
+    "/general-documentation/tool-commands-and-shortcuts": "Tool Commands/Shortcuts",
+    "/docs/general-documentation/tool-commands-and-shortcuts": "Tool Commands/Shortcuts",
+    "general-documentation/tool-commands-and-shortcuts": "Tool Commands/Shortcuts",
+    "/general-documentation/openai-and-chatgpt": "OpenAI and ChatGPT",
+    "/docs/general-documentation/openai-and-chatgpt": "OpenAI and ChatGPT",
+    "general-documentation/openai-and-chatgpt": "OpenAI and ChatGPT",
+    "/general-documentation/python": "Python",
+    "/docs/general-documentation/python": "Python",
+    "general-documentation/python": "Python",
+    "/general-documentation/installing-and-updating-versions": "Installing and Updating Versions",
+    "/docs/general-documentation/installing-and-updating-versions": "Installing and Updating Versions",
+    "general-documentation/installing-and-updating-versions": "Installing and Updating Versions",
+    "/general-documentation/package-managers": "Package Managers",
+    "/docs/general-documentation/package-managers": "Package Managers",
+    "general-documentation/package-managers": "Package Managers",
+    "/general-documentation/git-fixes": "Git Fixes",
+    "/docs/general-documentation/git-fixes": "Git Fixes",
+    "general-documentation/git-fixes": "Git Fixes",
+    "/general-documentation/umami-analytics-setup": "Umami Analytics Setup",
+    "/docs/general-documentation/umami-analytics-setup": "Umami Analytics Setup",
+    "general-documentation/umami-analytics-setup": "Umami Analytics Setup",
+    "/product-management/product-discovery": "Product Discovery",
+    "/docs/product-management/product-discovery": "Product Discovery",
+    "product-management/product-discovery": "Product Discovery",
+    "/product-management/product-management-intro": "Product Management Intro",
+    "/docs/product-management/product-management-intro": "Product Management Intro",
+    "product-management/product-management-intro": "Product Management Intro",
+    "/product-management/research": "Product Management Research",
+    "/docs/product-management/research": "Product Management Research",
+    "product-management/research": "Product Management Research",
+    "/project-set-up-to-release/planning": "Planning",
+    "/docs/project-set-up-to-release/planning": "Planning",
+    "project-set-up-to-release/planning": "Planning",
+    "/project-set-up-to-release/initiation": "Initiation",
+    "/docs/project-set-up-to-release/initiation": "Initiation",
+    "project-set-up-to-release/initiation": "Initiation",
+    "/project-set-up-to-release/development": "Development",
+    "/docs/project-set-up-to-release/development": "Development",
+    "project-set-up-to-release/development": "Development",
+    "/project-set-up-to-release/testing": "Testing",
+    "/docs/project-set-up-to-release/testing": "Testing",
+    "project-set-up-to-release/testing": "Testing",
+    "/project-set-up-to-release/release-checklist": "Release Checklist",
+    "/docs/project-set-up-to-release/release-checklist": "Release Checklist",
+    "project-set-up-to-release/release-checklist": "Release Checklist",
+    "/projects/dorkinians-stats/maintenance": "Dorkinians Stats Maintenance",
+    "/docs/projects/dorkinians-stats/maintenance": "Dorkinians Stats Maintenance",
+    "projects/dorkinians-stats/maintenance": "Dorkinians Stats Maintenance",
+    "/projects/dorkinians-website": "Dorkinians Website",
+    "/docs/projects/dorkinians-website": "Dorkinians Website",
+    "projects/dorkinians-website": "Dorkinians Website",
+    "/projects/dorkinians-website/home-page": "Home",
+    "/docs/projects/dorkinians-website/home-page": "Home",
+    "projects/dorkinians-website/home-page": "Home",
+    "/projects/dorkinians-website/stats-page": "Stats",
+    "/docs/projects/dorkinians-website/stats-page": "Stats",
+    "projects/dorkinians-website/stats-page": "Stats",
+    "/projects/dorkinians-website/totw-page": "TOTW",
+    "/docs/projects/dorkinians-website/totw-page": "TOTW",
+    "projects/dorkinians-website/totw-page": "TOTW",
+    "/projects/dorkinians-website/club-info-page": "Club Info",
+    "/docs/projects/dorkinians-website/club-info-page": "Club Info",
+    "projects/dorkinians-website/club-info-page": "Club Info",
+    "/projects/dorkinians-website/settings-page": "Settings",
+    "/docs/projects/dorkinians-website/settings-page": "Settings",
+    "projects/dorkinians-website/settings-page": "Settings",
+    "/SDLC/introduction": "Introduction to Software Development Life Cycle",
+    "/docs/SDLC/introduction": "Introduction to Software Development Life Cycle",
+    "SDLC/introduction": "Introduction to Software Development Life Cycle",
+    "/SDLC/planning-and-design": "Planning and Design",
+    "/docs/SDLC/planning-and-design": "Planning and Design",
+    "SDLC/planning-and-design": "Planning and Design",
+    "/SDLC/code": "Code",
+    "/docs/SDLC/code": "Code",
+    "SDLC/code": "Code",
+    "/SDLC/verify": "Verify",
+    "/docs/SDLC/verify": "Verify",
+    "SDLC/verify": "Verify",
+    "/SDLC/integrate": "Integrate",
+    "/docs/SDLC/integrate": "Integrate",
+    "SDLC/integrate": "Integrate",
+    "/SDLC/release": "Release",
+    "/docs/SDLC/release": "Release",
+    "SDLC/release": "Release",
+    "/SDLC/deploy": "Deploy",
+    "/docs/SDLC/deploy": "Deploy",
+    "SDLC/deploy": "Deploy",
+    "/SDLC/operate": "Operate",
+    "/docs/SDLC/operate": "Operate",
+    "SDLC/operate": "Operate",
+    "/SDLC/monitor": "Monitoring and Observability",
+    "/docs/SDLC/monitor": "Monitoring and Observability",
+    "SDLC/monitor": "Monitoring and Observability",
+    "/useful-links": "Useful Links",
+    "/docs/useful-links": "Useful Links",
+    "useful-links": "Useful Links"
+  },
+  "docLeafSortBySlugOrPath": {
+    "/documentation-intro": 1,
+    "/docs/documentation-intro": 1,
+    "documentation-intro": 1,
+    "/general-documentation/tool-commands-and-shortcuts": 1,
+    "/docs/general-documentation/tool-commands-and-shortcuts": 1,
+    "general-documentation/tool-commands-and-shortcuts": 1,
+    "/general-documentation/openai-and-chatgpt": 2,
+    "/docs/general-documentation/openai-and-chatgpt": 2,
+    "general-documentation/openai-and-chatgpt": 2,
+    "/general-documentation/python": 3,
+    "/docs/general-documentation/python": 3,
+    "general-documentation/python": 3,
+    "/general-documentation/installing-and-updating-versions": 4,
+    "/docs/general-documentation/installing-and-updating-versions": 4,
+    "general-documentation/installing-and-updating-versions": 4,
+    "/general-documentation/package-managers": 5,
+    "/docs/general-documentation/package-managers": 5,
+    "general-documentation/package-managers": 5,
+    "/general-documentation/git-fixes": 6,
+    "/docs/general-documentation/git-fixes": 6,
+    "general-documentation/git-fixes": 6,
+    "/general-documentation/umami-analytics-setup": 7,
+    "/docs/general-documentation/umami-analytics-setup": 7,
+    "general-documentation/umami-analytics-setup": 7,
+    "/product-management/product-discovery": 3,
+    "/docs/product-management/product-discovery": 3,
+    "product-management/product-discovery": 3,
+    "/product-management/product-management-intro": 1,
+    "/docs/product-management/product-management-intro": 1,
+    "product-management/product-management-intro": 1,
+    "/product-management/research": 2,
+    "/docs/product-management/research": 2,
+    "product-management/research": 2,
+    "/project-set-up-to-release/planning": 1,
+    "/docs/project-set-up-to-release/planning": 1,
+    "project-set-up-to-release/planning": 1,
+    "/project-set-up-to-release/initiation": 2,
+    "/docs/project-set-up-to-release/initiation": 2,
+    "project-set-up-to-release/initiation": 2,
+    "/project-set-up-to-release/development": 3,
+    "/docs/project-set-up-to-release/development": 3,
+    "project-set-up-to-release/development": 3,
+    "/project-set-up-to-release/testing": 4,
+    "/docs/project-set-up-to-release/testing": 4,
+    "project-set-up-to-release/testing": 4,
+    "/project-set-up-to-release/release-checklist": 5,
+    "/docs/project-set-up-to-release/release-checklist": 5,
+    "project-set-up-to-release/release-checklist": 5,
+    "/projects/dorkinians-website": 1,
+    "/docs/projects/dorkinians-website": 1,
+    "projects/dorkinians-website": 1,
+    "/projects/dorkinians-website/home-page": 2,
+    "/docs/projects/dorkinians-website/home-page": 2,
+    "projects/dorkinians-website/home-page": 2,
+    "/projects/dorkinians-website/stats-page": 3,
+    "/docs/projects/dorkinians-website/stats-page": 3,
+    "projects/dorkinians-website/stats-page": 3,
+    "/projects/dorkinians-website/totw-page": 4,
+    "/docs/projects/dorkinians-website/totw-page": 4,
+    "projects/dorkinians-website/totw-page": 4,
+    "/projects/dorkinians-website/club-info-page": 5,
+    "/docs/projects/dorkinians-website/club-info-page": 5,
+    "projects/dorkinians-website/club-info-page": 5,
+    "/projects/dorkinians-website/settings-page": 6,
+    "/docs/projects/dorkinians-website/settings-page": 6,
+    "projects/dorkinians-website/settings-page": 6,
+    "/SDLC/introduction": 1,
+    "/docs/SDLC/introduction": 1,
+    "SDLC/introduction": 1,
+    "/SDLC/planning-and-design": 2,
+    "/docs/SDLC/planning-and-design": 2,
+    "SDLC/planning-and-design": 2,
+    "/SDLC/code": 3,
+    "/docs/SDLC/code": 3,
+    "SDLC/code": 3,
+    "/SDLC/verify": 4,
+    "/docs/SDLC/verify": 4,
+    "SDLC/verify": 4,
+    "/SDLC/integrate": 5,
+    "/docs/SDLC/integrate": 5,
+    "SDLC/integrate": 5,
+    "/SDLC/release": 6,
+    "/docs/SDLC/release": 6,
+    "SDLC/release": 6,
+    "/SDLC/deploy": 7,
+    "/docs/SDLC/deploy": 7,
+    "SDLC/deploy": 7,
+    "/SDLC/operate": 8,
+    "/docs/SDLC/operate": 8,
+    "SDLC/operate": 8,
+    "/SDLC/monitor": 9,
+    "/docs/SDLC/monitor": 9,
+    "SDLC/monitor": 9,
+    "/useful-links": 6,
+    "/docs/useful-links": 6,
+    "useful-links": 6
+  },
+  "sidebarItems": [
+    {
+      "type": "link",
+      "label": "Documentation Intro",
+      "href": "/docs/documentation-intro",
+      "sort": 1
+    },
+    {
+      "type": "category",
+      "label": "Product Management",
+      "href": "/docs/product-management",
+      "collapsible": true,
+      "collapsed": false,
+      "position": 1,
+      "items": [
+        {
+          "type": "link",
+          "label": "Product Management Intro",
+          "href": "/docs/product-management/product-management-intro",
+          "sort": 1
+        },
+        {
+          "type": "link",
+          "label": "Product Management Research",
+          "href": "/docs/product-management/research",
+          "sort": 2
+        },
+        {
+          "type": "link",
+          "label": "Product Discovery",
+          "href": "/docs/product-management/product-discovery",
+          "sort": 3
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "SDLC",
+      "href": "/docs/SDLC",
+      "collapsible": true,
+      "collapsed": true,
+      "position": 2,
+      "items": [
+        {
+          "type": "link",
+          "label": "Introduction to Software Development Life Cycle",
+          "href": "/docs/SDLC/introduction",
+          "sort": 1
+        },
+        {
+          "type": "link",
+          "label": "Planning and Design",
+          "href": "/docs/SDLC/planning-and-design",
+          "sort": 2
+        },
+        {
+          "type": "link",
+          "label": "Code",
+          "href": "/docs/SDLC/code",
+          "sort": 3
+        },
+        {
+          "type": "link",
+          "label": "Verify",
+          "href": "/docs/SDLC/verify",
+          "sort": 4
+        },
+        {
+          "type": "link",
+          "label": "Integrate",
+          "href": "/docs/SDLC/integrate",
+          "sort": 5
+        },
+        {
+          "type": "link",
+          "label": "Release",
+          "href": "/docs/SDLC/release",
+          "sort": 6
+        },
+        {
+          "type": "link",
+          "label": "Deploy",
+          "href": "/docs/SDLC/deploy",
+          "sort": 7
+        },
+        {
+          "type": "link",
+          "label": "Operate",
+          "href": "/docs/SDLC/operate",
+          "sort": 8
+        },
+        {
+          "type": "link",
+          "label": "Monitoring and Observability",
+          "href": "/docs/SDLC/monitor",
+          "sort": 9
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Project Set Up to Release",
+      "href": "/docs/project-set-up-to-release",
+      "collapsible": true,
+      "collapsed": true,
+      "position": 3,
+      "items": [
+        {
+          "type": "link",
+          "label": "Planning",
+          "href": "/docs/project-set-up-to-release/planning",
+          "sort": 1
+        },
+        {
+          "type": "link",
+          "label": "Initiation",
+          "href": "/docs/project-set-up-to-release/initiation",
+          "sort": 2
+        },
+        {
+          "type": "link",
+          "label": "Development",
+          "href": "/docs/project-set-up-to-release/development",
+          "sort": 3
+        },
+        {
+          "type": "link",
+          "label": "Testing",
+          "href": "/docs/project-set-up-to-release/testing",
+          "sort": 4
+        },
+        {
+          "type": "link",
+          "label": "Release Checklist",
+          "href": "/docs/project-set-up-to-release/release-checklist",
+          "sort": 5
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Projects",
+      "href": "/docs/projects",
+      "collapsible": true,
+      "collapsed": false,
+      "position": 4,
+      "items": [
+        {
+          "type": "category",
+          "label": "Dorkinians Website Project",
+          "href": "/docs/projects/dorkinians-website-project",
+          "collapsible": true,
+          "collapsed": true,
+          "position": 1,
+          "items": [
+            {
+              "type": "link",
+              "label": "Dorkinians Website",
+              "href": "/docs/projects/dorkinians-website",
+              "sort": 1
+            },
+            {
+              "type": "link",
+              "label": "Home",
+              "href": "/docs/projects/dorkinians-website/home-page",
+              "sort": 2
+            },
+            {
+              "type": "link",
+              "label": "Stats",
+              "href": "/docs/projects/dorkinians-website/stats-page",
+              "sort": 3
+            },
+            {
+              "type": "link",
+              "label": "TOTW",
+              "href": "/docs/projects/dorkinians-website/totw-page",
+              "sort": 4
+            },
+            {
+              "type": "link",
+              "label": "Club Info",
+              "href": "/docs/projects/dorkinians-website/club-info-page",
+              "sort": 5
+            },
+            {
+              "type": "link",
+              "label": "Settings",
+              "href": "/docs/projects/dorkinians-website/settings-page",
+              "sort": 6
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Dorkinians Stats",
+          "href": "/docs/projects/dorkinians-stats",
+          "collapsible": true,
+          "collapsed": true,
+          "position": 2,
+          "items": [
+            {
+              "type": "link",
+              "label": "Dorkinians Stats Maintenance",
+              "href": "/docs/projects/dorkinians-stats/maintenance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "General Documentation",
+      "href": "/docs/general-documentation",
+      "collapsible": true,
+      "collapsed": true,
+      "position": 5,
+      "items": [
+        {
+          "type": "link",
+          "label": "Tool Commands/Shortcuts",
+          "href": "/docs/general-documentation/tool-commands-and-shortcuts",
+          "sort": 1
+        },
+        {
+          "type": "link",
+          "label": "OpenAI and ChatGPT",
+          "href": "/docs/general-documentation/openai-and-chatgpt",
+          "sort": 2
+        },
+        {
+          "type": "link",
+          "label": "Python",
+          "href": "/docs/general-documentation/python",
+          "sort": 3
+        },
+        {
+          "type": "link",
+          "label": "Installing and Updating Versions",
+          "href": "/docs/general-documentation/installing-and-updating-versions",
+          "sort": 4
+        },
+        {
+          "type": "link",
+          "label": "Package Managers",
+          "href": "/docs/general-documentation/package-managers",
+          "sort": 5
+        },
+        {
+          "type": "link",
+          "label": "Git Fixes",
+          "href": "/docs/general-documentation/git-fixes",
+          "sort": 6
+        },
+        {
+          "type": "link",
+          "label": "Umami Analytics Setup",
+          "href": "/docs/general-documentation/umami-analytics-setup",
+          "sort": 7
+        }
+      ]
+    },
+    {
+      "type": "link",
+      "label": "Useful Links",
+      "href": "/docs/useful-links",
+      "sort": 6
+    }
+  ]
+}
