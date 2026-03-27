@@ -107,7 +107,7 @@ See [Deploy - Deployment Strategies](../SDLC/deploy#deployment-strategies) for m
 
 <PageBreak />
 
-## <Tooltip text="SEO" definition="Search Engine Optimisation: practices that help search engines index and rank your site." /> and Meta Data {#seo-and-meta-data}
+## SEO and Meta Data
 
 - This will depend on the project and its requirements and if it needs to be SEO friendly (private projects may not need this)
 - Set up <Tooltip text="meta tags" definition="HTML tags in the head that describe the page (title, description, social preview) for browsers and search engines." /> in the index.html file
@@ -130,7 +130,7 @@ See [Deploy - Deployment Strategies](../SDLC/deploy#deployment-strategies) for m
 
 - <a href="https://medium.com/@amareshadak/12-frontend-micro-interactions-that-users-secretly-judge-d0b333165191" target="_blank">12 Frontend Micro-Interactions That Users Secretly Judge</a>
 
-### <Tooltip text="404 page" definition="The page shown when a user requests a URL that does not exist on the site." /> {#404-page}
+### 404 Page
 
 - Create a 404 page for catching routing errors
   - <a href="https://error404.fun/" target="_blank">error404.fun</a>
@@ -223,7 +223,7 @@ See [Deploy - Deployment Strategies](../SDLC/deploy#deployment-strategies) for m
 
 <PageBreak />
 
-## <Tooltip text="Deployment Strategy" definition="The method used to move new code to production while minimising downtime and risk, such as rolling, blue/green, or canary deployments." /> {#deployment-strategy}
+## Deployment Strategy
 
 :::info
 See [Deploy](../SDLC/deploy) for comprehensive deployment guidance including infrastructure as code and environment management.
@@ -240,7 +240,7 @@ Before releasing, decide on your deployment approach:
 
 For solo developers using a <Tooltip text="PaaS" definition="Platform as a Service: a cloud service (e.g. Vercel, Netlify, Railway) that handles infrastructure so developers can focus on application code." /> (Netlify, Vercel), the platform handles most of this for you - push to `main` and it deploys automatically with instant rollback available in the dashboard.
 
-### <Tooltip text="Secrets Management" definition="The practice of securely storing, accessing, and rotating sensitive values like API keys, database credentials, and encryption keys." /> {#secrets-management}
+### Secrets Management
 
 :::danger[Production Secrets]
 Never store production secrets in `.env` files committed to source control. Even if `.env` is in `.gitignore`, relying solely on local files for production secrets is fragile and insecure.
@@ -262,7 +262,7 @@ See [Monitor](../SDLC/monitor) and [Operate](../SDLC/operate) for comprehensive 
 
 Set up monitoring **before** launch, not after your first outage. Even for solo projects, basic monitoring is essential.
 
-### The Golden Signals {#golden-signals}
+### The Golden Signals
 
 Monitor these four signals (<Tooltip text="Golden Signals" definition="The four most important metrics for monitoring any user-facing system: latency, traffic, errors, and saturation." />) for every user-facing service:
 
@@ -282,6 +282,7 @@ Monitor these four signals (<Tooltip text="Golden Signals" definition="The four 
 
 ### Basic Alerting
 
+- Consider adding the project to <a href="https://dashboard.uptimerobot.com/monitors" target="_blank">UptimeRobot</a> to monitor the status of the site and get email notifications when the site is down
 - Set up Sentry email/Slack notifications for new errors
 - Configure uptime monitoring to alert when your site goes down
 - Review error logs weekly to catch recurring issues before users report them
@@ -305,7 +306,7 @@ Even as a solo developer, having a basic incident response process prevents pani
 | **Minor** | Non-critical bug, workaround exists | Fix in next work session |
 | **Low** | Cosmetic issue, edge case | Add to backlog |
 
-### <Tooltip text="Runbook" definition="A step-by-step guide for responding to specific operational scenarios, designed so any on-call engineer can follow it." /> {#runbook}
+### Runbook
 
 Write down the answers to these questions before you need them:
 
@@ -315,7 +316,7 @@ Write down the answers to these questions before you need them:
 - How do I restart the service? (platform-specific steps)
 - Who do I contact if the hosting provider is down? (support links)
 
-### <Tooltip text="Blameless Postmortem" definition="A structured review after an incident that focuses on understanding systemic causes and improving processes - never on blaming individuals." /> {#postmortem}
+### Blameless Postmortem
 
 After any significant incident, write a brief postmortem (even just for yourself):
 
