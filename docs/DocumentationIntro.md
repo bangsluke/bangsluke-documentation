@@ -293,7 +293,7 @@ This site holds all of my documentation for how I've developed my projects and m
   - [Deployment Strategy](/docs/project-set-up-to-release/release-checklist#deployment-strategy)
     - [Secrets Management](/docs/project-set-up-to-release/release-checklist#secrets-management)
   - [Monitoring and Observability Setup](/docs/project-set-up-to-release/release-checklist#monitoring-and-observability-setup)
-    - [The Golden Signals](/docs/project-set-up-to-release/release-checklist#golden-signals)
+    - [The Golden Signals](/docs/project-set-up-to-release/release-checklist#the-golden-signals)
     - [Minimum Monitoring Stack for Solo Developers](/docs/project-set-up-to-release/release-checklist#minimum-monitoring-stack-for-solo-developers)
   - [GitHub Information](/docs/project-set-up-to-release/release-checklist#github-information)
   - [Other Options](/docs/project-set-up-to-release/release-checklist#other-options)

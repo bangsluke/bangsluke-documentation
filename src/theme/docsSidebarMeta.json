@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-27T15:36:36.414Z",
+  "generatedAt": "2026-04-06T10:36:29.039Z",
   "categoriesBySlug": {
     "/general-documentation": {
       "label": "General Documentation",
@@ -116,6 +116,9 @@
     "/projects/dorkinians-website/settings-page": "Settings",
     "/docs/projects/dorkinians-website/settings-page": "Settings",
     "projects/dorkinians-website/settings-page": "Settings",
+    "/projects/dorkinians-website/player-profile-page": "Player Profile",
+    "/docs/projects/dorkinians-website/player-profile-page": "Player Profile",
+    "projects/dorkinians-website/player-profile-page": "Player Profile",
     "/SDLC/introduction": "Introduction to Software Development Life Cycle",
     "/docs/SDLC/introduction": "Introduction to Software Development Life Cycle",
     "SDLC/introduction": "Introduction to Software Development Life Cycle",
@@ -214,6 +217,9 @@
     "/projects/dorkinians-website/settings-page": 6,
     "/docs/projects/dorkinians-website/settings-page": 6,
     "projects/dorkinians-website/settings-page": 6,
+    "/projects/dorkinians-website/player-profile-page": 7,
+    "/docs/projects/dorkinians-website/player-profile-page": 7,
+    "projects/dorkinians-website/player-profile-page": 7,
     "/SDLC/introduction": 1,
     "/docs/SDLC/introduction": 1,
     "SDLC/introduction": 1,
@@ -435,6 +441,12 @@
               "label": "Settings",
               "href": "/docs/projects/dorkinians-website/settings-page",
               "sort": 6
+            },
+            {
+              "type": "link",
+              "label": "Player Profile",
+              "href": "/docs/projects/dorkinians-website/player-profile-page",
+              "sort": 7
             }
           ]
         },
