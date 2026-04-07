@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-06T10:36:29.039Z",
+  "generatedAt": "2026-04-07T17:33:57.832Z",
   "categoriesBySlug": {
     "/general-documentation": {
       "label": "General Documentation",
@@ -77,9 +77,9 @@
     "/product-management/product-management-intro": "Product Management Intro",
     "/docs/product-management/product-management-intro": "Product Management Intro",
     "product-management/product-management-intro": "Product Management Intro",
-    "/product-management/research": "Product Management Research",
-    "/docs/product-management/research": "Product Management Research",
-    "product-management/research": "Product Management Research",
+    "/product-management/research": "Product Research",
+    "/docs/product-management/research": "Product Research",
+    "product-management/research": "Product Research",
     "/project-set-up-to-release/planning": "Planning",
     "/docs/project-set-up-to-release/planning": "Planning",
     "project-set-up-to-release/planning": "Planning",
@@ -274,7 +274,7 @@
         },
         {
           "type": "link",
-          "label": "Product Management Research",
+          "label": "Product Research",
           "href": "/docs/product-management/research",
           "sort": 2
         },

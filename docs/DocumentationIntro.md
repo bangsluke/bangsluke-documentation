@@ -31,9 +31,9 @@ This site holds all of my documentation for how I've developed my projects and m
     - [What Product Management is Not](/docs/product-management/product-management-intro#what-product-management-is-not)
   - [Key Concepts](/docs/product-management/product-management-intro#key-concepts)
     - [Product Vision, Strategy and Principles](/docs/product-management/product-management-intro#product-vision-strategy-and-principles)
+    - [Prioritisation Frameworks](/docs/product-management/product-management-intro#prioritisation-frameworks)
     - [DORA Metrics](/docs/product-management/product-management-intro#dora-metrics)
     - [The Three Ways](/docs/product-management/product-management-intro#the-three-ways)
-    - [Prioritisation Frameworks](/docs/product-management/product-management-intro#prioritisation-frameworks)
     - [Agile User Stories - INVEST](/docs/product-management/product-management-intro#agile-user-stories---invest)
   - [Suggested PM Tool Stack](/docs/product-management/product-management-intro#suggested-pm-tool-stack)
 - [Product Discovery](/docs/product-management/product-discovery)
@@ -451,7 +451,7 @@ This site holds all of my documentation for how I've developed my projects and m
   - [Git Errors](/docs/general-documentation/git-fixes#git-errors)
     - [Error: Unable to load Commits. fatal: bad object desktop.ini](/docs/general-documentation/git-fixes#error-unable-to-load-commits-fatal-bad-object-desktopini)
     - [Clearing Secrets from History](/docs/general-documentation/git-fixes#clearing-secrets-from-history)
- - [Umami Analytics Setup](/docs/general-documentation/umami-analytics-setup)
+- [Umami Analytics Setup](/docs/general-documentation/umami-analytics-setup)
   - [Prerequisites](/docs/general-documentation/umami-analytics-setup#prerequisites)
   - [Getting your Website ID](/docs/general-documentation/umami-analytics-setup#getting-your-website-id)
   - [Configuration in this project](/docs/general-documentation/umami-analytics-setup#configuration-in-this-project)
@@ -460,7 +460,6 @@ This site holds all of my documentation for how I've developed my projects and m
   - [Keeping the ID out of the repo](/docs/general-documentation/umami-analytics-setup#keeping-the-id-out-of-the-repo)
   - [Verification](/docs/general-documentation/umami-analytics-setup#verification)
   - [References](/docs/general-documentation/umami-analytics-setup#references)
-
 <PageBreak />
 
 ### Useful Links
