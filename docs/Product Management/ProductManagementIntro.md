@@ -72,7 +72,7 @@ While every member of the team participates in both product discovery and produc
 
 Product discovery is how product teams **gather evidence** that their solution or product will achieve the desired outcome.
 
-This work is structured around the four key product risks that the product team addresses in product discovery are: 
+This work is structured around the four key product risks: 
 
 **1. Value Risk** – Will customers buy or choose to use the product or feature?
  - Validate that the product solves a real customer problem and delivers enough value for users to adopt it through continuous product discovery, customer research, and experimentation.  This is the responsibility of the **product manager**.
@@ -90,10 +90,10 @@ This work is structured around the four key product risks that the product team 
 
 ### What Product Management is Not
 
-The role of the product manager is often misunderstood, or confused with the role of a project manager. **Product Managers**:
+The role of the product manager is often misunderstood, or confused with the role of a *project manager*. **Product Managers**:
 - Do not directly manage people, but instead work collaboratively with the engineers, designers, or other team members to deliver outcomes.
 - Are not requirement gatherers or backlog managers.
-- Are not project managers focused only on delivery timelines.
+- Are not *project managers* focused only on delivery timelines.
 - Don't focus on shipping features; they focus on solving problems in ways their customers love that also work for their business
 
 <PageBreak />
@@ -120,6 +120,38 @@ If a principle is "We never use dark patterns," then a proposal for a pre-checke
 - **Startup:** Vision might be a single sentence; strategy may live in the founder's head. Writing down 3–5 product principles early still pays off when the team grows.
 - **Growth / Established:** Document vision and strategy in a living doc (e.g. one-pager or wiki). Revisit strategy at least annually; principles rarely change unless the company pivots.
 :::
+
+<PageBreak />
+
+### Prioritisation Frameworks
+
+With limited resources and endless feature requests, structured prioritisation is essential. The most effective frameworks include:
+
+| Framework     | When to Use                                            | Key Components                                 | Pros                      | Cons                                        |
+| ------------- | ------------------------------------------------------ | ---------------------------------------------- | ------------------------- | ------------------------------------------- |
+| RICE          | Feature-level prioritisation with quantifiable metrics | Reach x Impact x Confidence ÷ Effort              | Data-driven, objective    | Can be time-consuming, subjective estimates |
+| MoSCoW        | Sprint planning, stakeholder communication             | Must-have, Should-have, Could-have, Won't-have | Simple, aligns teams      | Can be vague, subjective                    |
+| Kano Model    | Feature-level prioritisation with quantifiable metrics | Basic expectations, performance differentiators, or delighters | Helps identify which features will drive satisfaction vs. which are table stakes | Can be subjective                    |
+| Value vs. effort | For less experienced teams or more subjective decision-making | 2x2 grid based on value to the user and the effort required to deliver | Visual identification for easier decisions | Can be subjective relying on instinct                    |
+| Cost-of-Delay | Strategic decisions, opportunity cost analysis         | Business value × Urgency                       | Focuses on value, urgency | Requires accurate value estimation          |
+| Opportunity scoring | If the project aims to improve customer satisfaction | Importance + max(importance – satisfaction,0) = opportunity | The ROI outweighs the development costs | Scoring models only provide a limited view of each idea's scope                    |
+
+**Elaboration:**
+
+- **RICE** helps PMs quantify and compare features based on their potential impact and required effort. [Read more here](https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/).
+  - **Reach**: how many people will this impact? (Estimate within a defined time period - try to use real analytics data)
+  - **Impact**: how much will this impact each person? (Massive = 3x, High = 2x, Medium = 1x, Low = 0.5x, Minimal = 0.25x.)
+  - **Confidence**: how confident are you in your estimates? (High = 100%, Medium = 80%, Low = 50%.)
+  - **Effort**: how many “person-months” will this take? (Use whole numbers and minimum of half a month – don’t get into the weeds of estimation.)
+- **MoSCoW** is effective for communicating priorities with stakeholders and ensuring MVP focus. [Read more here](https://www.productplan.com/glossary/moscow-prioritization/).
+- **Kano Model** helps identify which features will drive satisfaction vs. which are table stakes. [Read more here](https://www.productplan.com/glossary/kano-model/).
+- **Value vs. effort** helps prioritise features into a 2x2 grid based on their value to the user and the effort required to deliver them. [Read more here](https://www.geeksforgeeks.org/software-engineering/what-is-value-vs-effort-matrix-and-how-does-it-work-in-product-management/).
+- **Cost-of-Delay** highlights the financial and strategic impact of delayed features, guiding urgent investments. [Read more here](https://www.productplan.com/glossary/cost-of-delay/).
+- **Opportunity scoring** gets customers to rate both a feature's importance and their satisfaction and an opportunity algorithm calculates the score on a five or ten point scale. [Read more here](https://www.productplan.com/glossary/opportunity-scoring/).
+
+PMs should use multiple frameworks as appropriate and validate assumptions with user research and data.
+
+> For outcome-based planning and aligning roadmap to goals, see [Outcome-based roadmaps and OKRs](/docs/SDLC/planning-and-design#outcome-based-roadmaps-and-okrs) in Planning and Design.
 
 <PageBreak />
 
@@ -153,38 +185,6 @@ You can integrate tools like [LinearB](https://linearb.io/), [Haystack](https://
 :::tip[Tools to Help with the Three Ways]
 For The Second Way, you can use tools like [Mixpanel](https://mixpanel.com/) or [Amplitude](https://amplitude.com/) to understand how users are interacting with features. For the Third Way, you can use tools like [Spikes](https://www.spikes.com/) to help with continual learning.
   :::
-
-<PageBreak />
-
-### Prioritisation Frameworks
-
-With limited resources and endless feature requests, structured prioritisation is essential. The most effective frameworks include:
-
-| Framework     | When to Use                                            | Key Components                                 | Pros                      | Cons                                        |
-| ------------- | ------------------------------------------------------ | ---------------------------------------------- | ------------------------- | ------------------------------------------- |
-| RICE          | Feature-level prioritisation with quantifiable metrics | Reach x Impact x Confidence ÷ Effort              | Data-driven, objective    | Can be time-consuming, subjective estimates |
-| MoSCoW        | Sprint planning, stakeholder communication             | Must-have, Should-have, Could-have, Won't-have | Simple, aligns teams      | Can be vague, subjective                    |
-| Kano Model    | Feature-level prioritisation with quantifiable metrics | Basic expectations, performance differentiators, or delighters | Helps identify which features will drive satisfaction vs. which are table stakes | Can be subjective                    |
-| Value vs. effort | For less experienced teams or more subjective decision-making | 2x2 grid based on value to the user and the effort required to deliver | Visual identification for easier decisions | Can be subjective relying on instinct                    |
-| Cost-of-Delay | Strategic decisions, opportunity cost analysis         | Business value × Urgency                       | Focuses on value, urgency | Requires accurate value estimation          |
-| Opportunity scoring | If the project aims to improve customer satisfaction | Importance + max(importance – satisfaction,0) = opportunity | The ROI outweighs the development costs | Scoring models only provide a limited view of each idea's scope                    |
-
-**Elaboration:**
-
-- **RICE** helps PMs quantify and compare features based on their potential impact and required effort. [Read more here](https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/).
-  - **Reach**: how many people will this impact? (Estimate within a defined time period - try to use real analytics data)
-  - **Impact**: how much will this impact each person? (Massive = 3x, High = 2x, Medium = 1x, Low = 0.5x, Minimal = 0.25x.)
-  - **Confidence**: how confident are you in your estimates? (High = 100%, Medium = 80%, Low = 50%.)
-  - **Effort**: how many “person-months” will this take? (Use whole numbers and minimum of half a month – don’t get into the weeds of estimation.)
-- **MoSCoW** is effective for communicating priorities with stakeholders and ensuring MVP focus. [Read more here](https://www.productplan.com/glossary/moscow-prioritization/).
-- **Kano Model** helps identify which features will drive satisfaction vs. which are table stakes. [Read more here](https://www.productplan.com/glossary/kano-model/).
-- **Value vs. effort** helps prioritise features into a 2x2 grid based on their value to the user and the effort required to deliver them. [Read more here](https://www.geeksforgeeks.org/software-engineering/what-is-value-vs-effort-matrix-and-how-does-it-work-in-product-management/).
-- **Cost-of-Delay** highlights the financial and strategic impact of delayed features, guiding urgent investments. [Read more here](https://www.productplan.com/glossary/cost-of-delay/).
-- **Opportunity scoring** gets customers to rate both a feature's importance and their satisfaction and an opportunity algorithm calculates the score on a five or ten point scale. [Read more here](https://www.productplan.com/glossary/opportunity-scoring/).
-
-PMs should use multiple frameworks as appropriate and validate assumptions with user research and data.
-
-> For outcome-based planning and aligning roadmap to goals, see [Outcome-based roadmaps and OKRs](/docs/SDLC/planning-and-design#outcome-based-roadmaps-and-okrs) in Planning and Design.
 
 <PageBreak />
 

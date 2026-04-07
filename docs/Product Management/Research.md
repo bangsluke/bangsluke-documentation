@@ -1,10 +1,10 @@
 ---
 sidebar_position: 2
 slug: /product-management/research
-desciption: Summaries of research such as books read on Product Management
+description: Summaries of research such as books read on Product Management
 ---
 
-# Product Management Research
+# Product Research
 
 > [Back to Product Management Intro](../product-management/product-management-intro)
 

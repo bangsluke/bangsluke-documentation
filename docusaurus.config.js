@@ -45,6 +45,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           sidebarCollapsed: false,
+          remarkPlugins: [require("./plugins/remark-reading-time.js")],
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
