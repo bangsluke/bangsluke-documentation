@@ -2251,23 +2251,7 @@
     fs-extra "^11.1.1"
     tslib "^2.6.0"
 
-"@docusaurus/types@3.10.0":
-  version "3.10.0"
-  resolved "https://registry.yarnpkg.com/@docusaurus/types/-/types-3.10.0.tgz#a69232bba74b738fcf4671fd5f0f079366dd3d13"
-  integrity sha512-F0dOt3FOoO20rRaFK7whGFQZ3ggyrWEdQc/c8/UiRuzhtg4y1w9FspXH5zpCT07uMnJKBPGh+qNazbNlCQqvSw==
-  dependencies:
-    "@mdx-js/mdx" "^3.0.0"
-    "@types/history" "^4.7.11"
-    "@types/mdast" "^4.0.2"
-    "@types/react" "*"
-    commander "^5.1.0"
-    joi "^17.9.2"
-    react-helmet-async "npm:@slorber/react-helmet-async@1.3.0"
-    utility-types "^3.10.0"
-    webpack "^5.95.0"
-    webpack-merge "^5.9.0"
-
-"@docusaurus/types@3.9.2", "@docusaurus/types@^3.9.2":
+"@docusaurus/types@3.9.2":
   version "3.9.2"
   resolved "https://registry.npmjs.org/@docusaurus/types/-/types-3.9.2.tgz"
   integrity sha512-Ux1JUNswg+EfUEmajJjyhIohKceitY/yzjRUpu04WXgvVz+fbhVC0p+R0JhvEu4ytw8zIAys2hrdpQPBHRIa8Q==
@@ -2283,13 +2267,21 @@
     webpack "^5.95.0"
     webpack-merge "^5.9.0"
 
-"@docusaurus/utils-common@3.10.0":
+"@docusaurus/types@^3.10.0":
   version "3.10.0"
-  resolved "https://registry.yarnpkg.com/@docusaurus/utils-common/-/utils-common-3.10.0.tgz#2a6dc76b312664fca7234d33607c085318ff1ae3"
-  integrity sha512-JyL7sb9QVDgYvudIS81Dv0lsWm7le0vGZSDwsztxWam1SPBqrnkvBy9UYL/amh6pbybkyYTd3CMTkO24oMlCSw==
+  resolved "https://registry.yarnpkg.com/@docusaurus/types/-/types-3.10.0.tgz#a69232bba74b738fcf4671fd5f0f079366dd3d13"
+  integrity sha512-F0dOt3FOoO20rRaFK7whGFQZ3ggyrWEdQc/c8/UiRuzhtg4y1w9FspXH5zpCT07uMnJKBPGh+qNazbNlCQqvSw==
   dependencies:
-    "@docusaurus/types" "3.10.0"
-    tslib "^2.6.0"
+    "@mdx-js/mdx" "^3.0.0"
+    "@types/history" "^4.7.11"
+    "@types/mdast" "^4.0.2"
+    "@types/react" "*"
+    commander "^5.1.0"
+    joi "^17.9.2"
+    react-helmet-async "npm:@slorber/react-helmet-async@1.3.0"
+    utility-types "^3.10.0"
+    webpack "^5.95.0"
+    webpack-merge "^5.9.0"
 
 "@docusaurus/utils-common@3.9.2":
   version "3.9.2"
