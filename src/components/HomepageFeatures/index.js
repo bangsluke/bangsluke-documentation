@@ -14,6 +14,16 @@ const InternalLinks = [
     link: '/docs/product-management',
   },
   {
+    title: 'Agile',
+    Svg: require('@site/static/img/sdlc.svg').default,
+    description: (
+      <>
+        Compact Agile and Scrum reference pages for fast review.
+      </>
+    ),
+    link: '/docs/agile',
+  },
+  {
     title: 'SDLC',
     Svg: require('@site/static/img/sdlc.svg').default,
     description: (

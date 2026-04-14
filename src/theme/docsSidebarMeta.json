@@ -1,6 +1,11 @@
 {
-  "generatedAt": "2026-04-08T17:41:11.899Z",
+  "generatedAt": "2026-04-14T10:10:31.365Z",
   "categoriesBySlug": {
+    "/agile": {
+      "label": "Agile",
+      "collapsed": false,
+      "position": 3
+    },
     "/general-documentation": {
       "label": "General Documentation",
       "collapsed": true,
@@ -38,6 +43,7 @@
     }
   },
   "categoryIndexSlugs": [
+    "/agile",
     "/general-documentation",
     "/product-management",
     "/project-set-up-to-release",
@@ -47,6 +53,21 @@
     "/SDLC"
   ],
   "docH1BySlugOrPath": {
+    "/agile/overview-and-mindset": "Agile Overview and Mindset",
+    "/docs/agile/overview-and-mindset": "Agile Overview and Mindset",
+    "agile/overview-and-mindset": "Agile Overview and Mindset",
+    "/agile/scrum-core-guide": "Scrum Core Guide",
+    "/docs/agile/scrum-core-guide": "Scrum Core Guide",
+    "agile/scrum-core-guide": "Scrum Core Guide",
+    "/agile/kanban-and-flow": "Kanban and Flow",
+    "/docs/agile/kanban-and-flow": "Kanban and Flow",
+    "agile/kanban-and-flow": "Kanban and Flow",
+    "/agile/planning-metrics-and-delivery": "Planning, Metrics, and Delivery",
+    "/docs/agile/planning-metrics-and-delivery": "Planning, Metrics, and Delivery",
+    "agile/planning-metrics-and-delivery": "Planning, Metrics, and Delivery",
+    "/agile/scaling-and-adoption": "Scaling and Adoption",
+    "/docs/agile/scaling-and-adoption": "Scaling and Adoption",
+    "agile/scaling-and-adoption": "Scaling and Adoption",
     "/documentation-intro": "Documentation Intro",
     "/docs/documentation-intro": "Documentation Intro",
     "documentation-intro": "Documentation Intro",
@@ -151,6 +172,21 @@
     "useful-links": "Useful Links"
   },
   "docLeafSortBySlugOrPath": {
+    "/agile/overview-and-mindset": 1,
+    "/docs/agile/overview-and-mindset": 1,
+    "agile/overview-and-mindset": 1,
+    "/agile/scrum-core-guide": 2,
+    "/docs/agile/scrum-core-guide": 2,
+    "agile/scrum-core-guide": 2,
+    "/agile/kanban-and-flow": 3,
+    "/docs/agile/kanban-and-flow": 3,
+    "agile/kanban-and-flow": 3,
+    "/agile/planning-metrics-and-delivery": 4,
+    "/docs/agile/planning-metrics-and-delivery": 4,
+    "agile/planning-metrics-and-delivery": 4,
+    "/agile/scaling-and-adoption": 5,
+    "/docs/agile/scaling-and-adoption": 5,
+    "agile/scaling-and-adoption": 5,
     "/documentation-intro": 1,
     "/docs/documentation-intro": 1,
     "documentation-intro": 1,
@@ -347,6 +383,46 @@
           "label": "Monitoring and Observability",
           "href": "/docs/SDLC/monitor",
           "sort": 9
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Agile",
+      "href": "/docs/agile",
+      "collapsible": true,
+      "collapsed": false,
+      "position": 3,
+      "items": [
+        {
+          "type": "link",
+          "label": "Agile Overview and Mindset",
+          "href": "/docs/agile/overview-and-mindset",
+          "sort": 1
+        },
+        {
+          "type": "link",
+          "label": "Scrum Core Guide",
+          "href": "/docs/agile/scrum-core-guide",
+          "sort": 2
+        },
+        {
+          "type": "link",
+          "label": "Kanban and Flow",
+          "href": "/docs/agile/kanban-and-flow",
+          "sort": 3
+        },
+        {
+          "type": "link",
+          "label": "Planning, Metrics, and Delivery",
+          "href": "/docs/agile/planning-metrics-and-delivery",
+          "sort": 4
+        },
+        {
+          "type": "link",
+          "label": "Scaling and Adoption",
+          "href": "/docs/agile/scaling-and-adoption",
+          "sort": 5
         }
       ]
     },

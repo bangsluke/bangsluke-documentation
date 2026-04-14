@@ -11,6 +11,7 @@ This site holds all of my documentation for how I've developed my projects and m
 ## Quick Links
 
 - [Product Management](/docs/product-management/product-management-intro)
+- [Agile](/docs/agile/overview-and-mindset)
 - [Software Development Life Cycle](/docs/SDLC/introduction)
 - [Project Set Up to Release](/docs/project-set-up-to-release/planning)
 - [Projects](/docs/projects/dorkinians-website)
@@ -65,9 +66,22 @@ This site holds all of my documentation for how I've developed my projects and m
   - [Continuous Discovery Habits](/docs/product-management/research#continuous-discovery-habits)
     - [Continuous Discovery Habits Summary](/docs/product-management/research#continuous-discovery-habits-summary)
     - [Continuous Discovery Habits Key Concepts](/docs/product-management/research#continuous-discovery-habits-key-concepts)
+  - [Escaping the Build Trap](/docs/product-management/research#escaping-the-build-trap)
+    - [Escaping the Build Trap Summary](/docs/product-management/research#escaping-the-build-trap-summary)
+    - [Escaping the Build Trap Key Concepts](/docs/product-management/research#escaping-the-build-trap-key-concepts)
   - [The DevOps Handbook](/docs/product-management/research#the-devops-handbook)
     - [The DevOps Handbook Summary](/docs/product-management/research#the-devops-handbook-summary)
     - [The DevOps Handbook Key Concepts](/docs/product-management/research#the-devops-handbook-key-concepts)
+
+<PageBreak />
+
+### Agile
+
+- [Agile Overview and Mindset](/docs/agile/overview-and-mindset)
+- [Scrum Core Guide](/docs/agile/scrum-core-guide)
+- [Kanban and Flow](/docs/agile/kanban-and-flow)
+- [Planning, Metrics, and Delivery](/docs/agile/planning-metrics-and-delivery)
+- [Scaling and Adoption](/docs/agile/scaling-and-adoption)
 
 <PageBreak />
 
