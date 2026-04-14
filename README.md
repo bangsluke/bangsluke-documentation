@@ -1,84 +1,152 @@
-# Docusaurus
+<p align="center">
+  <img src="./static/bangsluke-logo.png" alt="bangsluke Logo" height="120" />
+</p>
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+<h1 align="center">bangsluke Documentation</h1>
+
+<p align="center">
+  Central documentation hub for development practices, delivery workflows, and project knowledge across the bangsluke ecosystem.
+</p>
+
+<p align="center">
+  <a href="https://bangsluke-documentation.netlify.app/">🌐 Live Site</a> •
+  <a href="https://github.com/bangsluke/bangsluke-documentation">💻 GitHub Repository</a> •
+  <a href="#documentation-areas">✨ Documentation Areas</a> •
+  <a href="#tech-stack">🛠️ Tech Stack</a> •
+  <a href="#project-overview">🏗️ Project Overview</a> •
+  <a href="https://bangsluke-documentation.netlify.app/docs/documentation-intro">📚 Documentation Intro</a>
+</p>
+
+<p align="center">
+   <a href="https://app.netlify.com/projects/bangsluke-documentation/deploys" style="text-decoration: none;">
+    <img src="https://api.netlify.com/api/v1/badges/8c75ee64-90db-4e5f-b390-81683b14888c/deploy-status" alt="Netlify Status" />
+  </a>
+  <img src="https://img.shields.io/badge/Docusaurus-3-blueviolet?logo=docusaurus&logoColor=white" alt="Docusaurus 3" />
+  <img src="https://img.shields.io/badge/React-19-149eca?logo=react&logoColor=white" alt="React 19" />
+  <img src="https://img.shields.io/badge/PWA-enabled-purple?logo=pwa&logoColor=white" alt="PWA enabled" />
+</p>
+
+<p align="center">
+  <img src="./static/img/bangsluke-Documentation.png" alt="bangsluke Documentation" width="920" />
+</p>
 
 ## Table of Contents
 
-- [Docusaurus](#docusaurus)
-  - [Table of Contents](#table-of-contents)
-  - [Before Starting](#before-starting)
-    - [Installation](#installation)
-    - [MDX Checking](#mdx-checking)
-    - [Local Development](#local-development)
-    - [Build](#build)
-    - [Deployment](#deployment)
+- [Table of Contents](#table-of-contents)
+- [Project Overview](#project-overview)
+- [Documentation Areas](#documentation-areas)
+- [Tech Stack](#tech-stack)
+- [Quick Start](#quick-start)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Local Development](#local-development)
+  - [Production Build](#production-build)
+  - [Serve Build Locally](#serve-build-locally)
+- [Developer Commands](#developer-commands)
+- [PWA and Offline Support](#pwa-and-offline-support)
+  - [Features](#features)
+  - [Validating Offline Mode Locally](#validating-offline-mode-locally)
+- [Contributing](#contributing)
 
-## Before Starting
+## Project Overview
 
-Use `cd docusaurus` to navigate to the root of the website. Then `yarn dev` to start a local development server.
+This repository powers the **bangsluke documentation site**, built with Docusaurus and published at [bangsluke-documentation.netlify.app](https://bangsluke-documentation.netlify.app/).
+
+It captures practical guidance and reference material across product management, agile delivery, SDLC, release workflows, project writeups, and reusable development notes.
+
+## Documentation Areas
+
+Primary documentation categories:
+
+- [Product Management](https://bangsluke-documentation.netlify.app/docs/product-management/product-management-intro)
+- [Agile](https://bangsluke-documentation.netlify.app/docs/agile/overview-and-mindset)
+- [Software Development Life Cycle](https://bangsluke-documentation.netlify.app/docs/SDLC/introduction)
+- [Project Set Up to Release](https://bangsluke-documentation.netlify.app/docs/project-set-up-to-release/planning)
+- [Projects](https://bangsluke-documentation.netlify.app/docs/projects/dorkinians-website)
+- [General Documentation](https://bangsluke-documentation.netlify.app/docs/general-documentation/tool-commands-and-shortcuts)
+- [Useful Links](https://bangsluke-documentation.netlify.app/docs/useful-links)
+
+The full entry page is available at [`docs/DocumentationIntro.md`](./docs/DocumentationIntro.md).
+
+## Tech Stack
+
+- **Docusaurus 3** (`@docusaurus/core`, `@docusaurus/preset-classic`) for documentation site generation
+- **React 19** for rendering and component-level customization
+- **Prism + custom themes** for syntax highlighting
+- **Docusaurus PWA plugin** for installable/offline documentation
+- **Image zoom plugin** and custom remark/plugin scripts for authoring workflow
+
+## Quick Start
+
+### Prerequisites
+
+- Node.js `>=18.0`
+- npm (or an equivalent package manager)
 
 ### Installation
 
 ```bash
-yarn
+npm install
 ```
-
-### MDX Checking
-
-To check the MDX files are formatted correctly, use `npx docusaurus-mdx-checker`
 
 ### Local Development
 
 ```bash
-yarn start
+npm run dev
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Starts a local docs server at `http://127.0.0.1:3000` with live reload for content changes.
 
-### Build
+### Production Build
 
 ```bash
-yarn build
+npm run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Build output is generated into `build/`.
 
-### Deployment
-
-Using SSH:
+### Serve Build Locally
 
 ```bash
-USE_SSH=true yarn deploy
+npm run serve
 ```
 
-Not using SSH:
+Use this to verify production behavior (including service worker behavior) before deployment.
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
+## Developer Commands
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+- `npm run generate-docs-sidebar-meta` - Regenerates docs sidebar metadata
+- `npm run docusaurus` - Runs the Docusaurus CLI directly
+- `npm run clear` - Clears Docusaurus generated cache/state
+- `npm run write-translations` - Extracts translation files
+- `npm run write-heading-ids` - Generates stable heading IDs
+- `npm run deploy` - Builds/deploys site using Docusaurus deploy workflow
 
 ## PWA and Offline Support
 
-This site is configured as a Progressive Web App (PWA) using `@docusaurus/plugin-pwa`. It allows users to install the documentation as an app and access content offline.
+This site is configured as a Progressive Web App using `@docusaurus/plugin-pwa`, allowing installation and offline browsing of cached documentation pages.
 
 ### Features
 
-- **Offline Access**: The entire site is precached upon installation. Users can browse all documentation pages without an internet connection.
-- **Offline Ready Indicator**: A popup notification ("Ready for offline use") appears when the offline cache has fully downloaded.
+- **Offline Access**: Documentation pages are available without an active connection after caching.
+- **Offline Ready Indicator**: A "Ready for offline use" notification appears once caching finishes.
+- **Installable Experience**: The site can be installed as an app on supported devices.
 
 ### Validating Offline Mode Locally
-
-Service Workers require a production build to function. To test offline capabilities locally:
 
 1. Build the project:
    ```bash
    npm run build
    ```
-2. Serve the build:
+2. Serve the production build:
    ```bash
    npm run serve
    ```
-3. Test the "Downloading" popup (simulates a fresh install):
-   - Open `http://localhost:3000/?offlineMode=true` in your browser.
+3. Open `http://localhost:3000/?offlineMode=true` to test offline activation behavior.
+
+## Contributing
+
+- Keep docs updates focused and scoped to the section being improved.
+- When adding or moving docs, ensure navigation/sidebars remain coherent.
+- Run local development or production build checks before opening a pull request.
+- Prefer clear headings and concise sections to maintain readability across the site.
