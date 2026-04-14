@@ -6,8 +6,6 @@ description: Compact overview of Agile fundamentals, values, principles, and min
 
 # Agile Overview and Mindset
 
-> [Scrum Core Guide](/docs/agile/scrum-core-guide) | [Kanban and Flow](/docs/agile/kanban-and-flow) | [Planning, Metrics, and Delivery](/docs/agile/planning-metrics-and-delivery) | [Scaling and Adoption](/docs/agile/scaling-and-adoption)
-
 ## What Agile Is
 
 Agile is an iterative way of working that prioritizes customer value, short feedback loops, and continuous improvement. It is a mindset first, then a set of frameworks and practices.
@@ -18,6 +16,8 @@ Agile is an iterative way of working that prioritizes customer value, short feed
 - Use frequent customer and stakeholder feedback to re-prioritize.
 - Let cross-functional teams self-organize around outcomes.
 - Inspect and adapt continuously, not only at project end.
+
+> Read more at [Atlassian: What is Agile?](https://www.atlassian.com/agile)
 
 ## Agile Manifesto: What to Remember
 
@@ -35,12 +35,16 @@ Agile is an iterative way of working that prioritizes customer value, short feed
 - Simplicity and focus on the highest-value work.
 - Regular reflection and process adaptation.
 
+> Read more at [Atlassian: Agile manifesto](https://www.atlassian.com/agile/manifesto)
+
 ## Why Teams Choose Agile
 
 - Faster adaptation when priorities, market, or customer needs shift.
 - Earlier risk discovery through incremental delivery.
 - Better collaboration across product, engineering, design, and business.
 - Higher transparency through visible backlogs, boards, and reviews.
+
+> Read more at [Atlassian: The Agile Transformation](https://www.atlassian.com/agile/advantage)
 
 ## Agile as a Mindset, Not a Ceremony Checklist
 
@@ -60,6 +64,8 @@ Using ceremonies without the mindset leads to "ritual Agile." Healthy Agile team
 - Running standups as status theater for management.
 - Equating more process with better delivery.
 
+> Read more at [Atlassian: Cultivating an agile mindset](https://www.atlassian.com/agile/advantage/agile-mindset)
+
 ## Framework Landscape at a Glance
 
 - **Scrum:** timeboxed iterations, defined roles/events/artifacts.
@@ -67,12 +73,16 @@ Using ceremonies without the mindset leads to "ritual Agile." Healthy Agile team
 - **Scrumban:** Scrum cadence + Kanban flow controls.
 - **Lean/XP/DevOps practices:** quality, waste reduction, and delivery reliability.
 
+> Read more at [Atlassian: Agile topics hub](https://www.atlassian.com/agile)
+
 ## Practical Starter Pattern (First 30 Days)
 
 1. Define one clear outcome and success metric.
 2. Build a prioritized backlog with thin slices of value.
 3. Start with a simple cadence (weekly planning/review + daily sync).
 4. Run a short retrospective each cycle and track 1-2 improvements.
+
+> Read more at [Atlassian: Going Agile](https://www.atlassian.com/agile/advantage/going-agile)
 
 ## Coverage map from Atlassian Agile hub
 
@@ -85,6 +95,8 @@ This summary set consolidates Atlassian's `/agile/**` material (212 URLs) into f
 - Scrum guides and roles/events/artifacts
 - Software development and delivery practices
 - Agile at scale, portfolio, and operating model topics
+
+> Read more at [Atlassian: Agile articles index](https://www.atlassian.com/agile/articles)
 
 ## Further reading on Atlassian
 

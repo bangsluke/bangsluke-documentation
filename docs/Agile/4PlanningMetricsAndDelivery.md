@@ -6,11 +6,11 @@ description: Compact guide to Agile planning, estimation, delivery tracking, and
 
 # Planning, Metrics, and Delivery
 
-> [Agile Overview and Mindset](/docs/agile/overview-and-mindset) | [Scrum Core Guide](/docs/agile/scrum-core-guide) | [Kanban and Flow](/docs/agile/kanban-and-flow) | [Scaling and Adoption](/docs/agile/scaling-and-adoption)
-
 ## Plan around outcomes, not output
 
 Agile planning should connect strategy to delivery through clear outcomes, incremental milestones, and rapid feedback.
+
+> Read more at [Atlassian: Agile project management](https://www.atlassian.com/agile/project-management)
 
 ## Backlog structure and quality
 
@@ -19,6 +19,8 @@ Agile planning should connect strategy to delivery through clear outcomes, incre
 - Add acceptance criteria and clear completion signals.
 - Reprioritize frequently based on evidence, not opinions.
 
+> Read more at [Atlassian: Epics, stories, and initiatives](https://www.atlassian.com/agile/project-management/epics-stories-themes)
+
 ## Estimation and forecasting
 
 - Estimate relative effort (story points/t-shirt sizes) for planning.
@@ -26,12 +28,16 @@ Agile planning should connect strategy to delivery through clear outcomes, incre
 - Separate confidence discussions from commitments.
 - Keep estimates lightweight; avoid precision theater.
 
+> Read more at [Atlassian: Story points and estimation](https://www.atlassian.com/agile/project-management/estimation)
+
 ## Definition of Ready and Definition of Done
 
 - **DoR:** item is clear enough to start without churn.
 - **DoD:** item is complete, tested, integrated, and potentially releasable.
 
 Teams with explicit DoR/DoD reduce rework and increase predictability.
+
+> Read more at [Atlassian: Definition of Ready](https://www.atlassian.com/agile/project-management/definition-of-ready)
 
 ## Metrics that improve decisions
 
@@ -42,12 +48,16 @@ Teams with explicit DoR/DoD reduce rework and increase predictability.
 
 Use metrics as system feedback, not individual performance scoring.
 
+> Read more at [Atlassian: Agile metrics](https://www.atlassian.com/agile/project-management/metrics)
+
 ## Release and feedback loops
 
 - Deliver in small, reversible increments.
 - Review customer signals quickly after release.
 - Feed learning back into backlog weekly.
 - Track risks, dependencies, and constraints visibly.
+
+> Read more at [Atlassian: Continuous improvement process](https://www.atlassian.com/agile/project-management/continuous-improvement)
 
 ## Practical cadence template
 
@@ -56,12 +66,16 @@ Use metrics as system feedback, not individual performance scoring.
 - End of cycle: review + retrospective + metric check.
 - Monthly/quarterly: roadmap and outcome refresh.
 
+> Read more at [Atlassian: Sprint cadence](https://www.atlassian.com/agile/project-management/sprint-cadence)
+
 ## Common anti-patterns
 
 - Big upfront planning with weak reprioritization.
 - Too many metrics with no decisions attached.
 - Story points treated as productivity KPI.
 - Missing feedback loop from delivery data to planning.
+
+> Read more at [Atlassian: Continuous improvement](https://www.atlassian.com/agile/project-management/continuous-improvement)
 
 ## Further reading on Atlassian
 
