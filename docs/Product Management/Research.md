@@ -10,17 +10,17 @@ description: Summaries of research such as books read on Product Management
 
 ## Accelerate
 
-> The Science of Lean Software and DevOps: Building and Scaling High-performing Technology Organizations - By Nicole Forsgren, Jez Humble and Gene Kim
+> *"The Science of Lean Software and DevOps: Building and Scaling High-performing Technology Organizations"* - By Nicole Forsgren, Jez Humble and Gene Kim
 
 ### Accelerate Summary
 
-Accelerate explores what makes top engineering organisations deliver software quickly and reliably, using several years of rigorous DevOps research. The authors show that high performance isn’t about heroics or rigid processes, but about adopting proven technical practices and building a supportive, learning‑focused culture. A major contribution is the [DORA metrics](../product-management/product-management-intro#dora-metrics), which give teams a clear way to measure delivery speed and stability. The book highlights how practices like <Tooltip text="continuous delivery (CD)" definition="Releasing software in a way that allows frequent, reliable deployments to production at any time." />, automation, <Tooltip text="trunk-based development" definition="A branching strategy where developers integrate small, frequent changes into a single main branch (trunk)." />, and <Tooltip text="psychological safety" definition="A team culture where people feel safe to take risks, ask questions, and admit mistakes without fear of blame." /> consistently improve outcomes. Overall, it’s a concise, evidence‑backed guide to creating teams that ship faster, break less, and drive real business impact.
+Accelerate explores what makes top engineering organisations deliver software quickly and reliably, using several years of rigorous DevOps research. The authors show that high performance isn’t about heroics or rigid processes, but about adopting proven technical practices and building a supportive, learning‑focused culture. A major contribution is the [DORA metrics](../product-management/product-management-intro#dora-metrics), which give teams a clear way to measure delivery speed and stability. The book highlights how practices like <Tooltip text="continuous delivery (CD)" definition="Releasing software in a way that allows frequent, reliable deployments to production at any time." />, automation, <Tooltip text="trunk-based development" definition="A branching strategy where developers integrate small, frequent changes into a single main branch (trunk)." />, and <Tooltip text="psychological safety (in team culture)" definition="A team culture where people feel safe to take risks, ask questions, and admit mistakes without fear of blame." /> consistently improve outcomes. Overall, it’s a concise, evidence‑backed guide to creating teams that ship faster, break less, and drive real business impact.
 
 ### Accelerate Key Concepts
 
-Other than the [DORA metrics](../product-management/product-management-intro#dora-metrics), the key concepts in Accelerate include uncovering 24 key capabilities that drive software delivery performance (listed in Appendix A), which are grouped into five categories and all listed below:
+Other than the [DORA metrics](../product-management/product-management-intro#dora-metrics), the key concepts in Accelerate include uncovering 24 key capabilities that drive software delivery performance (listed in Appendix A of the book), which are grouped into five categories listed below:
 
-**Continuous Delivery Capabilities:**
+**A. Continuous Delivery Capabilities:**
 
 1. Use version control for all production artifacts
 2. Automate your deployment process
@@ -31,27 +31,27 @@ Other than the [DORA metrics](../product-management/product-management-intro#dor
 7. Shift left on security
 8. Implement continuous delivery (CD)
 
-**Architecture Capabilities:**
+**B. Architecture Capabilities:**
 
-9. Use a loosely coupled architecture
-10. Architect for empowered teams
+9. Use a loosely coupled architecture - a design where components can change independently without affecting other parts of the system
+10. Architect for empowered teams - give teams the autonomy to make decisions and build the product they need
 
-**Product and Process Capabilities:**
+**C. Product and Process Capabilities:**
 
 11. Gather and implement customer feedback
 12. Make the flow of work visible through the <Tooltip text="value stream" definition="The end-to-end flow of work from idea or request to delivery to the user." />
 13. Work in small batches
 14. Foster and enable team experimentation
 
-**Lean Management and Monitoring Capabilities:**
+**D. Lean Management and Monitoring Capabilities:**
 
 15. Have a lightweight change approval process
-16. Monitor acrosss application and infrastructure to inform business decisions
+16. Monitor across application and infrastructure to inform business decisions
 17. Check system health proactively
 18. Identify processes and manage work with <Tooltip text="WIP limits" definition="Work-in-process limits: caps on how many items can be in progress at once to reduce overload and improve flow." />
 19. Visualize work to monitor quality and communicate throughout the team
 
-**Cultural Capabilities:**
+**E. Cultural Capabilities:**
 
 20. Support a generative culture (as outlined by Westrum)
 21. Encourage and support learning. Is learning, in your culture, considered essential for continued progress?
@@ -63,7 +63,7 @@ Other than the [DORA metrics](../product-management/product-management-intro#dor
 
 ## The Phoenix Project
 
-> A Novel About IT, DevOps, and Helping Your Business Win - By Gene Kim, Kevin Behr, and George Spafford
+> *"A Novel About IT, DevOps, and Helping Your Business Win"* - By Gene Kim, Kevin Behr, and George Spafford
 
 ### The Phoenix Project Summary
 
@@ -81,7 +81,7 @@ A story of an IT manager who is trying to help his business win by implementing 
 
 ## Inspired
 
-> How to Create Products Customers Love - By Marty Cagan
+> *"How to Create Products Customers Love"* - By Marty Cagan
 
 ### Inspired Summary
 
@@ -95,7 +95,7 @@ The key concepts in Inspired include techniques for product discovery, including
 
 ## The Hard Thing About Hard Things
 
-> Building a Business When Ther Are No Easy Answers - By Ben Horowitz
+> *"Building a Business When There Are No Easy Answers"* - By Ben Horowitz
 
 ### The Hard Thing About Hard Things Summary
 
@@ -135,7 +135,7 @@ Use an agenda item called "What are we NOT doing?" to help you identify areas th
 
 ## Continuous Discovery Habits
 
-> Discover Products That Create Customer Value and Business Value - By Teresa Torres
+> *"Discover Products That Create Customer Value and Business Value"* - By Teresa Torres
 
 ### Continuous Discovery Habits Summary
 
@@ -147,9 +147,23 @@ Use an agenda item called "What are we NOT doing?" to help you identify areas th
 
 <PageBreak />
 
+## Escaping the Build Trap
+
+> *"How Effective Product Management Creates Real Value"* - By Melissa Perri
+
+### Escaping the Build Trap Summary
+
+<!-- TODO: Add summary of Escaping the Build Trap book -->
+
+### Escaping the Build Trap Key Concepts
+
+<!-- TODO: Add summary of key concepts -->
+
+<PageBreak />
+
 ## The DevOps Handbook
 
-> The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations" by Gene Kim, Jez Humble, Patrick Debois, and John Willis
+> *"The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations"* - By Gene Kim, Jez Humble, Patrick Debois, and John Willis
 
 ### The DevOps Handbook Summary
 
