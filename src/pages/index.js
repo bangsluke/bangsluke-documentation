@@ -26,6 +26,13 @@ function HomepageHeader() {
           >
             Jump to Documentation
           </Link>
+          <Link
+            className="button button--outline button--lg"
+            style={{ marginLeft: "0.75rem" }}
+            to="/docs/agile"
+          >
+            Jump to Agile
+          </Link>
         </div>
       </div>
     </header>

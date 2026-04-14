@@ -1,0 +1,10 @@
+{
+  "label": "Agile",
+  "position": 3,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "description": "Compact Agile and Scrum reference notes sourced from Atlassian's Agile hub.",
+    "slug": "/agile"
+  }
+}
