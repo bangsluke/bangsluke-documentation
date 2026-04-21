@@ -86,7 +86,7 @@ Functional correctness is necessary but not sufficient. Non-functional quality a
 - Coverage Reports
 
 :::tip[How AI Can Help: Verification]
-AI is reimagining verification by analyzing vast amounts of data to spot patterns and anomalies and automating the most tedious parts of <Tooltip text="QA" definition="Quality Assurance - processes and activities that ensure software meets specified requirements and is free of defects." />:
+AI is reimagining verification by analysing vast amounts of data to spot patterns and anomalies and automating the most tedious parts of <Tooltip text="QA" definition="Quality Assurance - processes and activities that ensure software meets specified requirements and is free of defects." />:
 
 - **Static Analysis:** Outside of AI in the IDEs listed in the [Code](./03-code.md) section, advanced static analysis tools (e.g., [SonarQube](https://www.sonarqube.org/)) use AI to identify complex bugs and code smells that traditional rules might miss.
 - **Test Generation:** AI can create comprehensive test suites and edge cases automatically from code. Outside of AI in the IDEs listed in the [Code](./03-code.md) section:

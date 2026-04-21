@@ -24,7 +24,7 @@ Scaling Agile succeeds when organizations preserve team autonomy while aligning 
 ## Common scaling models (use pragmatically)
 
 - **SAFe:** structured portfolio/program/team alignment.
-- **LeSS:** Scrum-centered simplification across many teams.
+- **LeSS:** Scrum-centred simplification across many teams.
 - **Scrum@Scale:** networks of teams with lightweight scaling.
 - **Spotify model:** culture and team topology concepts (squads/tribes/chapters/guilds).
 
@@ -35,7 +35,7 @@ Choose based on constraints, maturity, and outcomes, not branding.
 ## Portfolio and planning alignment
 
 - Connect strategic goals to measurable team outcomes (often via OKRs).
-- Limit concurrent initiatives; favor fewer, better-executed bets.
+- Limit concurrent initiatives; favour fewer, better-executed bets.
 - Make dependency and risk management explicit and visual.
 - Review portfolio progress on cadence with kill/continue decisions.
 

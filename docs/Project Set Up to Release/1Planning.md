@@ -212,12 +212,12 @@ For solo developers, a <Tooltip text="monolith" definition="A single, unified ap
   - Sequel DBs:
     - Xata
     - MySQL
-    - Postgress (recommended)
+    - PostgreSQL (recommended)
   - No Sequel DBs:
     - Firebase
     - MongoDB
     - PlanetScale
-    - Supebase
+    - Supabase
 
 > References
 >

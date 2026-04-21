@@ -55,7 +55,7 @@ Other than the [DORA metrics](../product-management/product-management-intro#dor
 
 20. Support a generative culture (as outlined by Westrum)
 21. Encourage and support learning. Is learning, in your culture, considered essential for continued progress?
-22. Support and facilitiate collaboration amoung teams
+22. Support and facilitate collaboration between teams
 23. Provide resources and tools that make work meaningful
 24. Support or embody transformational leadership
 

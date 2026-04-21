@@ -25,9 +25,9 @@ Product managers working in the product model on an empowered, cross-functional 
 
 **1. Deep Knowledge of the Users and Customers**
 
-The product manager must be an  acknowledged expert on the users and customers.  This requires direct engagement to understand their pain points, needs, decision-making process, and behaviors. Effective product managers leverage both:
-- **Quantitative insights** to analyze user behavior and trends through data to understand how their products are being used 
-- **Qualitative insights** to understand the motivations behind user and customer behaviors – especially to understand why their products are not being used.
+The product manager must be an  acknowledged expert on the users and customers.  This requires direct engagement to understand their pain points, needs, decision-making process, and behaviours. Effective product managers leverage both:
+- **Quantitative insights** to analyze user behaviour and trends through data to understand how their products are being used 
+- **Qualitative insights** to understand the motivations behind user and customer behaviours – especially to understand why their products are not being used.
 
 **2. Deep Knowledge of the Data**
 
@@ -37,7 +37,7 @@ Today’s product managers must be **fluent with data and analytics**.  They nee
 - **Sales analytics** to understand how the product is purchased
 - **Data trends** to evaluate how patterns are changing over time
 
-While product managers often collaborate with data analysts or data scientists on collecting and analyzing data, they _must_ understand the data themselves in order to truly understand their customers.
+While product managers often collaborate with data analysts or data scientists on collecting and analysing data, they _must_ understand the data themselves in order to truly understand their customers.
 
 **3. Deep Knowledge of their Business**
 
@@ -56,7 +56,7 @@ A product manager must stay abreast of:
 
 - **Competitive landscape** – Understanding the market and the various players and their positions 
 - **Emerging technologies** – Innovations shaping the industry
-- **Customer behaviors and expectations** – Anticipating shifts in behaviors and demand
+- **Customer behaviours and expectations** – Anticipating shifts in behaviours and demand
 
 **5. Deep Knowledge of the Product**
 
@@ -130,6 +130,7 @@ With limited resources and endless feature requests, structured prioritisation i
 | Framework     | When to Use                                            | Key Components                                 | Pros                      | Cons                                        |
 | ------------- | ------------------------------------------------------ | ---------------------------------------------- | ------------------------- | ------------------------------------------- |
 | RICE          | Feature-level prioritisation with quantifiable metrics | Reach x Impact x Confidence ÷ Effort              | Data-driven, objective    | Can be time-consuming, subjective estimates |
+| ICE | Shortened prioritisation with quantifiable metrics | Importance x Confidence x Effort | Data-driven, objective, faster than RICE | Easy to distort priorities, no sense of user scale |
 | MoSCoW        | Sprint planning, stakeholder communication             | Must-have, Should-have, Could-have, Won't-have | Simple, aligns teams      | Can be vague, subjective                    |
 | Kano Model    | Feature-level prioritisation with quantifiable metrics | Basic expectations, performance differentiators, or delighters | Helps identify which features will drive satisfaction vs. which are table stakes | Can be subjective                    |
 | Value vs. effort | For less experienced teams or more subjective decision-making | 2x2 grid based on value to the user and the effort required to deliver | Visual identification for easier decisions | Can be subjective relying on instinct                    |
@@ -143,6 +144,7 @@ With limited resources and endless feature requests, structured prioritisation i
   - **Impact**: how much will this impact each person? (Massive = 3x, High = 2x, Medium = 1x, Low = 0.5x, Minimal = 0.25x.)
   - **Confidence**: how confident are you in your estimates? (High = 100%, Medium = 80%, Low = 50%.)
   - **Effort**: how many “person-months” will this take? (Use whole numbers and minimum of half a month – don’t get into the weeds of estimation.)
+- **ICE** is a simple prioritisation model that scores ideas based on Impact, Confidence, and Ease. Each factor is usually rated 1–10, and the final score is: ICE = (Impact × Confidence × Ease). It's quick, lightweight, and good for fast decision‑making such as on bugs when you don’t need detailed sizing.
 - **MoSCoW** is effective for communicating priorities with stakeholders and ensuring MVP focus. [Read more here](https://www.productplan.com/glossary/moscow-prioritization/).
 - **Kano Model** helps identify which features will drive satisfaction vs. which are table stakes. [Read more here](https://www.productplan.com/glossary/kano-model/).
 - **Value vs. effort** helps prioritise features into a 2x2 grid based on their value to the user and the effort required to deliver them. [Read more here](https://www.geeksforgeeks.org/software-engineering/what-is-value-vs-effort-matrix-and-how-does-it-work-in-product-management/).

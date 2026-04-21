@@ -50,7 +50,7 @@ Agile is an iterative way of working that prioritizes customer value, short feed
 
 Using ceremonies without the mindset leads to "ritual Agile." Healthy Agile teams tune practices to context while staying anchored to outcomes, transparency, and learning.
 
-### Signs your team is practicing Agile well
+### Signs your team is practising Agile well
 
 - Goals are outcome-based and visible to everyone.
 - Backlog is actively prioritized, not a parking lot.
@@ -61,7 +61,7 @@ Using ceremonies without the mindset leads to "ritual Agile." Healthy Agile team
 
 - Treating velocity as a target rather than a planning signal.
 - Locking long plans and resisting evidence-based change.
-- Running standups as status theater for management.
+- Running standups as status theatre for management.
 - Equating more process with better delivery.
 
 > Read more at [Atlassian: Cultivating an agile mindset](https://www.atlassian.com/agile/advantage/agile-mindset)

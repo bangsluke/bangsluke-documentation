@@ -26,10 +26,10 @@ The purpose of product discovery is to address four critical risks before you in
 And it's not enough to just to have an opinion on these questions, we need to collect evidence.
 
 :::info
-On occassions, there is a fifth risk: ethics - where a team should also consider the question "*Should* we build it?". We need to avoid building solutions that will cause harm on certain users or the environment.
+On occasions, there is a fifth risk: ethics - where a team should also consider the question "*Should* we build it?". We need to avoid building solutions that will cause harm on certain users or the environment.
 :::
 
-Discovery is not a one-off phase-effective teams treat it as <Tooltip text="continuous discovery" definition="A practice of having at least weekly customer touchpoints, with the product team running small research activities in pursuit of a desired outcome (Teresa Torres)." />, running small research activities alongside delivery so that future work is informed by evidence.
+Discovery is not a one-off phase, effective teams treat it as <Tooltip text="continuous discovery" definition="A practice of having at least weekly customer touchpoints, with the product team running small research activities in pursuit of a desired outcome (Teresa Torres)." />, running small research activities alongside delivery so that future work is informed by evidence.
 
 > More information can be found on page 165 of Marty Cagan's book "[Inspired](/docs/product-management/research#inspired)".
 
@@ -64,7 +64,7 @@ There are really two goals to framing:
 
 Three useful framing techniques are:
 
-1. **Opportunity Assessment** - Used for the vast majority of product work, rangeing from simple optimisation, to a feature to a medium sized project.
+1. **Opportunity Assessment** - Used for the vast majority of product work, ranging from simple optimisation, to a feature to a medium sized project.
 2. **Customer Letter** - Designed for larger projects or initiatives.
 3. **Startup Canvas** - For times when you're creating an entirely new product line or new business.
 
@@ -83,7 +83,7 @@ A simple technique with the key being to answer four questions:
 
 When embarking on larger efforts, there may in fact be multiple reasons, several customer problems to be solved or business objectives to be addressed. For this, it may take more than the four questions of the Opportunity Assessment to fully frame the work.
 
-Marty Cagan describes a technique where the product team writes a hypothetical letter to the CEO from a very happy and impressed customer, explaining how the customer is using the product and the benefits they are getting from it and how it has changed their business. The letter also includes an imagined congratulary response from the CEO to the engineering team for delivering the solution.
+Marty Cagan describes a technique where the product team writes a hypothetical letter to the CEO from a very happy and impressed customer, explaining how the customer is using the product and the benefits they are getting from it and how it has changed their business. The letter also includes an imagined congratulatory response from the CEO to the engineering team for delivering the solution.
 
 This technique creates empathy for the customer and the problem they are solving, and more clearly emphasizes to the team how their efforts can help the lives of the customers they are serving.
 
@@ -117,8 +117,8 @@ Four techniques described here are:
 
 1. **Customer Interviews** - There are many forms of customer interviews - but the key is to ensure that the product manager, product designer and at least one developer are involved to get the benefit of the full learning. Key things: Establish regular cadence of interviews, ensure the customer is in your target market, go to the customers location if possible, ask open ended questions, and be prepared to ask follow up questions.
 2. **Concierge Test Technique** - This involves doing the job that the customer is doing, doing the tasks they have to do to understand the problem they are trying to solve, and then bouncing possible solutions off them and getting their feedback on the solutions. They may need to initially train you on how to do the job and it is most valuable when the product manager, designer and developer are all involved.
-3. **The Power of Customer Misbehavior** - This involves allowing or even encouraging the customer to use our product in a way that is not the way it is intended to be used, and then observing and learning from the customer's behavior to evaluate opportunities for improvement.
-4. **Hack Days** - The two main types are directed and undirected. Directed hack days are where the product team is given a specific customer problem to solve and undirected hack days are where the product team is given free reign to explore whatever product related ideas they have. HJack days typically are effective at creating ideation amongst the engineering team by inclusion and builds cultural missonary mindsets amongst employees.
+3. **The Power of Customer Misbehaviour** - This involves allowing or even encouraging the customer to use our product in a way that is not the way it is intended to be used, and then observing and learning from the customer's behaviour to evaluate opportunities for improvement.
+4. **Hack Days** - The two main types are directed and undirected. Directed hack days are where the product team is given a specific customer problem to solve and undirected hack days are where the product team is given free reign to explore whatever product related ideas they have. Hack days typically are effective at creating ideation amongst the engineering team by inclusion and builds cultural missionary mindsets amongst employees.
 
 <PageBreak />
 
@@ -129,7 +129,7 @@ Prototyping techniques are used to create a working model of a solution to test 
 Below describes four key prototyping techniques:
 1. **Feasibility Prototyping** - Typically code written by engineers to address technical feasibility risks - the idea is to write just enough code to mitigate the feasibility risk.
 2. **User Prototype Technique** - Two types: low fidelity and high fidelity (see below) - user prototypes are simulations for judging usability of the solution, most typically developed by the product designer. Don't use them for judging value or feasibility.
-3. **Live-Data Prototype Technique** - Sometimes we may need to collect some actual usage data as evidence support ideas from discovery. This should be real code, but developed to a fraction of what a full product is - it is just to collect data.
+3. **Live-Data Prototype Technique** - Sometimes we may need to collect some actual usage data as evidence to support ideas from discovery. This should be real code, but developed to a fraction of what a full product is - it is just to collect data.
 4. **Hybrid Prototype Technique** - Combine a wide variety of the above techniques for different purposes. An example is a Wizard of Oz prototype, where a test user interacts with a high fidelity prototype front end, but with an actual person on the other end of the interaction providing the necessary backend functionality to support the user's actions that would ultimately be provided by the full product.
 
 :::tip[High vs Low Fidelity User Prototypes]
@@ -157,14 +157,14 @@ We're essentially trying to quickly separate the good ideas from the bad, answer
 Probably the easiest to test, but should be done early on during discovery using prototypes. You need to do the following:
 
 - **Recruit users to test**: Establish a base of users to test, either through the product team's existing user base or through a recruitment agency.
-- **Preparing the test**: It is usual to conduct the usbaility test with a high-fidelity user prototype. Conduct the test with the product manager, designer and one engineer from the team. Define the set of tasks to be tested in advance. One person should administer the test and another take notes. Tests can be done in formal testing labs with video recording, in more comfortable public settings such as coffee shops, at the customer's location (where they are most comfortable and natural), or even remotely (although this is less effective in many ways).
+- **Preparing the test**: It is usual to conduct the usability test with a high-fidelity user prototype. Conduct the test with the product manager, designer and one engineer from the team. Define the set of tasks to be tested in advance. One person should administer the test and another take notes. Tests can be done in formal testing labs with video recording, in more comfortable public settings such as coffee shops, at the customer's location (where they are most comfortable and natural), or even remotely (although this is less effective in many ways).
 - **Testing your prototype**: Ensure that you frame the test situation, explaining that this prototype is not real and that you need feedback good or bad. Before jumping into your tasks, ask the user what they think the prototype is and what they think it does from its design which can lead to interesting insights. When testing, keep them in *use mode* rather than *critique mode* - what matters is if the user can easily do the task they need to do, not if they can critique the design. During testing, the main skill for you is to stay quiet and suppress your natural urge to help them out.
 
 > There is far far more guidance on pages 243-249 of Marty Cagan's book "[Inspired](/docs/product-management/research#inspired)".
 
 #### Testing Value
 
-Most of the time, users will already have a solution for the problem your product is trying to solve. You don't just need to match the features of their current solution (feature parity), you need to be substanially better than their current solution for them to migrate to your product. To test value you must:
+Most of the time, users will already have a solution for the problem your product is trying to solve. You don't just need to match the features of their current solution (feature parity), you need to be substantially better than their current solution for them to migrate to your product. To test value you must:
 
 - **Test Demand**: We can't just assume that there is a demand for the product, we need to test it - see [Demand Testing Techniques](#demand-testing-techniques)
 - **Test Qualitative Value**: Do customers love the product? Will they pay for it? And most important, if not, why not? - see [Qualitative Value Testing Techniques](#qualitative-value-testing-techniques)
@@ -173,7 +173,7 @@ Most of the time, users will already have a solution for the problem your produc
 #### Demand Testing Techniques
 
 It is very easy for products or features to be built that are not in demand, but even easier to avoid this. Some techniques to test demand are:
-- **Fake Door Demand Test**: The idea is that we put the button or menu item into the user experience exactly where we think it should be, which rather than leads to the feature, takes the uset to a page explaining that you're considering adding the feature and asking for their input on whether they would use it.
+- **Fake Door Demand Test**: The idea is that we put the button or menu item into the user experience exactly where we think it should be, which rather than leads to the feature, takes the user to a page explaining that you're considering adding the feature and asking for their input on whether they would use it.
 - **Landing Page Demand Test**: The idea is to set up a landing page for the new offering's product funnel, describing what the new offering would be as if we would if we were launching it. Rather that the CTA button on the page signing the person up for a trial, it takes them to a page explaining that you're studying the possibility of adding this new offering and you'd like to talk to them about it.
 
 Both of these techniques collect two useful things: (1) some good evidence on demand and (2) a list of users who are ready and willing to talk with you about this specific new capability.
@@ -189,7 +189,7 @@ Quantitative testing tells us what's happening (or not), but it can't tell us *w
 Qualitative testing is not about proving anything, it is about rapid learning and big insights. Marty Cagan suggests that product teams do at least *two or three qualitative tests every single week* as he sees it as the most important discovery activity.
 
 - **Interview first**: Begin the user test with a short user interview where we try to make sure our user has the problems we think she has, how she solves these problems today, and what it would take for her to switch.
-- **Usability test**: Always preceed a value test with a usability test to ensure that the user first understands what the product is and how it works. Only then can we have a discussion on the value of the product (or lack thereof). See more details in [Testing Usability](#testing-usability).
+- **Usability test**: Always precede a value test with a usability test to ensure that the user first understands what the product is and how it works. Only then can we have a discussion on the value of the product (or lack thereof). See more details in [Testing Usability](#testing-usability).
 - **Specific Value Tests**: It is important to challenge the user to be honest with us rather than nice, by using something to demonstrate value. For each of the below, we're not expecting them to actually do it, but we want to see if they would consider it to indicate value:
     - **Using money to demonstrate value**: See if the user is willing to pay for the product or feature. We're looking for the user to pull out their credit card or sign a "non-binding letter of intent" to buy the product or feature.
     - **Using reputation to demonstrate value**: See if the user is willing to recommend the product or feature to their friends or colleagues. See if they will share it online.
@@ -205,22 +205,22 @@ As a product manager/owner, it is important that you are at every single qualita
 
 While qualitative testing is all about fast learning and big insights, quantitative techniques are about collecting evidence. Sometimes we can collect enough data that we have *statistically significant results* (such as with consumer services with lots of daily traffic), and other times we'll set the bar lower and collect less usage data that we consider as useful *evidence*. The technique we select depends on the amount of traffic we have, the amount of time we have and our tolerance to risk.
 
-- **A/B Testing**: In discovery A/B testing, we ususally have the current product showing to 99% of users and the new product showing to 1% of users. We then measure the difference in usage between the two groups and see if it is statistically significant.
-- **Invite-Only Testing**: If your company is more risk averse, or you don't have enough traffic to show to 1 or 10% of users and get useful results, you can invite a small number of users to test the new product or feature. You tell them that this is an experimental version, allowing them to opt in or out of the test. Generally, groups who volutneer for this are more likely to be early adopters types - so this can be less representative of the overall user base.
+- **A/B Testing**: In discovery A/B testing, we usually have the current product showing to 99% of users and the new product showing to 1% of users. We then measure the difference in usage between the two groups and see if it is statistically significant.
+- **Invite-Only Testing**: If your company is more risk averse, or you don't have enough traffic to show to 1 or 10% of users and get useful results, you can invite a small number of users to test the new product or feature. You tell them that this is an experimental version, allowing them to opt in or out of the test. Generally, groups who volunteer for this are more likely to be early adopters types - so this can be less representative of the overall user base.
 - **Customer Discovery Program**: Here we can use existing contacts from our customer discovery program, explained earlier. These customers have already opted in to testing new versions and so will be willing to test the new product or feature.
 
 In today's world, product managers are also expected to leverage data analytics to collect evidence. There are 5 main uses of analytics in strong product teams:
 
-1. **Understanding user and customer behavior**: We can use analytics to understand if and how users and customers are using our product or feature, and how they are behaving.
+1. **Understanding user and customer behaviour**: We can use analytics to understand if and how users and customers are using our product or feature, and how they are behaving.
 2. **Measure product progress**: Set the team business objectives and measure progress against them.
 3. **Prove whether product ideas work**: We can isolate the contribution of new features, new versions of workflows or new designs by running A/B tests and comparing the results - allowing us to prove whether product ideas work.
 4. **Inform product decisions**: Today, data beats opinions - we can use analytics to inform product decisions by showing us what is working and what is not.
-5. **Inpire product work**: By exploring the data, we can find some very powerful product opportunities that we may not have otherwise considered.
+5. **Inspire product work**: By exploring the data, we can find some very powerful product opportunities that we may not have otherwise considered.
 
 :::tip
 It's important for tech product managers to have a broad understanding of the types of analytics that could be available:
 - User behaviour analytics (click paths, engagement)
-- Business analytics (active users, conversion rate, lifetime value, retrention)
+- Business analytics (active users, conversion rate, lifetime value, retention)
 - Financial analytics (<Tooltip text="ASP" definition="Average Selling Price" />, billings, <Tooltip text="time to close" definition="The time it takes to close a deal" />)
 - Performance (load time, uptime)
 - Operational costs (storage, hosting)
@@ -237,7 +237,7 @@ When we talk about validating feasibility, engineers are trying to answer severa
 - Do we have enough *time* to build this?
 - Do we need any *architectural* changes to build this?
 - Do we have on hand all the *components* we need to build this?
-- Do we understand the *dependeencies* involved in building this?
+- Do we understand the *dependencies* involved in building this?
 - Will the *performance* be acceptable?
 - Will it *scale* to the levels we need?
 - Do we have the *infrastructure* necessary to test and run this?
@@ -260,7 +260,7 @@ The product you're building not only needs to be usable, valuable and feasible, 
 - **Legal**: Will the product comply with all applicable laws and regulations? Have privacy concerns, compliance concerns, security risks, intellectual property concerns and competitive issues been considered?
 - **Business Development**: Will the product fit into any existing business relationships with customers or partners?
 - **Security**: Will the product be secure and compliant with security standards?
-- **CEO/COO/GM**: Will the product pass the CEO/COO/GM's approval?
+- **CEO/COO/GM**: Will the product pass the <Tooltip text="CEO/COO/GM" definition="Chief Executive Officer, Chief Operating Officer, General Manager" />'s approval?
 
 :::danger[Presentations vs High-fidelity user prototypes]
 Many product managers are still using presentations to validate business viability with stakeholders. Presentations are notoriously terrible for testing business viability as they are too ambiguous - stakeholders need to see real screens and designs to understand what they are signing off.
@@ -278,7 +278,7 @@ This section covers techniques to help transform the product team from mercenary
 
 #### Discovery Sprint Technique
 
-A *discovery srpint* is a one-week time box of product discovery work, designed to tackle a substantial problem or risk your product team is facing. During this week of intense discovery work, you and your team will likely explore dozens of different product ideas and approaches, with the goal of solvig some signiifcant business problem, ending the week with validating your potential solution with real users and customers.
+A *discovery sprint* is a one-week time box of product discovery work, designed to tackle a substantial problem or risk your product team is facing. During this week of intense discovery work, you and your team will likely explore dozens of different product ideas and approaches, with the goal of solving some significant business problem, ending the week with validating your potential solution with real users and customers.
 
 The five-day week starts with framing the problem by mapping the problem space, picking the problem to be solved and the target customer and the progresses into pursuing several different approaches to the solution. Th team next narrows down and fleshes out the different potential solutions, then creates a high-fidelity user prototype - finally, putting that prototype in front of actual target users and observing their reactions.
 
@@ -345,11 +345,11 @@ Given that users are now frequently asking AI agents such as ChatGPT, Gemini and
 :::
 
 :::tip[COMMUNICATING PRODUCT LEARNINGS]
-It is easy to share learning in a startup when the team is small, however as companies scale, this becomes increasingly difficult. One technqiue to aid this is to have the *head of product* do 15-30 minutes of sharing at a company all-hands or similar meeting. This is just meant to cover the bigger learnings - not the small things or where every product manager parades their work.
+It is easy to share learning in a startup when the team is small, however as companies scale, this becomes increasingly difficult. One technique to aid this is to have the *head of product* do 15-30 minutes of sharing at a company all-hands or similar meeting. This is just meant to cover the bigger learnings - not the small things or where every product manager parades their work.
 
 This is important as it:
 - Shares learnings for things that went well and things that didn't - and may trigger further insights from other teams
-- Is a useful way for the various product teams to keep aprised of what others are learning
+- Is a useful way for the various product teams to keep apprised of what others are learning
 - Focuses product teams on big learnings
 - Culturally enforces transparency and how critical continuous learning is
 :::

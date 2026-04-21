@@ -133,7 +133,7 @@ The most effective engineering organisations treat the SDLC as a continuous lear
 AI transforms raw data into actionable intelligence:
 
 - **Anomaly Detection:** Tools like [Datadog](https://www.datadoghq.com/) and [Dynatrace](https://www.dynatrace.com/) use AI to automatically detect anomalies without setting manual thresholds.
-- **Product and user analytics:** Tools like [Amplitude](https://amplitude.com/), [Heap](https://www.heap.io/), and [Mixpanel](https://mixpanel.com/) help observe user behavior and guide product decisions.
+- **Product and user analytics:** Tools like [Amplitude](https://amplitude.com/), [Heap](https://www.heap.io/), and [Mixpanel](https://mixpanel.com/) help observe user behaviour and guide product decisions.
 - **Log Analysis:** [Sumo Logic](https://www.sumologic.com/) and [Logz.io](https://logz.io/) use ML to cluster millions of log lines into patterns, helping find the "needle in the haystack."
 - **Alert Fatigue:** AI helps group related alerts into a single incident, reducing noise for the on-call engineers. AIOps platforms such as [Moogsoft](https://www.moogsoft.com/) and [BigPanda](https://www.bigpanda.io/) support this.
 :::

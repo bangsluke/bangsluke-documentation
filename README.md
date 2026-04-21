@@ -52,7 +52,7 @@
 
 This repository powers the **bangsluke documentation site**, built with Docusaurus and published at [bangsluke-documentation.netlify.app](https://bangsluke-documentation.netlify.app/).
 
-It captures practical guidance and reference material across product management, agile delivery, SDLC, release workflows, project writeups, and reusable development notes.
+It captures practical guidance and reference material across product management, agile delivery, SDLC, release workflows, project write-ups, and reusable development notes.
 
 ## Documentation Areas
 
@@ -111,7 +111,7 @@ Build output is generated into `build/`.
 npm run serve
 ```
 
-Use this to verify production behavior (including service worker behavior) before deployment.
+Use this to verify production behaviour (including service worker behaviour) before deployment.
 
 ## Developer Commands
 
@@ -142,7 +142,7 @@ This site is configured as a Progressive Web App using `@docusaurus/plugin-pwa`,
    ```bash
    npm run serve
    ```
-3. Open `http://localhost:3000/?offlineMode=true` to test offline activation behavior.
+3. Open `http://localhost:3000/?offlineMode=true` to test offline activation behaviour.
 
 ## Contributing
 

@@ -56,7 +56,7 @@ A good roadmap helps teams:
 - Adapt to new information while keeping the product moving forward
 
 :::danger[The Issue with Roadmaps]
-Even with the best of intentions, product roadmaps typically lead to very poor business results. Most product ideas aren't going to work from lack of value, usability, feasibility or business viability. But roadmaps are needed in most businesses to give visiblity of what items are being worked on and of timing for the business to make plans around the product.
+Even with the best of intentions, product roadmaps typically lead to very poor business results. Most product ideas aren't going to work from lack of value, usability, feasibility or business viability. But roadmaps are needed in most businesses to give visibility of what items are being worked on and of timing for the business to make plans around the product.
 
 A roadmap is only as good as the team's ability to deliver on it. Often, roadmaps cause issues with people interpreting items on the roadmap as commitments and the roadmap loses credibility quickly when they are not delivered on. A better approach for building a roadmap is to prioritise business results, rather than product ideas and to introduce the concept of **high-integrity commitments**.
 :::
@@ -116,7 +116,7 @@ Initiatives might include: redesigned onboarding, in-app tips, and email sequenc
 Global AI tools are streamlining the planning process:
 
 - **Meeting Automation:** Tools can transcribe and summarize meetings such as the AI feature in [Microsoft Teams](https://www.microsoft.com/en-us/microsoft-teams/group-chat-software), extracting action items automatically.
-- **Agile Enhancements:** In <Tooltip text="Agile" definition="A set of principles (from the Agile Manifesto) that favour iterative delivery, collaboration, and responding to change over following a fixed plan." />, AI such as [Zenhub](https://www.zenhub.com/) analyzes historical data to predict sprint velocities and suggest optimal backlogs.
+- **Agile Enhancements:** In <Tooltip text="Agile" definition="A set of principles (from the Agile Manifesto) that favour iterative delivery, collaboration, and responding to change over following a fixed plan." />, AI such as [Zenhub](https://www.zenhub.com/) analyses historical data to predict sprint velocities and suggest optimal backlogs.
 - **Planning Tools:** [Atlassian Jira](https://www.atlassian.com/software/jira) uses AI to help teams make data-driven decisions in planning, and can identify potential risks and bottlenecks.
 - **Customer intelligence:** Tools like [Dovetail](https://dovetail.com/) centralize and analyze customer feedback and research to inform requirements and design.
 :::
