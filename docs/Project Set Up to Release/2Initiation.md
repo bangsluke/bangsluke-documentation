@@ -32,7 +32,7 @@ If using either Cursor or Antigravity, you will already have a User Rule/Global 
 For setting up the Project Rules, you can follow the notes in the Obsidian notes or follow below:
 
 - To set up Project rules, open the project in Cursor and then follow the instructions in the following link to automatically set up the correct Project rule files for your project.
-  - [GitHub - Renvia-code/best-cursor-rules: Best Cursor Rules is a curated collection of 33 high-quality Cursor AI rules that actually work. Includes a Setup Wizard that analyzes your project and generates customized rules automatically.](https://github.com/Renvia-code/best-cursor-rules)
+  - [GitHub - Renvia-code/best-cursor-rules: Best Cursor Rules is a curated collection of 33 high-quality Cursor AI rules that actually work. Includes a Setup Wizard that analyses your project and generates customized rules automatically.](https://github.com/Renvia-code/best-cursor-rules)
 - Answer the questions in the Setup Wizard to generate the correct Project rule files for your project.
 
 :::note
@@ -277,7 +277,7 @@ See [Code - Pre-Commit Hooks](../SDLC/code#pre-commit-hooks) for more detail on 
 
 <PageBreak />
 
-### <Tooltip text="ESLint" definition="A tool that analyzes JavaScript/TypeScript code for bugs, style issues, and best-practice violations." /> and <Tooltip text="Prettier" definition="A code formatter that enforces a consistent style (indentation, quotes, line breaks) across the codebase." /> Config {#eslint-and-prettier-config}
+### <Tooltip text="ESLint" definition="A tool that analyses JavaScript/TypeScript code for bugs, style issues, and best-practice violations." /> and <Tooltip text="Prettier" definition="A code formatter that enforces a consistent style (indentation, quotes, line breaks) across the codebase." /> Config {#eslint-and-prettier-config}
 
 <img src="https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white" alt="ESLint" />
 <img src="https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=black" alt="Prettier" />

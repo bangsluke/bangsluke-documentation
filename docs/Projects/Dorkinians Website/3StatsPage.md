@@ -169,7 +169,7 @@ Position is determined by the captain's assessment of where the player played th
 If the player selected has ever played as a goalkeeper, the Defensive Record section will also include goalkeeper specific statistics such as saves
 :::
 
-10. **Distance Travelled** - shows the total distance round trip the player has traveled to away matches, calculated from the club's home ground (Pixham Sports Ground) to each opposition ground
+10. **Distance Travelled** - shows the total distance round trip the player has travelled to away matches, calculated from the club's home ground (Pixham Sports Ground) to each opposition ground
 11. **Opposition Locations** - displays a map showing all the locations where the player has played away matches, providing a visual representation of their travel history
 12. **Opposition Performance** - shows how the player performs against different opposition teams, rated by Goals and Assists per appearance against each opposition
 13. **Fantasy Points** - displays the player's fantasy football points total and breakdown, as well as the player's highest scoring week and month
@@ -226,7 +226,7 @@ The Player Stats section includes functionality to share player statistics as im
 - **Card Stats**: Yellow and red card statistics
 - **Penalty Stats**: Penalty-related statistics
 - **Fantasy Points**: Fantasy points breakdown
-- **Distance Travelled**: Distance traveled visualization
+- **Distance Travelled**: Distance travelled visualization
 - **Minutes per Stats**: Efficiency metrics visualization
 - **Monthly Performance**: Monthly performance chart
 - **Awards and Achievements**: Awards and achievements display
@@ -387,7 +387,7 @@ The comparison page still works with filters (see the [Filters](#filters) sectio
 
 ### Radar Charts
 
-A radar chart provides a visual comparison of the two selected players across various statistics. Each axis represents a different statistic, and each player is represented by a different colored area.
+A radar chart provides a visual comparison of the two selected players across various statistics. Each axis represents a different statistic, and each player is represented by a different coloured area.
 
 You can change the statistic being displayed in the chart using the dropdown above the chart.
 

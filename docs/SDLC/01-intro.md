@@ -31,7 +31,7 @@ The classical SDLC typically follows a series of distinct phases. Each phase rel
 5.  **[Release](./06-release.md):** Packaging and preparing the software for delivery.
 6.  **[Deploy](./07-deploy.md):** Moving the software to production environments.
 7.  **[Operate](./08-operate.md):** Running the software in the real world.
-8.  **[Monitor](./09-monitor.md):** Observing system health and user behavior.
+8.  **[Monitor](./09-monitor.md):** Observing system health and user behaviour.
 
 <PageBreak />
 

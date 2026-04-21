@@ -47,7 +47,7 @@
 - **`components/lender/`:** Lender-facing dashboard tabs and cards.
 - **`components/shared/`:** Reusable primitives shared by both audiences (KPI cards, filters, shared funnel components, chart wrappers).
 - **`components/shell/`:** Application shell and navigation orchestration (`AppShell`) that composes views/tabs and lazy-loads tab content.
-- **Why this split exists:** It keeps audience-specific behavior separate while preserving shared UI/interaction consistency across both dashboards.
+- **Why this split exists:** It keeps audience-specific behaviour separate while preserving shared UI/interaction consistency across both dashboards.
 
 ### Data, state, and metric computation layers
 
@@ -62,12 +62,12 @@
 - **Feature-adjacent tests:** Many dashboard and shared component tests live next to implementation files (for local discoverability during tab-level changes).
 - **Shared test support and smoke coverage (`src/test/`):** Reusable fixtures/setup plus cross-feature smoke tests for high-risk shared components.
 - **Utility-level tests (`src/utils/*.test.ts`):** Formula and aggregation correctness checks where most business risk lives.
-- **Why this split exists:** Test organization mirrors runtime boundaries, making it easier to change one tab/component without breaking shared metric behavior silently.
+- **Why this split exists:** Test organization mirrors runtime boundaries, making it easier to change one tab/component without breaking shared metric behaviour silently.
 
 ### Why the repo is structured this way overall
 
 - **Audience boundary first:** Internal and lender journeys are separated by folder to reduce accidental coupling and privacy-risky cross-use of data views.
-- **Shared building blocks second:** Common controls/components/metrics are centralized so both dashboards remain visually and behaviorally aligned.
+- **Shared building blocks second:** Common controls/components/metrics are centralized so both dashboards remain visually and behaviourally aligned.
 - **Change safety third:** Tab-level code lives in focused modules and is lazy-loaded by the shell, lowering blast radius for incremental feature updates.
 - **Documentation as part of delivery:** Context and explanation docs live in-repo to keep assumptions, trade-offs, and metric definitions versioned with code.
 
@@ -119,7 +119,7 @@
   - Daily mode: group rows by `createdAt` day (creation-only view).  
   - Monthly `Created`: group rows by `createdAt` month.  
   - Monthly `Completed`: include completion-stage rows and group by `completionDate` month.
-- **Control behavior:** Toggle is shown only in monthly mode (`Created` default). Daily mode keeps creation-only behavior and hides the toggle.
+- **Control :** Toggle is shown only in monthly mode (`Created` default). Daily mode keeps creation-only  and hides the toggle.
 - **Value to user:** Internal users can identify momentum shifts and cyclicality quickly.
 
 ![Internal Dashboard Overview 2](https://bangsluke-assets.netlify.app/images/acre-software-engineering-task/1-Internal-Overview-2.png)
@@ -138,13 +138,13 @@
      - `cumulativeConversion = stageCount / cohortCount`
   6. Compute `medianDaysFromPrev` for each transition after Lead.
 - **How `Stage distribution` is calculated:** Group by canonical stage and show `shareOfTotal = stageCount / totalEligibleCases`.
-- **Exit analysis behavior:** Separate right-hand panel showing:
+- **Exit analysis :** Separate right-hand panel showing:
   - `exitRate = exitedCases / cohortCount`
   - exited-at-stage distribution based on furthest reached milestone before exit.
   - **How exits are identified:** `exitedCases` are cohort rows where `notProceedingDate` exists **or** `caseStatus === NOT_PROCEEDING`.
   - **How exited-at-stage is assigned:** For each exited row, evaluate milestone dates in order (`createdAt`, `recommendationDate`, `firstSubmittedDate`, `firstOfferDate`, `completionDate`) and take the furthest milestone date that is on/before `notProceedingDate` (or furthest available milestone when no explicit exit date exists). Map that index to pipeline stage and increment that stage bucket.
   - **How breakdown percentages are calculated:** `stageExitShare = exitedAtStageCount / exitedCases` (denominator is exited rows, not full cohort).
-- **In-flight warning behavior:** Shows when selected range end is too recent relative to typical lifecycle; warns that completion may be artificially low.
+- **In-flight warning :** Shows when selected range end is too recent relative to typical lifecycle; warns that completion may be artificially low.
 - **PT toggle rationale:** PT journeys may skip normal progression stages; excluding them improves comparability of standard pipeline conversion metrics.
 - **Value to user:** Internal users can separate throughput issues (timing), conversion leakage (stage/cumulative rates), and attrition concentration (exit stage mix) in one panel.
 
@@ -208,7 +208,7 @@
 #### HIGHEST AVG NET REVENUE CASE TYPE (KPI Card)
 - **What it shows:** Case type with the highest average net revenue in the period (excluding `Other`). In plain terms: Which primary case segment yields the strongest average revenue.
 - **How it is calculated:** Compute average net revenue by case type, exclude `Other`, and select the highest valid value.
-- **Fallback behavior:** Shows `N/A` with no-valid-data messaging when average revenue cannot be computed.
+- **Fallback :** Shows `N/A` with no-valid-data messaging when average revenue cannot be computed.
 - **Value to user:** Internal teams can identify the most commercially efficient case segment at a glance.
 
 #### INITIAL RATE TYPE SHARE (Chart)
@@ -265,13 +265,13 @@
 #### BEST COMPLETION RATE (KPI Card)
 - **What it shows:** Highest lender completion rate among lenders above minimum volume threshold. In plain terms: Top-performing lender for getting cases to completion.
 - **How it is calculated:** Completion rate per lender = completed cases / total lender cases; take max where lender case count is `>=100`.
-- **Display behavior:** KPI subtitle includes the winning rate and the eligibility rule (`100+ cases`) to make the volume guardrail explicit.
+- **Display :** KPI subtitle includes the winning rate and the eligibility rule (`100+ cases`) to make the volume guardrail explicit.
 - **Value to user:** Internal users can benchmark what "good" performance looks like.
 
 #### AVG REVENUE PER LENDER (KPI Card)
 - **What it shows:** Mean commercial output per active lender in the filtered period. In plain terms: Typical revenue generated by each lender in this period.
 - **How it is calculated:** Sum valid `totalCaseRevenue` values across filtered rows and divide by number of active lenders.
-- **Fallback behavior:** Shows `N/A` when there are no active lenders or no valid revenue rows.
+- **Fallback :** Shows `N/A` when there are no active lenders or no valid revenue rows.
 - **Value to user:** Internal teams can compare concentration and lender productivity in one KPI strip.
 
 #### TOP LENDERS BY CASE VOLUME (Chart)
@@ -308,19 +308,19 @@
 #### AVERAGE LTV (KPI Card)
 - **What it shows:** Mean LTV over valid range rows. In plain terms: Typical leverage level across current business.
 - **How it is calculated:** Average LTV values where LTV is non-null and within accepted bounds.
-- **Trend badge behavior:** Shows previous-period delta for non-year filters; shows `No data` when `This year` is selected.
+- **Trend badge :** Shows previous-period delta for non-year filters; shows `No data` when `This year` is selected.
 - **Value to user:** Internal teams monitor overall risk appetite in platform flow.
 
 #### HIGH-LTV CASES (85%+) (KPI Card)
 - **What it shows:** Proportion of valid rows with LTV >= 0.85. In plain terms: Share of cases in higher-risk leverage range.
 - **How it is calculated:** Count high-LTV rows / total valid-LTV rows.
-- **Trend badge behavior:** Shows previous-period delta for non-year filters; shows `No data` when `This year` is selected.
+- **Trend badge :** Shows previous-period delta for non-year filters; shows `No data` when `This year` is selected.
 - **Value to user:** Internal users can quickly track risk pressure in incoming pipeline.
 
 #### VERY HIGH-LTV CASES (95%+) (KPI Card)
 - **What it shows:** Proportion of valid rows with LTV >= 0.95. In plain terms: Share of cases at very high leverage.
 - **How it is calculated:** Count very-high-LTV rows / total valid-LTV rows.
-- **Trend badge behavior:** Shows previous-period delta for non-year filters; shows `No data` when `This year` is selected.
+- **Trend badge :** Shows previous-period delta for non-year filters; shows `No data` when `This year` is selected.
 - **Value to user:** Internal teams can monitor tail risk and product suitability exposure.
 
 #### LTV TREND DIRECTION (KPI Card)
@@ -343,7 +343,7 @@
 #### TOP LENDERS BY AVERAGE LTV (Table)
 - **What it shows:** Top-volume lenders ranked with avg LTV, high-LTV share, and high-LTV share delta vs market average. In plain terms: Which major lenders carry higher-leverage books and who over-indexes against market.
 - **How it is calculated:** Restrict to top lenders by volume, compute lender LTV metrics, and derive lender high-LTV share minus market high-LTV share.
-- **Filter behavior:** `Exclude blank lender` is enabled by default (matching Lender Share), with excluded count/share helper text.
+- **Filter :** `Exclude blank lender` is enabled by default (matching Lender Share), with excluded count/share helper text.
 - **Value to user:** Internal teams can target risk reviews where exposure is concentrated.
 
 > [Back to Table of Contents](#table-of-contents)
@@ -386,7 +386,7 @@
 - **How it is calculated:**  
   - `Created`: group rows by `createdAt` month and chart counts.  
   - `Completed`: include only completion-stage rows and group by `completionDate` month.
-- **Control behavior:** `Created` is selected by default; selecting `Completed` updates the chart series, subtitle, and accessibility label.
+- **Control :** `Created` is selected by default; selecting `Completed` updates the chart series, subtitle, and accessibility label.
 - **Value to user:** Internal teams can validate growth/decline narratives with data.
 
 #### COMPLETION VELOCITY OVER TIME (Chart)
@@ -430,7 +430,7 @@
 #### BLANK LENDER ROWS BEYOND APPLICATION STAGE (KPI Card)
 - **What it shows:** Blank-lender rows in pre-application through completion statuses. In plain terms: Missing lender data across active/in-flight and later lifecycle stages.
 - **How it is calculated:** Blank lender condition + status in: `PRE_APPLICATION`, `REVIEW`, `APPLICATION_SUBMITTED`, `REFERRED`, `AWAITING_VALUATION`, `AWAITING_OFFER`, `OFFER_RECEIVED`, `EXCHANGE`, `COMPLETE`.
-- **Tooltip behavior:** Card includes a tooltip listing all included statuses.
+- **Tooltip :** Card includes a tooltip listing all included statuses.
 - **Display rule:** KPI subtitle percentages are rounded to 1 decimal place.
 - **Value to user:** Internal users can prioritize fixes where operational impact is highest.
 
@@ -520,7 +520,7 @@
 - **How it is calculated:**  
   - `Created`: group selected lender rows by `createdAt` month.  
   - `Completed`: include only completion-stage rows for the selected lender and group by `completionDate` month.
-- **Control behavior:** `Created` is the default selected state; `Completed` updates the chart series, subtitle, and accessibility label.
+- **Control :** `Created` is the default selected state; `Completed` updates the chart series, subtitle, and accessibility label.
 - **Value to user:** Lenders can separate pipeline generation trend from actual completion throughput.
 
 ![Lender Dashboard Overview 2](https://bangsluke-assets.netlify.app/images/acre-software-engineering-task/2-Lender-Overview-2.png)
@@ -539,13 +539,13 @@
      - `cumulativeConversion = stageCount / cohortCount`
   6. Compute `medianDaysFromPrev` for each transition after Lead.
 - **How `Stage distribution` is calculated:** Group by canonical stage and show `shareOfTotal = stageCount / totalEligibleCases`.
-- **Exit analysis behavior:** Separate right-hand panel showing:
+- **Exit analysis :** Separate right-hand panel showing:
   - `exitRate = exitedCases / cohortCount`
   - exited-at-stage distribution based on furthest reached milestone before exit.
   - **How exits are identified:** `exitedCases` are cohort rows where `notProceedingDate` exists **or** `caseStatus === NOT_PROCEEDING`.
   - **How exited-at-stage is assigned:** For each exited row, evaluate milestone dates in order (`createdAt`, `recommendationDate`, `firstSubmittedDate`, `firstOfferDate`, `completionDate`) and take the furthest milestone date that is on/before `notProceedingDate` (or furthest available milestone when no explicit exit date exists). Map that index to pipeline stage and increment that stage bucket.
   - **How breakdown percentages are calculated:** `stageExitShare = exitedAtStageCount / exitedCases` (denominator is exited rows, not full cohort).
-- **In-flight warning behavior:** Shows when selected range end is too recent relative to typical lifecycle; warns that completion may be artificially low.
+- **In-flight warning :** Shows when selected range end is too recent relative to typical lifecycle; warns that completion may be artificially low.
 - **PT toggle rationale:** PT journeys may skip normal progression stages; excluding them improves comparability of standard pipeline conversion metrics.
 - **Value to user:** Lenders can separate throughput issues (timing), conversion leakage (stage/cumulative rates), and attrition concentration (exit stage mix) in one panel.
 
@@ -578,7 +578,7 @@
 #### YOUR PIPELINE VS MARKET CONVERSION RATES (Table)
 - **What it shows:** Stage cards for all pipeline stages including `NOT_PROCEEDING`, with lender volume and lender/market stage share. In plain terms: Where your cases sit in the funnel compared with market stage distribution.
 - **How it is calculated:** Stage count from status-to-stage pipeline mapping; stage share = stage count / total included cases after excluding system statuses with no mapped stage.
-- **Tooltip behavior:** Each card tooltip includes the internal stage definition text plus lender and market conversion values.
+- **Tooltip :** Each card tooltip includes the internal stage definition text plus lender and market conversion values.
 - **Value to user:** Lenders can isolate stage-level volume and share gaps without crowded inline labels.
 
 > [Back to Table of Contents](#table-of-contents)
@@ -690,8 +690,8 @@
   - exited-at-stage breakdown bars
   - `stagesSkipped` quality counter
   - **How exit analysis is calculated:** Uses the same shared logic as Internal Funnel (`computePipelineFunnel -> buildExitAnalysis`): exited rows are `notProceedingDate` rows or `NOT_PROCEEDING` statuses, `exitRate = exitedCases / cohortCount`, and each exited row is assigned to the furthest reached milestone stage at/before exit; breakdown shares are normalized by `exitedCases`.
-- **Interaction behavior:** Bars use shared tooltip + hover/focus fade behavior for readability and visual consistency with other dashboard distributions.
-- **PT toggle behavior:** Enabled by default; keeps lender conversion metrics comparable to the standard (non-PT) lifecycle unless user explicitly includes PT.
+- **Interaction :** Bars use shared tooltip + hover/focus fade  for readability and visual consistency with other dashboard distributions.
+- **PT toggle :** Enabled by default; keeps lender conversion metrics comparable to the standard (non-PT) lifecycle unless user explicitly includes PT.
 - **Value to user:** Lenders can prioritize the highest-impact intervention stage with evidence on both conversion loss and timing delay.
 
 ![Lender Dashboard Pipeline 2](https://bangsluke-assets.netlify.app/images/acre-software-engineering-task/2-Lender-Pipeline-2.png)
@@ -699,7 +699,7 @@
 #### DROP-OFF REASONS (Table)
 - **What it shows:** Top grouped reasons for lender not-proceeding cases, shown in an internal-overview-style table with market comparison bars and a recommendation column. In plain terms: Why your cases are being lost.
 - **How it is calculated:** Group lender `NOT_PROCEEDING` rows by reason, rank by count, title-case all displayed reason labels, and overlay lender share vs market share per reason.
-- **Recommendation behavior:** The table includes lender-specific `Recommended Follow Up Actions` text by reason, and keeps the note `Other includes unclassified not-proceeding reasons.` at the bottom of the card.
+- **Recommendation :** The table includes lender-specific `Recommended Follow Up Actions` text by reason, and keeps the note `Other includes unclassified not-proceeding reasons.` at the bottom of the card.
 - **Value to user:** Lenders can prioritize process/product changes with highest loss impact.
 
 ![Lender Dashboard Pipeline 3](https://bangsluke-assets.netlify.app/images/acre-software-engineering-task/2-Lender-Pipeline-3.png)
@@ -792,7 +792,7 @@
 - **Value to user:** Lenders can judge competitiveness in a broker-sensitive metric.
 
 #### WHAT-IF MODELLING (Section)
-- **What it shows:** Interactive target-days slider for submission-to-offer speed with live modeled incremental revenue this quarter. In plain terms: A quick scenario test for “if we got faster, how much extra revenue could clear this quarter?”
+- **What it shows:** Interactive target-days slider for submission-to-offer speed with live modelled incremental revenue this quarter. In plain terms: A quick scenario test for “if we got faster, how much extra revenue could clear this quarter?”
 - **How it is calculated:** Uses current lender speed, market average speed, and in-flight revenue in the latest creation quarter; applies a proportional improvement heuristic from current rounded speed to selected target days to estimate incremental cleared revenue and projected quarter total.
 - **Value to user:** Lenders can connect operational speed improvements to commercial impact in real time.
 

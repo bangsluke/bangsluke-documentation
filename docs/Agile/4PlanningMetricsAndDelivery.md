@@ -26,7 +26,7 @@ Agile planning should connect strategy to delivery through clear outcomes, incre
 - Estimate relative effort (story points/t-shirt sizes) for planning.
 - Forecast with historical throughput/velocity ranges.
 - Separate confidence discussions from commitments.
-- Keep estimates lightweight; avoid precision theater.
+- Keep estimates lightweight; avoid precision theatre.
 
 > Read more at [Atlassian: Story points and estimation](https://www.atlassian.com/agile/project-management/estimation)
 
