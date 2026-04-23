@@ -59,6 +59,8 @@ I treated this exercise as a way of exploring the various optimal graphics for a
   - The Pipeline Funnel mode and LTV-focused calculation metrics remove any cases with an LTV greater than 1.5
   - Blank lender rows are still included in the market average as they are treated as missing data and not excluded from the calculation.
 
+> [Back to Table of Contents](#table-of-contents)
+
 ### Future Work
 
 - To take this piece of work further, I would do the following:
@@ -66,6 +68,8 @@ I treated this exercise as a way of exploring the various optimal graphics for a
   - It would then help to exclude certain data to build the most accurate and useful dashboard for the users
   - I'd emphasise of ensuring the data is properly populated in the "Data Quality" section
   - I'd conduct user interviews with both internal Acre users and Lenders to review the dashboard and gather feedback which key metrics to explore further.
+  - I'd improve the shared logic of LTV inclusion, ensuring all metrics have the same exclusion logic for LTVs greater than 1.5 after understanding the logic for LTVs higher than 1.
+  - I'd extend the insights logic, either grouping them onto the Insights tab or distributing banners throughout the dashboard to highlight the insights.
 
 > [Back to Table of Contents](#table-of-contents)
 
@@ -90,6 +94,8 @@ From an implementation perspective, I kept the module as a React + TypeScript SP
 - Some benchmark formulas are intentionally simplified for consistency and explainability.
 - For this challenge, parsing and aggregation are performed client-side; in production, I would move aggregation to API-backed services and use worker-based parsing/background processing to keep the UI responsive at larger data volumes.
 
+> [Back to Table of Contents](#table-of-contents)
+
 ### Process
 
 I started the task by using Claude to identify the detail behind each header and ensuring that I had a clear understanding of the data and terminology used. I have a lot of domain knowledge to pick up about the mortgage industry although the terminology quickly became obvious to me as I read through the data.
@@ -106,6 +112,8 @@ In a working environment, my behaviour towards regular git pushes would change t
 
 On Monday morning I cleaned up the repo and README.md file and committed the final version to GitHub for submission.
 
+> [Back to Table of Contents](#table-of-contents)
+
 ### Data Quality
 
 #### Current handling in this implementation
@@ -116,6 +124,8 @@ On Monday morning I cleaned up the repo and README.md file and committed the fin
 - Outlier filtering is applied for some risk views (e.g. very high LTV exclusions) to avoid misleading summaries.
 - The "initial_pay_rate" values came in in the format of 454000 which I have assumed to be 4.54% based on realistic rates from the market.
 
+> [Back to Table of Contents](#table-of-contents)
+
 #### Known data limitations
 
 - Important fields have low population in places (especially lender and mortgage value), which affects confidence for some lender-level metrics.
@@ -123,6 +133,8 @@ On Monday morning I cleaned up the repo and README.md file and committed the fin
 - The market average in lender pages uses selected-period row averages; production logic would require stricter completeness and quality gating.
 - In a production app, I would validate the data at ingestion and route missing/invalid data such as missing lender rows to a quarantine stream with reason codes and track blank-lender rate as a data quality SLI with alert thresholds.
 - For the Median Days from recommendation to submission, the value I am using is coming out as 0, as sometimes the recommendation_date is after the first_submitted_date so my definition of this needs to be reviewed with better understanding of the process.
+
+> [Back to Table of Contents](#table-of-contents)
 
 #### Pipeline stage grouping assumptions
 
@@ -136,9 +148,13 @@ To avoid cluttering the dashboard funnel, I added a grouping for case status, li
 - Exit stage: `NOT_PROCEEDING`
 - System admin states excluded: `IMPORTING`, `IMPORTED_COMPLETE`
 
+> [Back to Table of Contents](#table-of-contents)
+
 ### Further Ideation
 
 With additional time, user research would guide feature prioritization before implementation. Adding proper discovery to the process will ensure that the features are actually needed and valuable to the users. However, below I have outlined some possible areas for extension.
+
+> [Back to Table of Contents](#table-of-contents)
 
 #### Product and UX priorities
 
@@ -147,12 +163,16 @@ With additional time, user research would guide feature prioritization before im
 - Accessibility improvements (ARIA semantics, assistive technology support) are identified as a next-step focus area.
 - Performance and polish improvements would target loading behavior (adding skeletons), tooltips, micro-interactions, and navigation smoothness.
 
+> [Back to Table of Contents](#table-of-contents)
+
 #### Potential feature extensions
 
 - Additional filtering across case type/status and other dimensions for deeper investigative workflows.
 - More granular export options by chart/table/page instead of only broad exports.
 - With more time, I would also consider adding extra pipeline analysis, investigating more cases stuck in the pipeline at certain stages to understand why and what can be done to improve the process. For this demo, I have added a few insights to the lender dashboard for cases stalled at submitted to give a feel for the type of analysis that could be done.
 - If it was known that a lenders entire mortgage case profile was stored on Acre, we could add additional information such as how much total loan value they are committed to.
+
+> [Back to Table of Contents](#table-of-contents)
 
 #### Data and modelling enhancements desired
 
@@ -564,103 +584,63 @@ Data completeness lag (newer months often have less complete financial fields).
 ![Lender Dashboard Overview](https://bangsluke-assets.netlify.app/images/acre-software-engineering-task/2-Lender-Overview-1.png)
 
 #### CONVERSION VELOCITY RANK (KPI Card)
-- **What it shows:** Position among lenders by average days-to-offer (with minimum-volume eligibility), shown as `X of Y`. In plain terms: Your speed leaderboard position without extra rank label copy.
-- **How it is calculated:** Compute eligible lender speeds, sort ascending, and return rank/total where eligibility requires at least 5 period rows and a non-zero average days-to-offer.
-- **Tooltip note:** Card includes an info tooltip (`Conversion rank eligibility`) clarifying that only lenders with `>= 5` cases and valid submitted-to-offer dates are counted in `Y`.
-- **Denominator caveat:** `Y` can be lower than Internal Lender Share `Number of lenders` because lenders without sufficient volume or valid speed dates are excluded from ranking.
-- **Value to user:** Lenders get context beyond absolute days.
-- **Layout note:** In the overview KPI strip, this is the first (left-most) card.
+- **What it shows:** Position among lenders by average days-to-offer (`firstSubmittedDate` to `completionDate`), including (with minimum-volume eligibility >= 5).
+- **Value to user:** Lenders get context beyond absolute days and how they compare to the market.
 
 #### YOUR CASES (KPI Card)
-- **What it shows:** Primary value now displays lender case count; market share is shown as supporting text. In plain terms: How many cases you have, with your completion market share as context.
-- **How it is calculated:** Count lender rows; market share based on lender completed cases vs market completed cases.
+- **What it shows:** How many cases you have, with your completion market share as context. Market share based on lender completed cases vs market completed cases.
 - **Value to user:** Keeps the most actionable quantity (case volume) prominent while preserving share context.
 
 #### TOTAL NET REVENUE (KPI Card)
-- **What it shows:** Sum of lender `netCaseRevenue` values, with `Total loan value` shown as supporting text on the same card. In plain terms: Your aggregate net revenue and the corresponding aggregate loan value for the selected period.
-- **How it is calculated:** Sum positive lender `netCaseRevenue` for the main value, and sum positive lender `mortgageAmount` for the subtitle.
+- **What it shows:** Sum of lender `netCaseRevenue` values, with `Total loan value` shown.
 - **Value to user:** Surfaces commercial outcome and lending scale together without requiring a separate panel.
-- **Layout note:** In the overview KPI strip, this card appears directly after `YOUR CASES`.
 
 #### AVG LOAN SIZE (KPI Card)
-- **What it shows:** Mean positive mortgage amount for selected lender. In plain terms: Typical loan size for your submitted business.
-- **How it is calculated:** Average mortgage amount over valid lender rows.
+- **What it shows:** Typical loan size for your submitted business.
 - **Value to user:** Lenders can understand portfolio value profile.
 
 #### COMPLETION RATE (KPI Card)
-- **What it shows:** Lender completion ratio with market-average comparator. In plain terms: What portion of your cases finish, and how that compares.
-- **How it is calculated:** Lender completed cases / lender total cases; compare to market equivalent.
+- **What it shows:** What portion of your cases finish, and how that compares. Lender completed cases / lender total cases; compare to market equivalent.
 - **Value to user:** Lenders can benchmark operational effectiveness directly.
 
 #### AVG DAYS TO OFFER (KPI Card)
-- **What it shows:** Lender mean days submission-to-offer vs market average. In plain terms: How fast you convert submissions into offers.
-- **How it is calculated:** Average day difference using `firstSubmittedDate -> firstOfferDate` only (rows must have both dates). `lastSubmittedDate` is not used in this KPI.
+- **What it shows:** How fast you convert submissions into offers. Average day difference using `firstSubmittedDate -> firstOfferDate` only (rows must have both dates).
 - **Value to user:** Lenders can quantify speed competitiveness, a key broker decision factor.
 
 #### MONTHLY VOLUME (Chart)
-- **What it shows:** Month-level lender case volumes with trend line and a top-right metric toggle (`Created` / `Completed`). In plain terms: Your monthly case trend, with the option to switch between case creation and case completions.
-- **How it is calculated:**  
-  - `Created`: group selected lender rows by `createdAt` month.  
-  - `Completed`: include only completion-stage rows for the selected lender and group by `completionDate` month.
-- **Control :** `Created` is the default selected state; `Completed` updates the chart series, subtitle, and accessibility label.
+- **What it shows:** Your monthly case trend, with the option to switch between case creation (createdAt) and case completions (completionDate).
 - **Value to user:** Lenders can separate pipeline generation trend from actual completion throughput.
+
+---
 
 ![Lender Dashboard Overview 2](https://bangsluke-assets.netlify.app/images/acre-software-engineering-task/2-Lender-Overview-2.png)
 
 #### PIPELINE FUNNEL (Chart)
-- **What it shows:** Shared `FunnelPanel` with two modes (`Pipeline funnel` for cohort conversion/timing/exit analysis and `Stage distribution` for current-status composition). In plain terms: Either how a created-in-period cohort progresses through the journey, or where current-period cases currently sit by stage.
-  - `Pipeline funnel` (cohort conversion + timing + exit analysis)
-  - `Stage distribution` (current-status composition view)
-- **How `Pipeline funnel` is calculated:**  
-  1. Build cohort from `createdAt` in selected period.  
-  2. Exclude `IMPORTING` / `IMPORTED_COMPLETE` and `ltv > 1.5`.  
-  3. Optionally exclude PT (`pt = true`, default ON).  
-  4. Count milestone reach (`recommendationDate`, `firstSubmittedDate`, `firstOfferDate`, `completionDate`).  
-  5. Compute:
-     - `stageConversion = stageCount / previousStageCount`
-     - `cumulativeConversion = stageCount / cohortCount`
-  6. Compute `medianDaysFromPrev` for each transition after Lead.
-- **How `Stage distribution` is calculated:** Group by canonical stage and show `shareOfTotal = stageCount / totalEligibleCases`.
-- **Exit analysis :** Separate right-hand panel showing:
-  - `exitRate = exitedCases / cohortCount`
-  - exited-at-stage distribution based on furthest reached milestone before exit.
-  - **How exits are identified:** `exitedCases` are cohort rows where `notProceedingDate` exists **or** `caseStatus === NOT_PROCEEDING`.
-  - **How exited-at-stage is assigned:** For each exited row, evaluate milestone dates in order (`createdAt`, `recommendationDate`, `firstSubmittedDate`, `firstOfferDate`, `completionDate`) and take the furthest milestone date that is on/before `notProceedingDate` (or furthest available milestone when no explicit exit date exists). Map that index to pipeline stage and increment that stage bucket.
-  - **How breakdown percentages are calculated:** `stageExitShare = exitedAtStageCount / exitedCases` (denominator is exited rows, not full cohort).
-- **In-flight warning :** Shows when selected range end is too recent relative to typical lifecycle; warns that completion may be artificially low.
-- **PT toggle rationale:** PT journeys may skip normal progression stages; excluding them improves comparability of standard pipeline conversion metrics.
-- **Value to user:** Lenders can separate throughput issues (timing), conversion leakage (stage/cumulative rates), and attrition concentration (exit stage mix) in one panel.
+
+Show the same as the [Internal Dashboard Pipeline Funnel](#pipeline-funnel-chart), but scoped to the selected lender rows only.
+
+#### STAGE DISTRIBUTION (Chart)
+
+Show the same as the [Internal Dashboard Stage Distribution](#stage-distribution-chart), but scoped to the selected lender rows only.
 
 #### YOUR CASE MIX VS MARKET (Chart)
-- **What it shows:** Case-type distribution comparison between lender and market. In plain terms: Whether your business mix differs from the market.
-- **How it is calculated:** Case-type shares from lender stats and market stats.
-- **Value to user:** Lenders can identify segment over/under-indexing.
+- **What it shows:** Case-type distribution comparison between lender and market.
+- **Value to user:** Lenders can identify segment over/under-indexing and which cases they are most popular or least popular.
 
 #### PERFORMANCE BENCHMARKS TABLE (Table)
-- **What it shows:** Side-by-side lender vs market metrics (LTV, revenue/case, protection attach, days to complete, resubmission). In plain terms: Quick scorecard of where you are above or below market.
-- **How it is calculated:** Uses lender aggregated metrics compared to market aggregated metrics.
+- **What it shows:** Side-by-side lender vs market metrics (LTV, revenue/case, protection attach, days to complete, resubmission). Quick scorecard of where you are above or below market.
 - **Value to user:** Lenders can prioritize improvements on weakest dimensions.
-- **Metric breakdown:**
-  - **Avg LTV:** Mean lender LTV compared to mean market LTV; lower is generally safer.
-  - **Broker revenue per case:** Mean `totalBrokerFees` per case for lender and market.
-  - **Protection attach:** `linkedProtection` true share for lender vs market.
-  - **Days to complete:** Mean submitted-to-completion days for lender vs market.
-  - **Resubmission rate:** Share of submitted cases where `lastSubmittedDate` is after `firstSubmittedDate`.
-- **Why "Pending validation" appeared previously:** Market broker-revenue-per-case display was intentionally suppressed after a historical inflation concern in the benchmark row wiring.
-- **Current state:** The market broker revenue value now uses the same period-level average revenue-per-case calculation as Performance tab benchmarking and is shown directly.
-- **Current implementation caveat:** This overview benchmark market-revenue row still uses a more permissive denominator (`periodData.length` with null fees treated as zero), while Performance tab market revenue uses null-filtered fee averages.
+
+---
 
 ![Lender Dashboard Overview 3](https://bangsluke-assets.netlify.app/images/acre-software-engineering-task/2-Lender-Overview-3.png)
 
 #### MORTGAGE AMOUNT DISTRIBUTION (YOU VS MARKET) (Chart)
-- **What it shows:** Overlaid lender-vs-market horizontal distribution of mortgage amount bands. In plain terms: Whether your loan-size mix is weighted smaller or larger than market.
-- **How it is calculated:** Bucket positive `mortgageAmount` values into fixed amount bands for lender rows and full market rows, then compare band shares.
+- **What it shows:** Whether your loan-size mix is weighted smaller or larger than market.
 - **Value to user:** Lenders can spot under-indexed loan-size bands and adjust acquisition/pricing focus.
 
 #### YOUR PIPELINE VS MARKET CONVERSION RATES (Table)
-- **What it shows:** Stage cards for all pipeline stages including `NOT_PROCEEDING`, with lender volume and lender/market stage share. In plain terms: Where your cases sit in the funnel compared with market stage distribution.
-- **How it is calculated:** Stage count from status-to-stage pipeline mapping; stage share = stage count / total included cases after excluding system statuses with no mapped stage.
-- **Tooltip :** Each card tooltip includes the internal stage definition text plus lender and market conversion values.
+- **What it shows:** Stage cards for all pipeline stages including `NOT_PROCEEDING`, with lender volume and lender/market stage share. Stage count from status-to-stage pipeline mapping; stage share = stage count / total included cases after excluding system statuses with no mapped stage.
 - **Value to user:** Lenders can isolate stage-level volume and share gaps without crowded inline labels.
 
 > [Back to Table of Contents](#table-of-contents)
@@ -672,31 +652,23 @@ Data completeness lag (newer months often have less complete financial fields).
 ![Lender Dashboard Performance](https://bangsluke-assets.netlify.app/images/acre-software-engineering-task/2-Lender-Performance-1.png)
 
 #### BROKER REVENUE PER CASE (KPI Card)
-- **What it shows:** Mean lender revenue per case plus market benchmark and prior-period delta. In plain terms: Average revenue generated per case and whether it is moving.
-- **How it is calculated:** Sum lender `totalBrokerFees` / lender case count; compare to market and previous period.
+- **What it shows:** Average Broker fees per case. Sum lender `totalBrokerFees` / lender case count and then compare to market and previous period. Inlcudes 0 values which is why it is low.
 - **Value to user:** Lenders see commercial efficiency and trajectory.
-- **Display note:** Prior-period delta uses directional styling aligned to internal benchmark delta treatment (green when improving, amber when deteriorating).
 
 #### PROTECTION ATTACH RATE (KPI Card)
-- **What it shows:** Ratio of cases with linked protection, compared to market. In plain terms: How often protection products are attached to your cases.
-- **How it is calculated:** `linkedProtection` true count / lender case count.
+- **What it shows:** How often protection products are attached to your cases. `linkedProtection` true count / lender case count.
 - **Value to user:** Lenders can assess cross-sell performance against peers.
 
 #### RESUBMISSION RATE (KPI Card)
-- **What it shows:** Share of eligible submitted cases that were resubmitted, with market comparison. In plain terms: How often cases need to be submitted again.
-- **How it is calculated:** Resubmitted eligible cases / eligible submitted cases using shared resubmission logic.
+- **What it shows:** How often cases need to be submitted again.
 - **Value to user:** Lenders can identify process friction and quality issues.
 
 #### AVG INITIAL RATE (KPI Card)
-- **What it shows:** Average `initialPayRate` normalized to percentage-rate display, with market benchmark. In plain terms: Typical initial rate on your cases compared with market.
-- **How it is calculated:** `initial_pay_rate` raw values are scaled to decimal rate form during parsing, then displayed as percentages in KPI formatting.
+- **What it shows:** Average `initialPayRate`, with market benchmark.
 - **Value to user:** Lenders can compare pricing profile against platform baseline.
-- **Clarification:** The previous helper text `i Bps to percent conversion may apply` meant unit ambiguity ("is this basis points or percent?"). The KPI now states values are shown as percentage rates.
 
 #### BROKER REVENUE BREAKDOWN (MONTHLY STACKED BAR) (Chart)
-- **What it shows:** Monthly split of broker fee vs procurement fee totals. In plain terms: Which revenue components drive total monthly income.
-- **How it is calculated:** Group by month, sum `totalBrokerFees` and `grossMortgageProcFee`.
-- **Visual encoding:** Procurement fee is shown in blue and broker fee is shown in orange to keep the two components visually distinct.
+- **What it shows:** Monthly split of broker fee vs procurement fee totals. Group by month, sum `totalBrokerFees` and `grossMortgageProcFee`.
 - **Value to user:** Lenders can understand composition changes in earnings.
 
 #### TOTAL REVENUE TREND (Chart)
@@ -704,35 +676,36 @@ Data completeness lag (newer months often have less complete financial fields).
 - **How it is calculated:** Monthly total = broker fee + proc fee; average line from monthly mean.
 - **Value to user:** Lenders can monitor momentum and detect weak months early.
 
+:::tip[Broker Revenue Breakdown and Total revenue trend]
+These two charts are showing near identical data with some slight differences in the data - but they could be combined into a single chart.
+:::
+
+---
+
 ![Lender Dashboard Performance 2](https://bangsluke-assets.netlify.app/images/acre-software-engineering-task/2-Lender-Performance-2.png)
 
 #### CASE TYPE PERFORMANCE (Table)
-- **What it shows:** Case-type comparison table for lender vs market across completion rate, not-proceeding rate, and average net revenue. In plain terms: Which case types outperform or underperform market quality and economics.
-- **How it is calculated:** Build case-type metrics for lender rows and full period rows, align by case-type label, and render side-by-side values.
+- **What it shows:** Case-type comparison table for lender vs market across completion rate, not-proceeding rate, and average net revenue. Which case types outperform or underperform market quality and economics.
 - **Value to user:** Lenders can target operational/commercial interventions by case type.
 
 #### PRODUCT MIX VS MARKET (Chart)
-- **What it shows:** Initial-rate-type share comparison (fixed, tracker, discount, variable, stepped) for lender vs market. In plain terms: How your rate-product composition differs from platform baseline.
-- **How it is calculated:** Aggregate known `initialRateType` buckets for lender and market rows and convert to percentage shares; unknown/unmapped rate types are not assigned to plotted buckets.
+- **What it shows:** Initial-rate-type share comparison (fixed, tracker, discount, variable, stepped) for lender vs market. How your rate-product composition differs from platform baseline. Excludes blank values.
 - **Value to user:** Lenders can identify product-mix gaps against market demand.
 
 #### COMPLIANCE COMPOSITION (Mini-KPI Row)
-- **What it shows:** Mini-KPIs for regulated share, product-transfer share, and consumer-BTL share, each with market benchmark; includes avg term length KPI. In plain terms: A quick compliance/profile snapshot of your case book vs market.
-- **How it is calculated:** Use lender and market percentages from regulated and case-composition aggregations plus average term from product-mix aggregation.
-- **Interpretation note:** Composition flags are non-exclusive, so displayed percentages can overlap.
+- **What it shows:** Mini-KPIs for regulated share, product-transfer share, and consumer-BTL share, each with market benchmark; includes avg term length KPI. A quick compliance/profile snapshot of your case book vs market.
 - **Value to user:** Lenders can quickly monitor compliance-heavy mix changes and compare against market norm.
+
+---
 
 ![Lender Dashboard Performance 3](https://bangsluke-assets.netlify.app/images/acre-software-engineering-task/2-Lender-Performance-3.png)
 
 #### PROTECTION ATTACH BY CASE TYPE (Chart)
-- **What it shows:** Protection attach rates segmented by case type. In plain terms: Which case types convert best for protection.
-- **How it is calculated:** For each case type, linked-protection count / type total.
-- **Styling rule:** Lender bar is green when above market for that case type, red when below market, and neutral when equal; market remains as the comparison overlay.
+- **What it shows:** Protection attach rates segmented by case type. Which case types convert best for protection.
 - **Value to user:** Lenders can target commercial improvements by segment and immediately spot over/under-performance visually.
 
 #### RESUBMISSION ANALYSIS PANEL (Table)
-- **What it shows:** Eligible submitted count, resubmitted count, and resulting rate (with market baseline). In plain terms: Volume context behind the headline resubmission percentage.
-- **How it is calculated:** Uses same eligibility/resubmission logic as resubmission KPI, exposed as raw counts.
+- **What it shows:** Eligible submitted count, resubmitted count, and resulting rate (with market baseline).
 - **Value to user:** Lenders can judge if percentage movement is material or sample-size noise.
 
 > [Back to Table of Contents](#table-of-contents)
@@ -744,57 +717,55 @@ Data completeness lag (newer months often have less complete financial fields).
 ![Lender Dashboard Pipeline](https://bangsluke-assets.netlify.app/images/acre-software-engineering-task/2-Lender-Pipeline-1.png)
 
 #### SUBMISSION TO OFFER SPEED (KPI Card)
-- **What it shows:** Mean submission-to-offer cycle time vs market benchmark and rank cue. In plain terms: How quickly your submitted cases get to offer.
-- **How it is calculated:** Average `daysBetween(firstSubmittedDate, firstOfferDate)` for valid lender rows.
+- **What it shows:** Mean submission-to-offer cycle time (`firstSubmittedDate` to `firstOfferDate`) vs market benchmark and rank cue. How quickly your submitted cases get to offer.
 - **Value to user:** Lenders can track a core turnaround metric that impacts broker choice.
 
 #### OFFER TO COMPLETE SPEED (KPI Card)
-- **What it shows:** Mean offer-to-completion duration vs market. In plain terms: How long completion takes after an offer is received.
-- **How it is calculated:** Average `daysBetween(firstOfferDate, completionDate)` for valid rows.
+- **What it shows:** Mean offer-to-completion duration (`firstOfferDate` to `completionDate`) vs market. How long completion takes after an offer is received.
 - **Value to user:** Lenders can isolate post-offer processing efficiency.
 
 #### NOT PROCEEDING RATE (KPI Card)
-- **What it shows:** Share of lender rows in `NOT_PROCEEDING`, with market comparison. In plain terms: How frequently cases are lost before completion.
-- **How it is calculated:** Not-proceeding count / lender non-system rows (system statuses are excluded from denominator) and compared with the same market denominator logic.
+- **What it shows:** Share of lender rows in `NOT_PROCEEDING`, with market comparison.
 - **Value to user:** Lenders can monitor attrition risk and benchmark leakage.
 
-#### LENDER PIPELINE FUNNEL (Chart)
-- **What it shows:** Same shared `FunnelPanel` model as Internal, but scoped to selected lender rows only. In plain terms: For this lender, where cohort conversion is strongest/weakest, where time is lost, and where exits cluster.
-- **How it is calculated:** Same cohort and conversion logic as Internal pipeline funnel, with lender filter applied before computation.
-- **Rendered columns (`Pipeline funnel` mode):**
-  - `Stage`
-  - `Volume` (bar + count)
-  - `Stage conversion`
-  - `Cumulative conversion`
-  - `Median days`
-- **Exit analysis panel:** Right-side companion panel with lender-specific:
-  - exit rate
-  - exited-at-stage breakdown bars
-  - `stagesSkipped` quality counter
-  - **How exit analysis is calculated:** Uses the same shared logic as Internal Funnel (`computePipelineFunnel -> buildExitAnalysis`): exited rows are `notProceedingDate` rows or `NOT_PROCEEDING` statuses, `exitRate = exitedCases / cohortCount`, and each exited row is assigned to the furthest reached milestone stage at/before exit; breakdown shares are normalized by `exitedCases`.
-- **Interaction :** Bars use shared tooltip + hover/focus fade  for readability and visual consistency with other dashboard distributions.
-- **PT toggle :** Enabled by default; keeps lender conversion metrics comparable to the standard (non-PT) lifecycle unless user explicitly includes PT.
-- **Value to user:** Lenders can prioritize the highest-impact intervention stage with evidence on both conversion loss and timing delay.
+#### PIPELINE FUNNEL (Chart)
+
+Show the same as the [Internal Dashboard Pipeline Funnel](#pipeline-funnel-chart), but scoped to the selected lender rows only.
+
+#### STAGE DISTRIBUTION (Chart)
+
+Show the same as the [Internal Dashboard Stage Distribution](#stage-distribution-chart), but scoped to the selected lender rows only.
+
+---
 
 ![Lender Dashboard Pipeline 2](https://bangsluke-assets.netlify.app/images/acre-software-engineering-task/2-Lender-Pipeline-2.png)
 
 #### DROP-OFF REASONS (Table)
-- **What it shows:** Top grouped reasons for lender not-proceeding cases, shown in an internal-overview-style table with market comparison bars and a recommendation column. In plain terms: Why your cases are being lost.
-- **How it is calculated:** Group lender `NOT_PROCEEDING` rows by reason, rank by count, title-case all displayed reason labels, and overlay lender share vs market share per reason.
-- **Recommendation :** The table includes lender-specific `Recommended Follow Up Actions` text by reason, and keeps the note `Other includes unclassified not-proceeding reasons.` at the bottom of the card.
+- **What it shows:** Top grouped reasons for lender not-proceeding cases, shown in an internal-overview-style table with market comparison bars and a recommendation column. Revenue at risk is `totalCaseRevenue` for the not-proceeding cases.
 - **Value to user:** Lenders can prioritize process/product changes with highest loss impact.
 
 ![Lender Dashboard Pipeline 3](https://bangsluke-assets.netlify.app/images/acre-software-engineering-task/2-Lender-Pipeline-3.png)
 
 #### CONVERSION VELOCITY TIMELINE (Chart)
-- **What it shows:** Dual-line monthly trend of average submission-to-offer days for lender and market. In plain terms: Whether your offer speed trend is improving or diverging from market over time.
-- **How it is calculated:** Group valid cases by `firstSubmittedDate` month and average `daysBetween(firstSubmittedDate, firstOfferDate)` for lender and market series.
+- **What it shows:** Dual-line monthly trend of average submission-to-offer days (`firstSubmittedDate` to `firstOfferDate`) for lender and market. Whether your offer speed trend is improving or diverging from market over time.
 - **Value to user:** Lenders can track month-by-month speed competitiveness, not just period averages.
 
+:::tip[Conversion velocity timeline]
+This chart is showing values in April 2026 as some of the `firstSubmittedDate` sit in 2026.
+
+The maths behind this graph clamps to 0 for data errors (such as months where no rows have both required dates) which is why you see the 0 values.
+
+For recent submission months (especially 2026), many slower cases likely haven’t reached offer yet, so they’re excluded. That leaves a biased sample of faster-converting cases, which pushes the average days down.
+:::
+
 #### STALLED CASE LIST (Table)
-- **What it shows:** Application-stage cases stalled beyond market-derived threshold, with stall start date, days stalled, case type, mortgage amount, and revenue at risk. In plain terms: Specific cases likely stuck and needing action.
+- **What it shows:** Application-stage cases stalled (where `lastSubmittedDate` or `firstSubmittedDate` is before the report as-of date) beyond market-derived threshold, with stall start date, days stalled, case type, mortgage amount, and revenue at risk (`netCaseRevenue`).
 - **How it is calculated:** Keep `APPLICATION`-stage rows, compute age from `lastSubmittedDate ?? firstSubmittedDate` to the report as-of date, and filter rows above `max(1, round(market avg days to offer))`.
 - **Value to user:** Lenders can convert analysis into immediate case-level follow-up.
+
+:::tip[Stalled case list]
+A stalled case is a case that is still in the APPLICATION stage and has been stalled for more than the market average submission-to-offer days (`lastSubmittedDate` or `firstSubmittedDate` is before the report as-of date).
+:::
 
 > [Back to Table of Contents](#table-of-contents)
 
@@ -804,87 +775,75 @@ Data completeness lag (newer months often have less complete financial fields).
 
 ![Lender Dashboard Insights](https://bangsluke-assets.netlify.app/images/acre-software-engineering-task/2-Lender-Insights-1.png)
 
-#### INSIGHTS TAB ALERT BADGE (Tab pill)
-- **What it shows:** Amber badge beside the `Insights` tab showing count of `alertMessages` from `evaluateLenderInsights`. In plain terms: How many active alerts need review before opening the Insights content.
-- **Display rule:** Uses singular for one alert (`1 alert`) and plural for multiple alerts (`N alerts`); badge is hidden when count is zero.
-- **Value to user:** Gives immediate urgency/context in navigation chrome.
-
 #### HIGH FURTHER ADVANCES BADGE (Header pill)
-- **What it shows:** Amber `High further advances` badge below the Insights page header when selected lender further-advance share is elevated. In plain terms: Warns that a large proportion of current cases are additional borrowing against existing mortgages.
-- **How it is calculated:** In Insights, compute `buildCaseCompositionRows(lenderRows)`, read the `Further advance` row percentage, and show badge when share is `>= 20%`.
-- **Display rule:** Presentation-only header indicator; it does not change the tab alert count.
+- **What it shows:** Amber `High further advances` badge below the Insights page header when selected lender further-advance share is elevated. that a large proportion of current cases are additional borrowing against existing mortgages (over 20% of cases).
 - **Value to user:** Surfaces product-mix risk/opportunity immediately before deeper analysis.
 
 #### ACTION REQUIRED ALERTS (Table)
-- **What it shows:** Rule-based alert messages from `evaluateLenderInsights`. In plain terms: Priority warning signals that need attention now.
-- **How it is calculated:** Evaluate lender metrics against market/context thresholds in insights utility.
+- **What it shows:** Rule-based alert messages from `evaluateLenderInsights`. Priority warning signals that need attention now.
 - **All current alert types:**
-  - `You have {n} cases stalled in Submitted for over {threshold} days` (trigger: at least one submitted case exceeds `round(market avg days to offer)`).
-  - `Submission-to-offer speed is slower than market average` (trigger: lender average submitted-to-offer days > market average).
-  - `Not-proceeding rate is above market average` (trigger: lender not-proceeding share > market not-proceeding share).
+  - `You have {n} cases stalled in Submitted for over {threshold} days` - **Trigger:** at least one submitted case exceeds `round(market avg days to offer)`)
+  - `Submission-to-offer speed is slower than market average` - **Trigger:** lender average submitted-to-offer days > market average.
+  - `Not-proceeding rate is above market average` - **Trigger:** lender not-proceeding share > market not-proceeding share.
 - **Value to user:** Lenders get concise, actionable guidance without scanning every chart.
 
-#### WHAT TO FOCUS ON (RECOMMENDATION CARDS) (Table)
-- **What it shows:** Top recommendation cards generated by insights evaluation logic. In plain terms: Suggested actions with highest expected impact.
-- **How it is calculated:** Rule engine ranks and returns focused recommendations (capped list).
+#### WHAT TO FOCUS ON (Table)
+- **What it shows:** Top recommendation cards generated by insights evaluation logic.
 - **All current possible recommendation items (max 3 shown at once):**
-  - `You have {n} cases stalled in Submitted for an average of {d} days - £{value} in mortgage value at risk.`  
-    Trigger: at least one submitted case exceeds the stall threshold.
-  - `Your not-proceeding rate ({x}%) is above the market average ({y}%) - review top drop-off reasons below.`  
-    Trigger: lender not-proceeding share is above market not-proceeding share.
-  - `Your {lowestType} protection attach rate ({x}%) is significantly lower than your {highestType} rate ({y}%) - a potential revenue opportunity.`  
-    Trigger: lowest case-type attach rate is less than half of highest attach rate.
-  - `Your submission-to-offer speed ({x} days) is slower than the market average ({y} days).`  
-    Trigger: lender average submitted-to-offer days is above market average.
-  - `Your resubmission rate ({x}%) is above the market average ({y}%) - first-submission quality may be improvable.`  
-    Trigger: lender resubmission rate is greater than market rate by more than 5 percentage points.
+  - `You have {n} cases stalled in Submitted for an average of {d} days - £{value} in mortgage value at risk.` - **Trigger:** at least one submitted case exceeds the stall threshold.
+  - `Your not-proceeding rate ({x}%) is above the market average ({y}%) - review top drop-off reasons below.` - **Trigger:** lender not-proceeding share is above market not-proceeding share.
+  - `Your {lowestType} protection attach rate ({x}%) is significantly lower than your {highestType} rate ({y}%) - a potential revenue opportunity.` - **Trigger:** lowest case-type attach rate is less than half of highest attach rate.
+  - `Your submission-to-offer speed ({x} days) is slower than the market average ({y} days).` - **Trigger:** lender average submitted-to-offer days is above market average.
+  - `Your resubmission rate ({x}%) is above the market average ({y}%) - first-submission quality may be improvable.` - **Trigger:** lender resubmission rate is greater than market rate by more than 5%.
 - **Value to user:** Lenders get prescriptive next steps, not just descriptive analytics.
 
 #### STALLED CASES (KPI Card)
-- **What it shows:** Count of stalled submitted cases in insights section, computed from the full stalled-case set (not the collapsed table subset). In plain terms: How many cases are currently stuck.
-- **How it is calculated:** Filter submitted/application-stage rows above the Insights-specific threshold (`days > max(1, round(market avg days to offer))`), based on `lastSubmittedDate ?? firstSubmittedDate`.
-- **Threshold note:** This differs from some pipeline/internal stall methods that use median-age or median-offer benchmarks.
+- **What it shows:** Count of stalled submitted cases in insights section.
 - **Value to user:** Lenders can size operational backlog quickly.
 
+:::tip[Stalled case list]
+A stalled case is a case that is still in the APPLICATION stage and has been stalled for more than the market average submission-to-offer days (`lastSubmittedDate` or `firstSubmittedDate` is before the report as-of date).
+:::
+
 #### BROKER REVENUE AT RISK (KPI Card)
-- **What it shows:** Sum of `totalCaseRevenue` for stalled cases. In plain terms: Potential revenue at risk if stalled cases do not progress.
-- **How it is calculated:** Add revenue values across the stalled case set.
+- **What it shows:** Sum of `totalCaseRevenue` for stalled cases.
 - **Value to user:** Lenders can prioritize operational work by commercial impact.
 
 #### MORTGAGE VALUE AT RISK (KPI Card)
-- **What it shows:** Sum of `mortgageAmount` for stalled cases. In plain terms: Total loan value currently exposed by stalled processing.
-- **How it is calculated:** Add mortgage amounts across stalled rows.
+- **What it shows:** Sum of `mortgageAmount` for stalled cases.
 - **Value to user:** Lenders can understand scale of potential lost lending volume.
 
 #### AVERAGE DAYS STALLED (KPI Card)
-- **What it shows:** Mean stall age for stalled-case subset. In plain terms: Typical delay length among stuck cases.
-- **How it is calculated:** Average day difference between reference date and submitted/last-touch date.
+- **What it shows:** Mean stall age for stalled-case subset. Days between `lastSubmittedDate` or `firstSubmittedDate` and the report as-of date.
 - **Value to user:** Lenders can prioritize whether issue is broad/early or deep/long-running.
 
 #### REVENUE-AT-RISK CASE TABLE (Table)
-- **What it shows:** Case-level rows: case ID, stall start date, days stalled, case type, mortgage amount, and revenue at risk. In plain terms: Exactly which stalled cases carry the biggest financial risk.
-- **How it is calculated:** Sort stalled cases by risk/value metrics and render tabular detail; the table defaults to a compact top-10 view with `Show more` / `Show less` to expand to all rows.
-- **Value to user:** Lenders can turn insight into targeted case-management actions.
+Same as the [Stalled case list](#stalled-case-list-table) table.
+
+---
 
 ![Lender Dashboard Insights 2](https://bangsluke-assets.netlify.app/images/acre-software-engineering-task/2-Lender-Insights-2.png)
 
 #### CONVERSION VELOCITY SECTION (KPI Card)
-- **What it shows:** Two KPI cards: lender avg days-to-offer (with in-card market delta text and market average subtitle) plus market ranking/percentile. In plain terms: How fast you are vs peers and where you rank.
-- **How it is calculated:** Combine lender speed metric, market benchmark, and ranking utility output; top-percent copy uses `rank / total` so low rank numbers correctly map to low top-percent values.
+- **What it shows:** Two KPI cards: lender avg days-to-offer (`firstSubmittedDate` to `firstOfferDate`) vs market benchmark and rank cue. How quickly your submitted cases get to offer.
 - **Value to user:** Lenders can judge competitiveness in a broker-sensitive metric.
 
 #### WHAT-IF MODELLING (Section)
-- **What it shows:** Interactive target-days slider for submission-to-offer speed with live modelled incremental revenue this quarter. In plain terms: A quick scenario test for “if we got faster, how much extra revenue could clear this quarter?”
+- **What it shows:** Interactive target-days slider for submission-to-offer days (`firstSubmittedDate` to `firstOfferDate`) speed with live modelled incremental revenue (`totalCaseRevenue`) this quarter. A quick scenario test for “if we got faster, how much extra revenue could clear this quarter?”
 - **How it is calculated:** Uses current lender speed, market average speed, and in-flight revenue in the latest creation quarter; applies a proportional improvement heuristic from current rounded speed to selected target days to estimate incremental cleared revenue and projected quarter total.
 - **Value to user:** Lenders can connect operational speed improvements to commercial impact in real time.
+
+---
 
 ![Lender Dashboard Insights 3](https://bangsluke-assets.netlify.app/images/acre-software-engineering-task/2-Lender-Insights-3.png)
 
 #### LTV RISK (LENDER + MARKET BASELINE) (Chart)
-- **What it shows:** Single combined chart with overlaid transparent bars for lender and market baseline by LTV band. In plain terms: Whether your risk profile is heavier or lighter than market.
-- **How it is calculated:** Bucket lender and market LTV values into the Insights LTV bands and render lender bars over market baseline bars in the same row for direct overlap comparison.
-- **Band caveat:** Insights LTV bands are defined locally in the Insights feature and are not identical to the shared `ltvDistribution` helper bands used elsewhere.
+- **What it shows:** Single combined chart with overlaid transparent bars for lender and market baseline by LTV band. In plain terms: Whether your risk profile is heavier or lighter than market. 
 - **Value to user:** Lenders can evaluate credit-risk positioning relative to peers.
+
+:::danger[LTV bands]
+The LTV band "95-100%" includes all values above 95% up to the 1.5 LTV cap.
+:::
 
 #### LTV OPPORTUNITY GAPS (Callout Card)
 - **What it shows:** Top two LTV bands where market share growth is positive period-over-period and lender share is below market share. In plain terms: Highest-priority LTV bands where you are under-indexed while demand is growing.
