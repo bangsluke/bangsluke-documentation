@@ -1940,6 +1940,19 @@
     react-helmet-async "npm:@slorber/react-helmet-async@1.3.0"
     react-loadable "npm:@docusaurus/react-loadable@6.0.0"
 
+"@docusaurus/plugin-content-blog@3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-content-blog/-/plugin-content-blog-3.10.0.tgz#10095291b637440847854ecb2c8afcd8746debd7"
+  integrity sha512-RuTz68DhB7CL96QO5UsFbciD7GPYq6QV+YMfF9V0+N4ZgLhJIBgpVAr8GobrKF6NRe5cyWWETU5z5T834piG9g==
+  dependencies:
+    "@docusaurus/types" "3.10.1"
+    "@types/history" "^4.7.11"
+    "@types/react" "*"
+    "@types/react-router-config" "*"
+    "@types/react-router-dom" "*"
+    react-helmet-async "npm:@slorber/react-helmet-async@1.3.0"
+    react-loadable "npm:@docusaurus/react-loadable@6.0.0"
+
 "@docusaurus/plugin-content-blog@3.10.1":
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/@docusaurus/plugin-content-blog/-/plugin-content-blog-3.10.1.tgz#0bd8de700ccbd8e95d920df2613304ef59abe72b"
@@ -2057,21 +2070,21 @@
     "@docusaurus/utils-validation" "3.10.1"
     tslib "^2.6.0"
 
-"@docusaurus/plugin-pwa@^3.10.0":
-  version "3.10.0"
-  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-pwa/-/plugin-pwa-3.10.0.tgz#9d02589c489859a181c828af254e87d86e4a05e5"
-  integrity sha512-kJr50iyQcE7qRBbYJol9IKREHny4nvodvJkz88lQl7LvOIE6SIgDMl2gG+nhkHqQvuO15i+WnPNlnPVSRLZUdg==
+"@docusaurus/plugin-pwa@^3.10.1":
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-pwa/-/plugin-pwa-3.10.1.tgz#d35704d43c3d62e3c7798a859010c589bebe4640"
+  integrity sha512-a5RI8Cxx5zeZky2F88CeB9Afel98Q9t7Bu6rgRKSm0biM7qABRDBTW/nTMV120Ehsj09sDPhLEE+x11HycbnkA==
   dependencies:
     "@babel/core" "^7.25.9"
     "@babel/preset-env" "^7.25.9"
-    "@docusaurus/bundler" "3.10.0"
-    "@docusaurus/core" "3.10.0"
-    "@docusaurus/logger" "3.10.0"
-    "@docusaurus/theme-common" "3.10.0"
-    "@docusaurus/theme-translations" "3.10.0"
-    "@docusaurus/types" "3.10.0"
-    "@docusaurus/utils" "3.10.0"
-    "@docusaurus/utils-validation" "3.10.0"
+    "@docusaurus/bundler" "3.10.1"
+    "@docusaurus/core" "3.10.1"
+    "@docusaurus/logger" "3.10.1"
+    "@docusaurus/theme-common" "3.10.1"
+    "@docusaurus/theme-translations" "3.10.1"
+    "@docusaurus/types" "3.10.1"
+    "@docusaurus/utils" "3.10.1"
+    "@docusaurus/utils-validation" "3.10.1"
     babel-loader "^9.2.1"
     clsx "^2.0.0"
     core-js "^3.31.1"
@@ -2200,10 +2213,10 @@
     tslib "^2.6.0"
     utility-types "^3.10.0"
 
-"@docusaurus/theme-search-algolia@3.10.1":
-  version "3.10.1"
-  resolved "https://registry.yarnpkg.com/@docusaurus/theme-search-algolia/-/theme-search-algolia-3.10.1.tgz#6f422058711629ce8d7c2f17e1e54efa075c626e"
-  integrity sha512-OTaARARVZj2GvkJQjB+1jOIxntRaXea+G+fMsNqrZBAU1O1vJKDW22R7kECOHW27oJCLFN9HKaZeRrfAUyviug==
+"@docusaurus/theme-search-algolia@3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@docusaurus/theme-search-algolia/-/theme-search-algolia-3.10.0.tgz#0ff57fe58db6abde8f5ad2877e459cd2fa6e7464"
+  integrity sha512-f5FPKI08e3JRG63vR/o4qeuUVHUHzFzM0nnF+AkB67soAZgNsKJRf2qmUZvlQkGwlV+QFkKe4D0ANMh1jToU3g==
   dependencies:
     "@algolia/autocomplete-core" "^1.19.2"
     "@docsearch/react" "^3.9.0 || ^4.3.2"
