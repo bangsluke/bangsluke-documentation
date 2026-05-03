@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-14T12:03:40.729Z",
+  "generatedAt": "2026-05-03T17:27:18.294Z",
   "categoriesBySlug": {
     "/agile": {
       "label": "Agile",
@@ -18,6 +18,11 @@
     },
     "/project-set-up-to-release": {
       "label": "Project Set Up to Release",
+      "collapsed": true,
+      "position": 3
+    },
+    "/projects/acre-software-task-project": {
+      "label": "Acre Software Task",
       "collapsed": true,
       "position": 3
     },
@@ -47,6 +52,7 @@
     "/general-documentation",
     "/product-management",
     "/project-set-up-to-release",
+    "/projects/acre-software-task-project",
     "/projects/dorkinians-stats",
     "/projects/dorkinians-website-project",
     "/projects",
@@ -116,6 +122,9 @@
     "/project-set-up-to-release/release-checklist": "Release Checklist",
     "/docs/project-set-up-to-release/release-checklist": "Release Checklist",
     "project-set-up-to-release/release-checklist": "Release Checklist",
+    "/projects/acre-software-task": "Acre Dashboard Explanation",
+    "/docs/projects/acre-software-task": "Acre Dashboard Explanation",
+    "projects/acre-software-task": "Acre Dashboard Explanation",
     "/projects/dorkinians-stats/maintenance": "Dorkinians Stats Maintenance",
     "/docs/projects/dorkinians-stats/maintenance": "Dorkinians Stats Maintenance",
     "projects/dorkinians-stats/maintenance": "Dorkinians Stats Maintenance",
@@ -538,6 +547,21 @@
               "type": "link",
               "label": "Dorkinians Stats Maintenance",
               "href": "/docs/projects/dorkinians-stats/maintenance"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Acre Software Task",
+          "href": "/docs/projects/acre-software-task-project",
+          "collapsible": true,
+          "collapsed": true,
+          "position": 3,
+          "items": [
+            {
+              "type": "link",
+              "label": "Acre Dashboard Explanation",
+              "href": "/docs/projects/acre-software-task"
             }
           ]
         }

@@ -324,6 +324,58 @@ Given that users are now frequently asking AI agents such as ChatGPT, Gemini and
 
 <PageBreak />
 
+## Opportunity Solution Tree Technique
+
+> Read the full article by Teresa Torres [here on Product Talk](https://www.producttalk.org/opportunity-solution-trees/)
+
+An Opportunity Solution Tree is a visual decision‑making framework created by Teresa Torres to help product teams connect their desired outcome to customer opportunities, potential solutions, and the experiments needed to validate them. It brings structure and clarity to continuous discovery by making your reasoning explicit and evidence‑based. 
+
+![Opportunity Solution Tree](https://storage.ghost.io/c/57/9b/579b6dca-f48a-4307-844f-f0533595d058/content/images/size/w720/2026/04/opportunity-solution-tree-550-x-401-1-6.webp)
+
+Below is a concise, practical walkthrough of how to build one.
+
+**1. Start with a Clear, Measurable Outcome**
+
+This sits at the top of the tree. It must be specific, measurable, and something your team can realistically move—e.g., "Increase onboarding completion from 40% to 55%.". This outcome should come from strategy or OKRs, not from brainstorming. 
+
+**2. Map the Opportunity Space (Customer Needs, Pain Points, Desires)**
+
+Opportunities are *not* solutions. They are unmet customer needs that, if addressed, would drive your outcome. They come from interviews, support tickets, analytics, and other research - not from internal assumptions. 
+
+Key steps:
+- Identify opportunities from real customer evidence.
+- Break large opportunities into smaller, nested ones (a hierarchy).
+- Keep the tree messy at first—refine later.
+
+This is the most important and most difficult part of the OST.
+
+**3. Select a Target Opportunity**
+
+You choose one opportunity to focus on next. Torres recommends assessing opportunities based on:
+
+- Customer value
+- Business value
+- How well the team understands the opportunity
+
+Effort is not included at this stage - you prioritise based on value and knowledge, not feasibility. 
+
+**4. Generate Multiple Solutions**
+
+For the chosen opportunity, brainstorm several possible solutions. Avoid falling in love with the first idea - OSTs force you to consider alternatives. Solutions can be features, workflows, UI changes, or even non‑product interventions. 
+
+**5. Identify the Riskiest Assumptions & Design Experiments**
+
+Each solution has assumptions about desirability, usability, feasibility, and viability. You map experiments under each solution to test these assumptions quickly and cheaply. Examples:
+
+- Prototype tests
+- A/B tests
+- Concierge tests
+- Data analysis
+
+This bottom layer ensures you learn before you build. 
+
+<PageBreak />
+
 ## Discovery by company stage
 
 :::info[Startup]
