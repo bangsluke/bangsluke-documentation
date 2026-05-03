@@ -139,9 +139,27 @@ Use an agenda item called "What are we NOT doing?" to help you identify areas th
 
 ### Continuous Discovery Habits Summary
 
-<!-- TODO: Add summary of Continuous Discovery Habits book -->
+A really good description of how to conduct discovery in a continuous manner, outlining processes such as mapping the opportunity space, picking the problem to be solved, and then pursuing several different approaches to the solution. Torres argues that teams should maintain weekly customer touchpoints, work as a cross‑functional product trio, and use tools like [Opportunity Solution Trees](/docs/product-management/product-discovery#opportunity-solution-tree-technique) to systematically explore customer problems and evaluate solutions.
 
 ### Continuous Discovery Habits Key Concepts
+
+The book opens by diagnosing a common industry problem: although companies claim to be customer‑centric, they often rely on internal opinions or competitor analysis instead of real customer insight. Torres proposes continuous discovery as the antidote - an approach rooted in regular customer interviews, assumption testing, and evidence‑based prioritisation. 
+
+A central theme is that good product decisions come from reducing uncertainty, not from guessing. Torres emphasises testing the assumptions behind ideas rather than the ideas themselves, enabling teams to learn faster and avoid building the wrong thing. She also highlights that framing problems well is half the work: how a team frames a problem strongly influences the solutions they generate.
+
+The book also outlines five core habits - continuous problem discovery, deep customer empathy, outcome‑focused thinking, relentless experimentation, and evidence‑based prioritisation - illustrated through practical examples and case studies. These habits help teams shift from a delivery‑first mindset to one that prioritises learning, insight, and iterative progress.
+
+<PageBreak />
+
+## Storytelling with Data
+
+> *"Storytelling with Data"* - By Cole Nussbaumer Knaflic
+
+### Storytelling with Data Summary
+
+<!-- TODO: Add summary of Storytelling with Data book -->
+
+### Storytelling with Data Key Concepts
 
 <!-- TODO: Add summary of key concepts -->
 
