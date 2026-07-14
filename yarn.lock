@@ -2182,21 +2182,21 @@
     "@docusaurus/utils-validation" "3.10.1"
     tslib "^2.6.0"
 
-"@docusaurus/plugin-pwa@^3.10.1":
-  version "3.10.1"
-  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-pwa/-/plugin-pwa-3.10.1.tgz#d35704d43c3d62e3c7798a859010c589bebe4640"
-  integrity sha512-a5RI8Cxx5zeZky2F88CeB9Afel98Q9t7Bu6rgRKSm0biM7qABRDBTW/nTMV120Ehsj09sDPhLEE+x11HycbnkA==
+"@docusaurus/plugin-pwa@^3.10.2":
+  version "3.10.2"
+  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-pwa/-/plugin-pwa-3.10.2.tgz#8f0dedd5e071b7b53f6729a986f5d2326d62580a"
+  integrity sha512-pJUaEZnIIzJdIvDCVENLS4ER5DnT+VJYXU6TYCsshUUg9FHAYrkAWbsldsv4u769FtHRUjO7TWjWsS0B8+RO9g==
   dependencies:
     "@babel/core" "^7.25.9"
     "@babel/preset-env" "^7.25.9"
-    "@docusaurus/bundler" "3.10.1"
-    "@docusaurus/core" "3.10.1"
-    "@docusaurus/logger" "3.10.1"
-    "@docusaurus/theme-common" "3.10.1"
-    "@docusaurus/theme-translations" "3.10.1"
-    "@docusaurus/types" "3.10.1"
-    "@docusaurus/utils" "3.10.1"
-    "@docusaurus/utils-validation" "3.10.1"
+    "@docusaurus/bundler" "3.10.2"
+    "@docusaurus/core" "3.10.2"
+    "@docusaurus/logger" "3.10.2"
+    "@docusaurus/theme-common" "3.10.2"
+    "@docusaurus/theme-translations" "3.10.2"
+    "@docusaurus/types" "3.10.2"
+    "@docusaurus/utils" "3.10.2"
+    "@docusaurus/utils-validation" "3.10.2"
     babel-loader "^9.2.1"
     clsx "^2.0.0"
     core-js "^3.31.1"
@@ -2307,6 +2307,24 @@
     tslib "^2.6.0"
     utility-types "^3.10.0"
 
+"@docusaurus/theme-common@3.10.2":
+  version "3.10.2"
+  resolved "https://registry.yarnpkg.com/@docusaurus/theme-common/-/theme-common-3.10.2.tgz#5cf2a8b76554b8b38c6afe8448470c411f683e5b"
+  integrity sha512-R9b/vMpK1yye6hNZTA6x/ivRv+at6GhxnXcxkpzCGzO1R1RwiquqiFg2wMFh6aqlJTpWRFKpFD2TzCDQcyOU0A==
+  dependencies:
+    "@docusaurus/mdx-loader" "3.10.2"
+    "@docusaurus/module-type-aliases" "3.10.2"
+    "@docusaurus/utils" "3.10.2"
+    "@docusaurus/utils-common" "3.10.2"
+    "@types/history" "^4.7.11"
+    "@types/react" "*"
+    "@types/react-router-config" "*"
+    clsx "^2.0.0"
+    parse-numeric-range "^1.3.0"
+    prism-react-renderer "^2.3.0"
+    tslib "^2.6.0"
+    utility-types "^3.10.0"
+
 "@docusaurus/theme-search-algolia@3.10.1":
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/@docusaurus/theme-search-algolia/-/theme-search-algolia-3.10.1.tgz#6f422058711629ce8d7c2f17e1e54efa075c626e"
@@ -2334,6 +2352,14 @@
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/@docusaurus/theme-translations/-/theme-translations-3.10.1.tgz#c3119a015652290eea560ca45ac775963d6eb75b"
   integrity sha512-cLMyaKivjBVWKMJuWqyFVVgtqe8DPJNPkog0bn8W1MDVAKcPdxRFycBfC1We1RaNp7Rdk513bmtW78RR6OBxBw==
+  dependencies:
+    fs-extra "^11.1.1"
+    tslib "^2.6.0"
+
+"@docusaurus/theme-translations@3.10.2":
+  version "3.10.2"
+  resolved "https://registry.yarnpkg.com/@docusaurus/theme-translations/-/theme-translations-3.10.2.tgz#cd649083babd12df324e7129008aaccacd4cfb13"
+  integrity sha512-iv20wrxnyXkY89LM3TzRlzGlt5fIGO5UnaR6UL1ZVfB9RRFjxQFQ6awDrwAc6Km8Y5gD8pInuwYPF+6/TiCxXA==
   dependencies:
     fs-extra "^11.1.1"
     tslib "^2.6.0"
