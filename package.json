@@ -47,9 +47,11 @@
   "resolutions": {
     "ajv": "8.18.0",
     "body-parser": "1.20.6",
+    "**/express/path-to-regexp": "0.1.13",
     "minimatch": "10.2.4",
     "node-forge": "1.4.0",
     "serialize-javascript": "7.0.5",
+    "uuid": "11.1.1",
     "svgo": "3.3.4",
     "websocket-driver": "0.7.5",
     "**/picomatch": "4.0.4"
